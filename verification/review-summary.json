@@ -1,0 +1,41 @@
+{
+  "version": "1",
+  "date": "2026-10-23",
+  "source_sha256": "cd1d1571f6fb99274e39cc8e848a110a3ef0d8ec4bc720827ccdf5686832af7a",
+  "accepted_editorial_source_sha256": "a0140b133024be4e445bd5e4d0c965603ae160c9bcd3677eaf528fc412b318a1",
+  "mathematical_release_gate": "OPEN",
+  "result_groups": [
+    "CONSTRUCTION",
+    "FOUNDATION-MATCH",
+    "MANUSCRIPT-SOURCES",
+    "MANUSCRIPT-SCOPE",
+    "PUBLICATION-READABILITY",
+    "RELEASE-METADATA"
+  ],
+  "fresh_public_delta_reviews": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "role": "delta-check",
+      "verdict": "NO REGRESSION",
+      "report_sha256": "b590d2c204d31dcecf1c31201c526968a15fbe1e9453777bc4fb1f07a33dcfea"
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "role": "delta-check",
+      "verdict": "NO REGRESSION",
+      "report_sha256": "73d8aa89c236b1ca220b863b2f91fcdbeb2fbb7cd1cecc7bbc4842f86eb051c3"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "role": "focused fix and scope; one continuation execution",
+      "verdict": "RESOLVED / CONSISTENT",
+      "report_sha256": "12a9cff193f528b11b0f422236c4fdf859ff8f27f8a028049f6d76bbf1487ea5"
+    }
+  ],
+  "open_blocking_findings": 0,
+  "scope": "Exact public presentation revision of the accepted manuscript. All protected mathematics and bibliography retained.",
+  "limits": "Internal model review with fresh Astra/max and Sol/max contexts under the approved unavailable-Opus fallback. No independent expert review, formal proof certification or claim of statistically independent errors. Detailed private history is not exported."
+}

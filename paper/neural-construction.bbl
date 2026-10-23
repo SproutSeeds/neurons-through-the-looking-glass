@@ -1,0 +1,136 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ageev and Ageeva(2026)]{AgeevAgeeva2026Transformer}
+Dmitry~S. Ageev and Yulia~A. Ageeva.
+\newblock {Neural Network Quantum Field Theory from Transformer Architectures}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2602.10209v1}.
+\newblock arXiv:2602.10209v1 as acquired. The primary class (cs.LG) is taken from Zhang v1 ref. [17] and was not observed on the primary page. Adjacent architecture comparison only.
+
+\bibitem[Albeverio et~al.(1989)Albeverio, H{\o}egh-Krohn, and Zegarlinski]{AHKZ1989}
+S.~Albeverio, R.~H{\o}egh-Krohn, and B.~Zegarlinski.
+\newblock {Uniqueness of Gibbs States for General $P(\phi)_2$-Weak Coupling Models by Cluster Expansion}.
+\newblock \emph{Communications in Mathematical Physics}, 121:\penalty0 683--697, 1989.
+
+\bibitem[Demirtas et~al.(2023)Demirtas, Halverson, Maiti, Schwartz, and Stoner]{DemirtasHalversonMaitiSchwartzStoner2023}
+Mehmet Demirtas, James Halverson, Anindita Maiti, Matthew~D. Schwartz, and Keegan Stoner.
+\newblock {Neural Network Field Theories: Non-Gaussianity, Actions, and Locality}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2307.03223v2}.
+\newblock arXiv:2307.03223v2, latest revision 2023-12-13 per the acquisition record. Supplied only as an excerpt (source lines 1-140, 673-944, 1165-1599). Published version cited by Frank v2 [3], Ferko--Mutchler v1 [17], Harvey v2, Universality v1 [6] and Zhang v1 [3] as Mach. Learn.: Sci. Technol. 5 (2024) 015002; DOI 10.1088/2632-2153/ad17d3 as printed in Ageev--Ageeva v1 ref. (7). Not verified.
+
+\bibitem[Ferko and Halverson(2025)]{FerkoHalverson2025QMNN}
+Christian Ferko and James Halverson.
+\newblock {Quantum Mechanics and Neural Networks}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.05462v1}.
+\newblock arXiv:2504.05462v1 as acquired (HTML; NOVELTY-ADJACENT-ACQUISITION.json). DATE AMBIGUITY RETAINED: the HTML body is dated August 24, 2026 (input line 8), which conflicts with the 2504 identifier; the cause was not determined. Primary class as cited in Zhang v1 [15]. Published version cited as Mach. Learn.: Sci. Technol. 7 (2026) 015002 by Ferko--Mutchler v1 [3], Frank v2 [9], Harvey v2 and Zhang v1 [15]; Universality v1 [9] cites only the 2025 arXiv preprint. Not verified.
+
+\bibitem[Ferko and Mutchler(2026)]{FerkoMutchler2026v1}
+Christian Ferko and Aaron Mutchler.
+\newblock {Neural Network Field Theory at Finite Width}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.21588v1}.
+\newblock arXiv:2608.21588v1 [hep-th], version v1, 21 August 2026.
+
+\bibitem[Ferko et~al.(2026)Ferko, Halverson, and Mutchler]{FerkoHalversonMutchler2026v1}
+Christian Ferko, James Halverson, and Aaron Mutchler.
+\newblock {Universality of Neural Network Field Theory}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.14453v1}.
+\newblock arXiv:2601.14453v1 [hep-th], version v1; arXiv stamp 20 January 2026, HTML body dated 24 August 2026.
+
+\bibitem[Frank(2026)]{Frank2026v2}
+Samuel Frank.
+\newblock {Constructive Neural Network Field Theory: $\phi^{4}_{2}$ in Finite Volume}, 2026.
+\newblock URL \url{https://arxiv.org/html/2610.00453v2}.
+\newblock arXiv:2610.00453v2 [hep-th], version v2, 5 October 2026.
+
+\bibitem[Fr{\"o}hlich and Simon(1977)]{FS1977}
+J.~Fr{\"o}hlich and B.~Simon.
+\newblock {Pure states for general $P(\phi)_2$ theories: Construction, regularity and variational equality}.
+\newblock \emph{Annals of Mathematics}, 105:\penalty0 493--526, 1977.
+
+\bibitem[Fr{\"o}hlich et~al.(1978)Fr{\"o}hlich, Israel, Lieb, and Simon]{FILS1978}
+J.~Fr{\"o}hlich, R.~Israel, E.~H. Lieb, and B.~Simon.
+\newblock {Phase Transitions and Reflection Positivity. I. General Theory and Long Range Lattice Models}.
+\newblock \emph{Communications in Mathematical Physics}, 62:\penalty0 1--34, 1978.
+
+\bibitem[Guerra et~al.(1976)Guerra, Rosen, and Simon]{GRS1976}
+Francesco Guerra, Lon Rosen, and Barry Simon.
+\newblock {Boundary Conditions for the $P(\phi)_2$ Euclidean Field Theory}.
+\newblock \emph{Annales de l'Institut Henri Poincar{\'e}, Section A: Physique Th{\'e}orique}, 25\penalty0 (3):\penalty0 231--334, 1976.
+\newblock URL \url{http://www.numdam.org/item?id=AIHPA_1976__25_3_231_0}.
+
+\bibitem[Halverson(2021)]{Halverson2021Neurons}
+James Halverson.
+\newblock {Building Quantum Field Theories Out of Neurons}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2112.04527v1}.
+\newblock arXiv:2112.04527v1 as acquired (primary-N-Halverson2021.txt lines 8-15). No journal version is observed in the supplied texts: all citing sources give the arXiv identifier only. Primary class as cited in Ferko--Halverson v1 ref. [2].
+
+\bibitem[Halverson et~al.(2021)Halverson, Maiti, and Stoner]{HalversonMaitiStoner2021}
+James Halverson, Anindita Maiti, and Keegan Stoner.
+\newblock {Neural Networks and Quantum Field Theory}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2008.08601v2}.
+\newblock arXiv:2008.08601v2, latest revision 2021-03-15 per the acquisition record. Supplied only as an excerpt. Primary class as cited in Ferko--Halverson v1 [1] and Zhang v1 [1]. Published version cited as Mach. Learn.: Sci. Technol. 2 (2021) 035002 by Frank v2 [1], Ferko--Mutchler v1 [1], Harvey v2, Universality v1 [15] and Zhang v1 [1]. Ferko--Halverson v1 [15] and Demirtas v2 [21] print an inconsistent volume (104). Ambiguity retained; not verified.
+
+\bibitem[Harvey(2026)]{Harvey2026v2}
+Thomas~R. Harvey.
+\newblock {What Neural Network Field Theory Can and Cannot Realise on a Computer}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.21523v2}.
+\newblock arXiv:2608.21523v2 [hep-th], version v2, 27 August 2026.
+
+\bibitem[Melrose(2016)]{Melrose2016Lecture15}
+Melrose.
+\newblock {18.155 Lecture 15}.
+\newblock MIT course 18.155 lecture notes, 2016.
+\newblock Lecture~15, p.~2, Theorem~1 (kernel theorem for tempered distributions). Bibliographic details not verified.
+
+\bibitem[Nagel and Weiss(2005)]{NagelWeiss2005}
+Werner Nagel and Viola Weiss.
+\newblock {Crack STIT tessellations: characterization of stationary random tessellations stable with respect to iteration}.
+\newblock \emph{Advances in Applied Probability}, 37\penalty0 (4):\penalty0 859--883, 2005.
+\newblock \doi{10.1239/aap/1134587744}.
+
+\bibitem[Osterwalder and Schrader(1973)]{OS1973}
+Konrad Osterwalder and Robert Schrader.
+\newblock {Axioms for Euclidean Green's functions}.
+\newblock \emph{Communications in Mathematical Physics}, 31:\penalty0 83--112, 1973.
+\newblock \doi{10.1007/BF01645738}.
+
+\bibitem[Osterwalder and Schrader(1975)]{OS1975}
+Konrad Osterwalder and Robert Schrader.
+\newblock {Axioms for Euclidean Green's functions II}.
+\newblock \emph{Communications in Mathematical Physics}, 42:\penalty0 281--305, 1975.
+\newblock \doi{10.1007/BF01608978}.
+
+\bibitem[Roy and Teh(2008)]{RoyTeh2008}
+Daniel~M. Roy and Yee~W. Teh.
+\newblock {The Mondrian Process}.
+\newblock In D.~Koller, D.~Schuurmans, Y.~Bengio, and L.~Bottou, editors, \emph{Advances in Neural Information Processing Systems}, volume~21. Curran Associates, Inc., 2008.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2008/file/fe8c15fed5f808006ce95eddb7366e35-Paper.pdf}.
+
+\bibitem[Simon and Griffiths(1973)]{SG1973}
+Barry Simon and Robert~B. Griffiths.
+\newblock {The $(\phi^4)_2$ Field Theory as a Classical Ising Model}.
+\newblock \emph{Communications in Mathematical Physics}, 33:\penalty0 145--164, 1973.
+
+\bibitem[Streater and Wightman(1964)]{StreaterWightman1964}
+R.~F. Streater and A.~S. Wightman.
+\newblock \emph{{PCT, Spin and Statistics and All That}}.
+\newblock Benjamin, New York, 1964.
+
+\bibitem[Zhang(2026)]{Zhang2026OptimalArchitecture}
+Zhengkang Zhang.
+\newblock {Optimal Architecture and Fundamental Bounds in Neural Network Field Theory}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2604.27050v1}.
+\newblock arXiv:2604.27050v1, abstract latest revision 2026-04-29 per the acquisition record. Primary class as cited in Frank v2 [12]. Cited only for finite-width cost/error context; nothing imported.
+
+\bibitem[Zou(2022)]{Zou2022Math218}
+Joey Zou.
+\newblock {Math 218 Lecture Notes (Spring 2022)}.
+\newblock Author-hosted lecture notes, 2022.
+\newblock URL \url{https://sites.math.northwestern.edu/nfw2778/math218_s22_website/lecture_notes.pdf}.
+\newblock Printed pages 15--17 consulted; accessed 20 October 2026.
+
+\end{thebibliography}
