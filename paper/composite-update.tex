@@ -1,0 +1,1578 @@
+% Private composite update candidate, 6 November 2026.
+% CMAP blocks map every new statement/hypothesis/proof block to frozen sources.
+\clearpage
+\begingroup
+% Keep the frozen contents pages and baseline body pagination unchanged.
+\renewcommand{\addcontentsline}[3]{}
+\section{Renormalized local squares and finite-neural approximation}
+\label{cm:update}
+\pdfbookmark[0]{Renormalized local squares and finite-neural approximation}{cm-update}
+\newcommand{\cmBL}{d_{\mathrm{BL}}}
+\newcommand{\cmU}{d_{\mathcal U_4}}
+\newcommand{\cmLtwo}{\operatorname{L2plus}}
+\newcommand{\cmEXT}{\operatorname{EXT}}
+
+% CMAP guide | CLAIM-CCA.md:1-83;../limits/G6-DECISION.json:70-71;CC1-STATEMENT-ONLY.md:7-96;CA1-STATEMENT-ONLY.md:183-324
+\subsection*{Guide to the local-square update}
+The preceding all-dyadic theorem controls its stated family of linear
+measurements. This addendum integrates the separately accepted local-square
+results CC1-SMOOTH-BYPASS-v1 and CA1-v1: a quantitative approximation of the
+renormalized square and a comparison of the actual normalized finite-neural
+joint law with the original target pair. All named premises remain below.
+Internal acceptance of the source results was recorded on 31 October 2026.
+Their complete manuscript integration received source and actual-proof matching
+review on 6 November; the public REVIEW document states the review limits.
+
+For the same target, physical subtraction and Borel prescription, CC1 gives
+\[
+ \E_{\nu_\infty}|Q_s-Q_0|\le12L_f\sqrt{s}<36\sqrt{s}.
+\]
+Coupling the unchanged first coordinate supplies precisely CA1.5b's joint
+bounded-Lipschitz input. Under the \emph{union} of S1--S4, H1--H7 and
+Appendix S, take
+\[
+ r(s)=36\sqrt{s},\qquad S_r(\tau)=2^{-2\cmLtwo(36/\tau)}.
+\]
+The target allocation is $\eta/8$, hence $j=\cmLtwo(288/\eta)$.
+CA1 then selects finite positive stages of joint error at most every rational
+$0<\eta\le1$. This is conditional mathematical termination. Useful sampling,
+expectation-evaluation runtime, finite-bit global simulation,
+interaction-resolving gap, matched advantage, priority and larger-model
+claims remain separate. G6 remains \textbf{STOP / INCOMPLETE}; no full
+G1--G9 capability is promoted. Neither the stronger numerical $L^2$ density
+certificate nor a later tail improvement enters this update.
+
+% CMAP conventions | CA1-STATEMENT-ONLY.md:3-5;CC1-STATEMENT-ONLY.md:7-7
+\subsection{Conventions and complete retained premises}
+Use $z=(t,y)$, $p=(w,q)$ in two Euclidean dimensions,
+\[
+ \hat g(p)=\int e^{-ip\cdot z}g(z)\,dz,\quad
+ d\lambda(p)=dp/(2\pi)^2,\quad m=1,\quad u=10^{-10},\quad\ell=1000.
+\]
+There is no factorial in $u$. Write $\Lambda=B_n=(-1000n,1000n)^2$,
+$n\in\N$, $n\ge1$, and $A_n=4{,}000{,}000n^2$.
+Wick ordering is $:x^2:_c=x^2-c$ and $:x^4:_c=x^4-6cx^2+3c^2$.
+All finite-dimensional norms, derivative operator norms and Lipschitz
+constants are Euclidean. $\mathrm{BL}_1$ imposes separately
+$\sup|G|\le1$ and $\operatorname{Lip}(G)\le1$, so its probability distance
+is at most two. Source lattice mesh, flow time and profile are distinct
+from $a,\beta,s,\eta$ and the shell parameter $q$.
+
+% CMAP H1 | CA1-STATEMENT-ONLY.md:9-34
+\paragraph{H1: original target, common Gaussian space and physical laws.}
+The original real complete separable space is
+$X=H^{-2}_{\mathrm{loc}}(\R^2;\R)$. Smooth $0\le\chi_j\le1$ equal one
+on $[-j,j]^2$, are supported in $(-j-1/2,j+1/2)^2$ and satisfy
+$\chi_{j+1}=1$ on $\supp\chi_j$. On $\T_j=\R^2/[2(j+1)\Z]^2$, put
+\begin{gather*}
+ V_j=4(j+1)^2,\quad e_{j,k}(z)=V_j^{-1/2}e^{i\pi k\cdot z/(j+1)},\quad
+ \lambda_{j,k}=1+\pi^2|k|^2/(j+1)^2,\\
+ p_j(v)^2=\sum_{k\in\Z^2}\lambda_{j,k}^{-2}
+       |v(\chi_j\overline{e_{j,k}})|^2,\qquad
+ d_X(v,w)=\sum_{j\ge1}2^{-j}\min(1,p_j(v-w)).
+\end{gather*}
+Compact smooth evaluations are continuous and generate the stated Borel
+sigma-algebra. The original strict AP3/AP5/AP6 route identifies
+$\nu_\infty$ as the $X$ representation of the unique common original
+Fr\"ohlich--Simon maximal state $v_{(1,10^{-10})}$, preserving every such
+evaluation, and gives $\nu_n\Rightarrow\nu_\infty$ in $X$.
+The strict cap $0<10^{-10}<1/8000$ retains P1--P6 below; the older unknown
+$g_*$ route is distinct.
+
+On the real Hermitian isonormal space $(\Gamma,\mathcal F,P)$,
+$H=L^2(\hat C_0\,d\lambda)$, use accepted Borel $X$ versions and continuous
+positive-$a$ point versions
+\begin{gather*}
+ \hat C_0=(1+w^2+q^2)^{-1},\quad
+ \hat C_a=(1+w^2+q^2+a^2w^2q^2)^{-1},\quad0<a<1,\\
+ \tau_a=(\hat C_a/\hat C_0)^{1/2},\quad\tau_0=1,\quad
+ \Phi(g)=W_H(\hat g),\quad\Phi_a(g)=W_H(\hat g\tau_a),\\
+ c_a=\int\hat C_a\,d\lambda
+ =\frac1{2\pi}\int_0^\infty\frac{dq}{\sqrt{(1+q^2)(1+a^2q^2)}},
+ \qquad U_{a,n}=u\int_\Lambda(\Phi_a^4-6c_a\Phi_a^2+3c_a^2).
+\end{gather*}
+$U_{0,n}$ is the accepted Gaussian $L^2$ limit; these are centered fourth
+chaos. At every permitted $a\ge0$ define individually
+\[
+ Z_{a,n}=\E_Pe^{-U_{a,n}},\quad r_{a,n}=e^{-U_{a,n}}/Z_{a,n},\quad
+ \mu_{a,n}=r_{a,n}P,\quad\nu_{a,n}=(\Phi_a)_\#\mu_{a,n},\quad\nu_n=\nu_{0,n}.
+\]
+The actual same-mass, own-variance, whole-plane free-boundary Wick/classical
+identification, Gaussian versions, isometry
+$\E I_2(K)I_2(L)=2\langle K,L\rangle$, Gaussian moments and homogeneous-chaos
+hypercontractivity remain accepted/classical inputs. Version equalities
+are fixed-parameter or specified countable-family equalities.
+
+% CMAP H2 | CA1-STATEMENT-ONLY.md:36-50
+\paragraph{H2: fixed-box quantitative physical/common-space input HC.}
+Define
+\begin{gather*}
+ F_2=\|f\|_2,\quad H_f=F_2\sqrt{2/\pi},\quad L_f=F_2\sqrt{2\sqrt5/\pi},
+ \quad\kappa_2=\frac{\sqrt{17}}{8\sqrt\pi},\quad
+ M_6=(2\pi)^{-5/3}(5\pi)^{5/6},\\
+ K_n=u\sqrt{384A_n\kappa_2M_6^3}<n/10^6,\quad
+ h_2(n)=\max(n^2/100,n^4/125),\quad m_2(n)=1+\lceil4h_2(n)\rceil,\\
+ \ell_n=\lceil m_2(n)/2\rceil,\quad M_n=2^{\ell_n},\quad C_n=3+4n/10^6,
+ \qquad R_n(a)=M_n\{aF_2/2+(H_f+4K_n)\sqrt a\}.
+\end{gather*}
+Retain CMP-FV-v1 P1--P4 and literal C2/C4/C5/C6 at every fixed $n$:
+\[
+ 1\le Z_{a,n}\le M_n,\quad\|r_{a,n}\|_2\le M_n,\quad
+ \|r_{a,n}-r_{0,n}\|_1\le4K_nM_n\sqrt a.
+\]
+For the H4 own-smoothed pairs,
+\begin{equation}
+ \cmBL\bigl(\Law_{\mu_{a,n}}(\Phi_a(f),Y_{a,s}),
+             \Law_{\mu_{0,n}}(\Phi(f),Y_s)\bigr)
+ \le\min(2,R_n(a)).\tag{HC}\label{cm:HC}
+\end{equation}
+The common-space density and actual field pushforward are distinct.
+Fixed-box raw-square and Borel-prescription qualifications remain;
+$Q_0(\Phi_a)=\int f(\Phi_a^2-c_a)$ is not hypothesized.
+
+% CMAP H3 | CA1-STATEMENT-ONLY.md:52-84
+\paragraph{H3: finite-linear response, moments and local target density.}
+For every real compact smooth $h$ and $t\in\R$,
+\[
+ \E_\zeta e^{t v(h)}\le e^{(3/2)t^2\|h\|_2^2},\qquad
+ \zeta\in\{\nu_n:n\ge1\}\cup\{\nu_\infty\}.
+\]
+Accepted MOM all-positive local $p_j$ moments, uniform integrability and
+polynomial-local-growth expectation transfer remain at their exact scopes.
+The unrestricted finite-linear-vector AP6 interface is literal as follows.
+For $g=(g_i)$ supported in $K\subset[-R,R]^2$ inside open $B_{n_0}$, set
+\begin{gather*}
+ \overline F_g=(2R+1/2)(\sum_i\|g_i\|_\infty^2)^{1/2},\quad
+ C_g=P_*\overline F_g,\quad q=e^{-125/32},\\
+ \Theta_n=q^n\{(2n+1)/(1-q)+2q/(1-q)^2\},\\
+ \cmBL(g_\#\nu_n,g_\#\nu_\infty)\le4C_gu\ell^2e^{R/256}\Theta_n
+ \quad(n\ge n_0,\ n\ell\ge R).
+\end{gather*}
+It includes singular/repeated tuples and the norm-preserving BL extension.
+The chosen OPT coefficient version has the same $C_H<2^{16}$,
+$C_{H2}\le2^{384}$ and $C_{\mathrm{base}}=P_*(5/2)\|f\|_\infty\le2^{360}$.
+For literal identification of $P_*$ put
+\begin{gather*}
+ \bar\delta=2\ell^{-2}\log[1/(1-e^{-4\ell})],\quad
+ g_{\mathrm{flow}}(t)=1+\bar\delta+(\pi/16)\log(1+1/t),\\
+ c_{\mathrm{CT}}=81/5,\quad b_{\mathrm{CT}}=1+c_{\mathrm{CT}}/256,\quad
+ \Gamma_G=4\sqrt{2\pi}/256,\\
+ C_*=6c_{\mathrm{CT}}/256+c_{\mathrm{CT}}^2/256^2
+       +b_{\mathrm{CT}}^2(\Gamma_G+3300u),\\
+ M_{\mathrm{flow}}(t)=32\ell^{-2}
+ \{C_H^2g_{\mathrm{flow}}(t)^3/12+u^2C_{H2}^2g_{\mathrm{flow}}(t)^7/9\},\\
+ P_*=e^{8\sqrt2/256}b_{\mathrm{CT}}^2
+ \{e^{C_*}\int_0^1\sqrt{M_{\mathrm{flow}}(t)}\,dt
+        +e^{2C_*}\sqrt{M_{\mathrm{flow}}(1)}/2\}.
+\end{gather*}
+Source time $t$ is separate from $s$. This general AP6 interface is not an
+extension of UDA's restricted ordered one-through-four bump theorem.
+
+Let $D_{\mathrm{loc}}=(-3,3)^2$ and let $\mathcal C_D$ be generated by real
+compact smooth evaluations supported inside it. The same target has a
+normalized density relative to the \emph{restricted whole-plane mass-one}
+Gaussian law:
+\begin{gather*}
+ k_D\ge0,\quad \E_{P_1}k_D=1,\quad K_D=\|k_D\|_{L^2(P_1)}<\infty,\\
+ k_D=e^{-uJ_D-\alpha_1(uX^4)|D|}g_{\partial D},\qquad
+ g_{\partial D}>0\ \hbox{a.e.},\quad D=D_{\mathrm{loc}}.
+\end{gather*}
+The boundary-algebra alternatives and all-semibounded-polynomial scope
+remain: the factor is measurable either for the intersection of neighborhood
+algebras or for the completed algebra generated by boundary-supported
+$H^{-1}$ evaluations. Pressure and boundary factor belong to this density;
+no finite-box partition function or Dirichlet Gaussian is substituted.
+A numerical upper certificate for $K_D$ is additional only in CA1.5.
+
+% CMAP H4 | CA1-STATEMENT-ONLY.md:86-101
+\paragraph{H4: fixed observables and Gaussian composite estimates.}
+Define
+\begin{gather*}
+ b(t)=\begin{cases}e^{-1/(1-t^2)},&|t|<1,\\0,&|t|\ge1,\end{cases}\quad
+ f(t,y)=b(t)b(y),\quad I=\int f,\quad\rho=f/I,\\
+ R_2=\|\rho\|_2,\quad D_\rho=\|\nabla\rho\|_2,\quad
+ \rho_s=s^{-2}\rho(\cdot/s),\quad h_{s,z}(x)=\rho_s(z-x),\quad0<s\le1,\\
+ c_s=\int|\hat\rho(sp)|^2\hat C_0(p)\,d\lambda,\quad
+ c_{a,s}=\int|\hat\rho(sp)|^2\hat C_a(p)\,d\lambda,\\
+ X_{\mathrm{obs}}(v)=v(f),\quad
+ Q_s(v)=\int f(z)\{v(h_{s,z})^2-c_s\}\,dz,\\
+ Y_{a,s}=\int f\{(\rho_s*\Phi_a)^2-c_{a,s}\},\qquad Y_s=Q_s(\Phi).
+\end{gather*}
+$Q_s$ is the actual continuous/Borel local $X$ functional. Set
+$Q_0(v)=\lim_{j\to\infty}Q_{2^{-2j}}(v)$ on its Borel convergence set,
+zero elsewhere, $j\ge1$. This is the same physical local Borel Wick
+prescription under $\nu_n,\nu_\infty$. On the Gaussian space,
+\[
+ Q_0(\Phi)=I_2(\hat f(p+q))\ \hbox{a.s.},\qquad
+ \|Y_s-Q_0(\Phi)\|_2\le L_f\sqrt s.
+\]
+The Gaussian null set and target-local absolute-continuity qualifications
+remain. Write $\mathcal L_{\mathrm{target}}=\Law_{\nu_\infty}
+(X_{\mathrm{obs}},Q_0)$, with second coordinate $O_2(f)$. Literal envelopes:
+\[
+ 1/27<I<1,\quad F_2<1/2,\quad\|f\|_{4/3}<1,\quad
+ R_2\le54,\quad D_\rho\le81,\quad H_f<2,\quad L_f<3.
+\]
+The weaker $I\le4,F_2\le2$ are allowed. All $h_{s,z}$ on $\supp f$ are
+supported in $[-2,2]^2$, strictly inside $D$ and every open $B_n$.
+The fixed query is $F(x,y)=\cos((x+y)/2)$.
+
+% CMAP H5 | CA1-STATEMENT-ONLY.md:105-132
+\paragraph{H5: original actual source laws RL2/SP1--SP4.}
+The product neuron is $g^{\mathrm{product}}(t,y)=\sigma(t)\tau(y)/2$ for
+independent stationary symmetric two-sided telegraphs with flip rate $1/(2a)$.
+The Mondrian neuron is $g^{\mathrm{Mondrian}}(z)=\eta_{\mathrm{cell}(z)}/2$
+from the original stationary projective axis-parallel whole-plane partition
+at budget $1/a$, with conditionally independent fair cell signs. A rectangle
+of sides $w,h$ splits at rate $w+h$, vertically with probability $w/(w+h)$
+and uniform cut; daughters evolve independently for the remaining budget.
+Use the lower-left half-open representative modulo area-null boundaries.
+Whole-plane existence, stationarity/projectivity, path measurability,
+copies and actual architecture/potential identification remain SP1--SP4.
+
+The original centered continuous Gaussian endpoint $\gamma$ has
+\[
+ C_{\mathrm{end}}(z-z')=e^{-|z-z'|_1/a}/4,\qquad
+ \hat C_{\mathrm{end}}=\frac{a^2}{(1+a^2w^2)(1+a^2q^2)}.
+\]
+For finite $R_{\mathrm{aux}}\ge1000n$, set
+$D_{\mathrm{aux}}=[-R_{\mathrm{aux}},R_{\mathrm{aux}}]^2$,
+$d=4R_{\mathrm{aux}}^2$, $E=L^4(D_{\mathrm{aux}};\R)$, $K=a^{-2}-1$,
+$F_N^{\mathfrak b}=N^{-1/2}\sum_i g_i^{\mathfrak b}$,
+$\rho_N^{\mathfrak b}=\Law_E(F_N^{\mathfrak b})$,
+$\rho_\gamma=\Law_E(\gamma)$, $\mathfrak b\in\{\mathrm{product},\mathrm{Mondrian}\}$.
+These actual strongly measurable $E$ random elements have zero Bochner
+means, global sign symmetry, fourth-norm moments $d/16$ and $3d/16$,
+respectively, and finite second-norm moments. For \emph{every} bounded real
+bilinear form $B_0$, including nonsymmetric ones,
+\[
+ \E B_0(g^{\mathfrak b},g^{\mathfrak b})=\E B_0(\gamma,\gamma).
+\]
+Independent full-law copies exist; $N^{-1/2}\sum\gamma_i$ has exactly
+$\rho_\gamma$. The finite-rank/every-bilinear route retains accepted NR1
+Astra/max attribution and exact-author/larger-blind-core qualification;
+RL2 consolidation and normalized-law work retain recorded Sol/max attribution.
+
+For $\beta>0$ define on $E$
+\begin{gather*}
+ W(v)=u\int_\Lambda(v^4-6c_av^2+3c_a^2),\quad
+ J_{\mathrm{out}}(v)=\int_{D_{\mathrm{aux}}\setminus\Lambda}v^4,\\
+ V(v)=W(v)+\beta J_{\mathrm{out}}(v)-(K/2)\int_{D_{\mathrm{aux}}}v^2,\quad w=e^{-V},\\
+ Z_N^{\mathfrak b}=\rho_N^{\mathfrak b}(w),\quad Z_\gamma=\rho_\gamma(w),\quad
+ P_N^{\mathfrak b}=w\rho_N^{\mathfrak b}/Z_N^{\mathfrak b},\quad
+ Q_\beta=w\rho_\gamma/Z_\gamma.
+\end{gather*}
+$T_s$ denotes convolution after zero extension from $D_{\mathrm{aux}}$,
+agreeing with the whole-plane convolution on $\supp f$. Put
+\begin{gather*}
+ B_T(v,h)=\int f(Tv)(Th),\quad
+ J_{T,k}(v)=(\int_{D_{\mathrm{aux}}}fv,B_T(v,v)-Ik),\\
+ J_s=J_{T_s,c_s},\qquad
+ \mathcal L_{\mathrm{neural}}^{\mathfrak b}=(J_s)_\#P_N^{\mathfrak b}.
+\end{gather*}
+These are full tilted actual source laws with distinct normalizers.
+No covariance-to-nonlinear-law identification is assumed.
+
+% CMAP H6 | CA1-STATEMENT-ONLY.md:134-154
+\paragraph{H6: literal HP mass tilt, residual laws and defect coupling.}
+For the whole-plane endpoint law $G_{\mathrm{end}}$ put
+\begin{gather*}
+ M_{D_{\mathrm{aux}},a}=\E_{G_{\mathrm{end}}}
+       e^{(K/2)\int_{D_{\mathrm{aux}}}v^2}\in(0,\infty),\quad
+ G'=e^{(K/2)\int_{D_{\mathrm{aux}}}v^2}G_{\mathrm{end}}/M_{D_{\mathrm{aux}},a},\\
+ z_\beta=\E_{G'}e^{-W-\beta J_{\mathrm{out}}},\quad z_0=\E_{G'}e^{-W},\quad
+ Q_{\mathrm{res}}^\beta=e^{-W-\beta J_{\mathrm{out}}}G'/z_\beta,\quad
+ Q_{\mathrm{res}}^0=e^{-W}G'/z_0.
+\end{gather*}
+The genuine centered continuous whole-plane Gaussian $G'=G'_{D_{\mathrm{aux}},a}$
+has the uniformly convergent covariance series, $x_0=z,x_{j+1}=z'$,
+\[
+ C'(z,z')=C_{\mathrm{end}}(z-z')+
+ \sum_{j\ge1}K^j\int_{D_{\mathrm{aux}}^j}
+          \prod_{i=0}^j C_{\mathrm{end}}(x_i-x_{i+1})\,dx_1\cdots dx_j.
+\]
+The all-Borel whole-path/restriction mass-tilt identity and
+$Z_\gamma=M_{D_{\mathrm{aux}},a}z_\beta$ remain; $Q_\beta$ is the
+$E$ restriction of $Q_{\mathrm{res}}^\beta$. The physical positive-$a$
+law is $e^{-W}G_a/Z_{a,n}$ with its own normalizer.
+
+$\Delta_{D_{\mathrm{aux}},a}=C_a-C'$ is a continuous positive semidefinite
+kernel; $C'$ point variances lie in $[0,c_a]$. Independent continuous
+centered Gaussian $Y\sim G'$ and $\psi\sim G_\Delta$ exist with
+$X_a=Y+\psi\sim G_a$. For compact $H$ put
+$\delta_D(H)=\sup_{z\in H}\Delta(z,z)$. If $D_{\mathrm{aux}}$ contains
+its Euclidean $r$ neighborhood, $r>0$,
+\[
+ \delta_D(H)\le\xi_a(r)=K\int_{|x|>r}C_a(x)^2\,dx.
+\]
+Separate fixed-$D$ couplings suffice. All physical/common-space,
+CT G-tilt/G-order/G-diff, classical and source qualifications remain.
+
+% CMAP H7 | CA1-STATEMENT-ONLY.md:156-179
+\paragraph{H7: literal normalized NC1 stage estimate.}
+Here let $\alpha=\min(u,\beta)$, $A=\max(u,\beta)$, $B=K/2+6uc_a$,
+$L=B^2d/(2\alpha)$. These $\alpha,L$ are distinct from pressure and the
+CC1 smoothing constant. For $x\ge0$ put
+\begin{align*}
+ v_1&=4Ax^3+2B\sqrt d\,x,&v_2&=12Ax^2+2B\sqrt d,&v_3&=24Ax,&v_4&=24A,\\
+ e_1&=v_1,&e_2&=v_1^2+v_2,&e_3&=v_1^3+3v_1v_2+v_3,\\
+ e_4&=v_1^4+6v_1^2v_2+3v_2^2+4v_1v_3+v_4,\\
+ q_1&=1+2x,&q_2&=2,&p_1&=q_1,\\
+ p_2&=q_1^2+q_2,&p_3&=q_1^3+3q_1q_2,&p_4&=q_1^4+6q_1^2q_2+3q_2^2.
+\end{align*}
+For a nonnegative-coefficient $P=\sum_jP_jx^j$, let $a_0=1$,
+$a_j=[j/(2\alpha e)]^{j/4}$ for $j>0$, $\mathcal T(P)=e^L\sum_jP_ja_j$,
+and
+\begin{gather*}
+ P_Z=e_4,\quad P_J=e_4+4p_1e_3+6p_2e_2+4p_3e_1+p_4,\quad
+ M_Z=\mathcal T(P_Z),\quad M_J=\mathcal T(P_J),\\
+ z=e^{-3Ad/16-3uc_a^2A_n},\quad C=\frac{d(M_J+M_Z)}{96z},\quad
+ D_J=\frac43(3\sqrt6C)^{1/4}(2\sqrt2)^{3/4}.
+\end{gather*}
+The exact imported conclusions are positive bounded Borel $w$,
+$Z_N^{\mathfrak b},Z_\gamma\ge z>0$, all-Borel actual source-law identities
+of restrictions and full tilts, and, uniformly in $\mathfrak b$, $N\ge1$,
+$0<s\le1$ and every finite common $k$,
+\begin{gather*}
+ \cmBL((J_{T_s,k})_\#P_N^{\mathfrak b},(J_{T_s,k})_\#Q_\beta)
+        \le\min(2,D_JN^{-1/4}),\\
+ \cmU((J_{T_s,k})_\#P_N^{\mathfrak b},(J_{T_s,k})_\#Q_\beta)
+        \le\min(2,C/N).
+\end{gather*}
+$\mathcal U_4$ bounds value and derivative operator norms through order four
+by one. For $0<\eta_W\le1$,
+$N\ge\lceil512\sqrt3 C\eta_W^{-4}\rceil$ suffices for error $\le\eta_W$.
+All $a,\beta,n,R_{\mathrm{aux}}$ dependence remains. No $a=0,\beta=0,s=0$
+stage is included.
+
+% CMAP S1 | CC1-STATEMENT-ONLY.md:7-9
+\paragraph{S1: CC1 model and source qualification.}
+CC1 uses exactly H1's model, boxes, Fourier convention, original $X$ Borel
+space and common FS state, the actual weak-$X$ limit of the original
+same-mass free-boundary Wick-quartic laws. The strict route retains literal
+P1--P6 and accepted H0--H5 source hypotheses; the original numerical $g_*$
+inequality is uncomputed and unused. P1--P6 include finite ferromagnetic
+DSS/SK-$q$ for all finite real physical fields, finite-positive-scale $P_*$
+susceptibility, fixed-square Gaussian/Wick exponential transfer, fixed-mesh
+periodization, original FS pressure/maximal-state/free-limit facts, and
+accepted physical/common-space/local-density/finite-response interfaces.
+Individual source, classical, H1/MIX/REG/FLOW/TP/T and NR1 qualifications
+remain. RL2/SP1--SP4 and NC1 HP/HC condition the later assembly; CC1 alone
+makes no new assertion about those arrows.
+
+% CMAP S2 | CC1-STATEMENT-ONLY.md:11-31
+\paragraph{S2: Gaussian reference, local interaction and Nelson input.}
+$P_1$ is the centered whole-plane Gaussian with multiplier $\hat C_0$;
+only its sigma-algebra is restricted. The common realization and
+$\Phi_a,\tau_a,c_a$ are H1's. Let $D=(-3,3)^2$, $A_D=36$ and
+$U_D=uJ_D$, the literal coefficient-one mass-one Gaussian fourth Wick
+integral, equivalently the Gaussian $L^2$ limit as $a\downarrow0$ of
+\[
+ U_{a,D}=u\int_D[\Phi_a(z)^4-6c_a\Phi_a(z)^2+3c_a^2]\,dz.
+\]
+$\E_{P_1}U_D=0$. Retain Gaussian construction, general-rectangle Nelson
+estimate, second-chaos isometry, finite-chaos hypercontractivity, Plancherel
+and elementary measure/real analysis at their named classical scopes. Put
+\begin{gather*}
+ \kappa_0=e(1+\sqrt2),\quad K_{A_D}=u\sqrt{384A_D\kappa_2M_6^3},\\
+ K^\sharp_{A_D}=\max(12uA_D,(2/e)K_{A_D}\sqrt{\kappa_0}),\qquad
+ \beta_{A_D}=\pi/(2\sqrt{12uA_D}).
+\end{gather*}
+The retained zero-regulator tail is
+$P_1(U_D<-v)\le\exp[-\exp(\beta_{A_D}\sqrt v-1)]$ for
+$v\ge K^\sharp_{A_D}$. All parameters refer to this same interaction and
+whole-plane mass-one reference.
+
+% CMAP S3 | CC1-STATEMENT-ONLY.md:33-46
+\paragraph{S3: actual normalized factorization and numerical source.}
+Write $\alpha_{\mathrm{pr}}=\alpha_1(uX^4)$ for the original normalized
+log-partition pressure. The density is
+\[
+ k_D=e^{-U_D-36\alpha_{\mathrm{pr}}}g_{\partial D},\quad
+ k_D\ge0,\quad\E_{P_1}k_D=1.
+\]
+The same positive boundary factor and BC1/BC2 readings in H3 remain;
+no isolated finite-box normalizer enters. Inherited H5 supplies $K_D<\infty$
+without its value. The accepted primary supplement FS1977-v1 matches
+Fr\"ohlich--Simon Lemma 7.1 and Theorem 7.2 proof, printed p.~517,
+equation (7.1), for the original Section 4 maximal states including their
+common value. For an $l$-square $E$, mass $m_0$, and
+$q\ge4(1-e^{-m_0l})^{-2}$, every nonnegative bounded $\mathcal C_E$
+measurable $H$ satisfies
+\[
+ \nu_\infty(H)\le e^{-|E|\alpha_1(uX^4)}
+                    \|He^{-uJ_E}\|_{L^q(P_1)}.
+\]
+Here $m_0=1,E=D,l=6$. This attributed fact retains literal same-mass,
+pressure, polynomial and state-class scope
+\citep[Lemma 7.1 and proof of Theorem 7.2, p.~517]{FS1977}.
+The accepted investigation inspected primary text and page image; this
+integration transcribes that frozen premise. Its GRS checkerboard
+dependency is retained \citep{GRS1976}. The numerical clause is a matched
+primary input, not a consequence of the old qualitative H5 alone.
+
+% CMAP S4 | CC1-STATEMENT-ONLY.md:48-58
+\paragraph{S4: CC1 observables.}
+Use H4's $b,f,I,F_2,\rho,\rho_s,h_{s,z},c_s,Q_s$ and countable Borel
+$Q_0$. Set
+\[
+ r_s(p)=\hat\rho(sp),\quad K_f(p,q)=\hat f(p+q),\quad
+ O_2^P=I_2(K_f),\quad \sigma=F_2/\sqrt{2\pi},\quad L_f=F_2\sqrt{2\sqrt5/\pi}.
+\]
+The isometry has factor two. Under the actual target $Q_0=O_2(f)$.
+All smoothed tests stay strictly inside $D$. Subtraction is exactly $c_s$
+under target and physical laws. The joint query remains
+$X_{\mathrm{obs}}(v)=v(f)$, $F(x,y)=\cos((x+y)/2)$.
+
+% CMAP source-scope | CA1-STATEMENT-ONLY.md:301-324
+\subsubsection*{Appendix S: full retained source scope}
+These are attributed accepted-source hypotheses with original source and
+review qualifications, rather than fresh proofs.
+
+\paragraph{P1.}
+On $\mathbb T=\epsilon(\Z+1/2)^2/L\Z^2$, $L/\epsilon$ even and at least
+four, use physical inner product $\epsilon^2\sum$, $A=-\Delta^\epsilon+m^2$
+and the \emph{plane} variance $c_\epsilon$. For every profile
+$q:\mathbb T\to[0,1]$, the law proportional to
+$e^{-u\epsilon^2\sum q_x:\psi_x^4:_{c_\epsilon}}dP_{A^{-1}}$ under every
+finite real physical field $H$ satisfies
+$0\le\operatorname{Cov}_{\nu^H}(\psi_x,\psi_y)\le\E_\nu\psi_x\psi_y$.
+The DSS/SK-$q$ clauses with added mass $1/t$ hold at all finite $t>0$.
+Retain BD/BBD/Griffiths--Simon, Ising-FKG and Robbins--Stirling qualifications;
+no $g_*$ premise is added.
+
+\paragraph{P2.}
+For $0<\epsilon\le\min(1/4,18/(5m))$, $L\ge\max(1,\sqrt2/m)$,
+admissible even $L/\epsilon\ge4$ and $0<u\le m^2/8000$, the original core
+$P_*$ at $S_{\max}=\infty,\Phi=1,\kappa=0$ gives at every finite $t>0$
+and profile $q$
+\begin{gather*}
+ \chi_{t,q}=\max_x\epsilon^2\sum_y\E_{\mu_{t,q}}\psi_x\psi_y
+ \le t/(1+m^2t)+2t/(2+m^2t),\\
+ d\mu_{t,q}\propto e^{-u\epsilon^2\sum q_x:\psi_x^4:_{c_\epsilon}}
+                          dP_{(A+1/t)^{-1}}.
+\end{gather*}
+It retains $\|S-C_t\|_{1,0}\le2t/(2+m^2t)$; P2 alone supplies no
+original-law endpoint conclusion.
+
+\paragraph{P3.}
+At fixed $B=(-b,b)^2$, commensurate plane meshes $\epsilon=b/N$ have the
+accepted T1--T4/GQ/W($b$)/W-laws common Gaussian realization:
+$J_B^\epsilon=\epsilon^2\sum_{x\in B}:\psi_x^4:_{c_\epsilon}$ and
+$Y_f^\epsilon=\epsilon^2\sum f(x)\psi_x$ converge in Gaussian $L^2$
+to $J_B,\Phi(f)$. For each fixed finite $p\ge1$,
+$\sup_{\epsilon\text{ sufficiently small}}\E e^{-puJ_B^\epsilon}<\infty$.
+Positive finite continuum normalizers, every finite Gaussian $L^p$
+density, coefficient-one Wick conventions and exact finite-law
+identifications remain at all $m,u>0$.
+
+\paragraph{P4.}
+At fixed mesh torus covariances converge entrywise on finite fixed site sets
+to plane covariance through admissible even periods, with the same plane
+Wick variance. This is the accepted H1-PREQ periodization/envelope premise.
+
+\paragraph{P5.}
+Use the original FS same-mass whole-plane free-boundary convention and
+$P_h(X)=uX^4-hX$. Its normalized pressure and dyadic-square realization
+are original Proposition 2.1 and the remark after (2.3). Corollary 4.3(ii)'s
+converse equates differentiability at $h=0$ with equality of the maximal
+states; Theorem 5.2 supplies ordinary-exhaustion convergence to the common
+state, in the compact generating-functional reading at every real frequency
+\citep{FS1977}. These are attributed published facts; full original FS
+proofs were not supplied/read in this integration.
+
+\paragraph{P6.}
+Retain (i) the all-$m,u>0$ physical/classical identity and full original
+local $H^{-2}$/Borel/compactness definitions; (ii) all-semibounded-polynomial
+original FS local $L^p$ density and positive boundary factorization under
+either boundary-algebra reading; (iii) exact finite DSS/SKQ/$P_*$/H1-PREQ/
+H1/MIX/REG/smoothed-CT/FLOW/TP/T interfaces, individual accepted decisions
+and source-normalization correction, including FLOW's $0<u\le m^2/8000$
+cap and fixed-square TP/T1--T4 scope; and (iv) raw fixed-stage NR1/L0 and
+Gaussian/common-space/Wick normalizers, original author-constant/larger-blind-core
+qualification, actual Gaussian mass-tilt/independent-defect coupling and
+physical own-variance identification. Old EB1/FV/CL1 with global unknown
+$g_*$ are excluded outside their literal domains; AHKZ C2(ii)/(iii) are
+not added.
+
+Named FS, AHKZ, GRS and SG, DSS, BD, BBD and Griffiths--Simon,
+Gaussian/Wick/Nelson, H1/MIX/FLOW/TP/T, NR1 attribution/review and source-access qualifications
+remain. Original FS/OPT full bodies are not a fresh audit here. Frozen
+CV1/NC1/CMP/RL2 decisions preserve all inherited adverse findings at
+original object, severity and disposition. The original private proof map distinguishes
+actual reading in that integration from these transcribed premises.
+
+% CMAP cc-statement | CC1-STATEMENT-ONLY.md:62-96
+\subsection{Complete CC1 conclusions}
+\begin{theorem}[CC1-SMOOTH-BYPASS-v1, under S1--S4]\label{cm:CC1}
+The following conclusions hold for the fixed original target.
+\begin{enumerate}[label=\textup{CC1.\arabic*},leftmargin=4.6em]
+\item The local Gaussian exponential certificate is
+\[
+ K_{A_D}<128u,\quad K^\sharp_{A_D}=432u,\quad\beta_{A_D}>1500,\quad
+ \E_{P_1}e^{-10U_D}\le19/9<4,\quad\|e^{-U_D}\|_{10}\le4/3.
+\]
+\item For the literal pressure and boundary factor,
+\[
+ \alpha_{\mathrm{pr}}\ge0,\qquad
+ \|g_{\partial D}\|_{5/4}\le1,\qquad \|k_D\|_{10/9}\le4/3.
+\]
+This is a different exponent from $K_D=\|k_D\|_2$ and does not certify
+the latter numerically.
+\item The same Borel $Q_0$ agrees with $O_2^P$ under $P_1$ and its
+convergence set has full target probability. For $0<s\le1$ and real $r\ge1$,
+\begin{gather*}
+ \|Q_s-Q_0\|_{L^r(\nu_\infty)}
+ \le(4/3)^{1/r}(10r-1)L_f\sqrt s,\\
+ \|Q_0\|_{L^r(\nu_\infty)}
+ \le(4/3)^{1/r}(10r-1)\sigma.
+\end{gather*}
+In particular
+$\E_{\nu_\infty}|Q_s-O_2(f)|\le12L_f\sqrt s<36\sqrt s$.
+Every fixed positive moment order of $\{Q_s:0<s\le1\}$ is uniformly
+integrable under the target.
+\item On positive rationals define
+$\cmLtwo(x)=\max(0,\lceil\log_2x\rceil)$ by exact integer comparisons.
+For positive rational $\tau$, choose
+$j=\cmLtwo(36/\tau)$ and $s=2^{-2j}$. Then $0<s\le1$ and the target
+$L^1$ smoothing error is $\le\tau$. For an allocation $\epsilon/4$,
+$j=\cmLtwo(144/\epsilon)$ suffices. Symbolic dyadic output is permitted.
+\item The stronger numerical $L^2$ density norm remains uncertified by
+CC1. The Gaussian reference, target, positive boundary factor, pressure
+sign and subtraction are unchanged. CC1 alone supplies target-local
+smoothing, without raw fixed-$a$ square limit, finite-neural assembly,
+sampler, normalized estimator, expectation runtime, matched comparator,
+positive interaction gap, full-work benefit or novelty-priority claim.
+No full G1--G9 flag is promoted. Its historical acceptance is governed
+by the frozen separate review/audit decisions, rather than the original
+author candidate header.
+\end{enumerate}
+\end{theorem}
+
+% CMAP ca1-1 | CA1-STATEMENT-ONLY.md:183-212
+\subsection{Complete CA1 conclusions}
+\begin{theorem}[CA1.1: actual-law eight-charge budget]\label{cm:CA1-budget}
+Assume H1--H7 and Appendix S. Fix $n\ge1$, $0<a<1$, $\beta>0$,
+finite $R_{\mathrm{aux}}\ge1000n$, $N\ge1$, $0<s\le1$, $T>0$ finite.
+Let $K_f=[-1,1]^2$, $K_*=[-2,2]^2$,
+$L_c=(4\sqrt{15}+12)c_a^{3/2}$, and put
+\begin{align*}
+ E_{\mathrm{width}}&=D_JN^{-1/4},\\
+ E_{\mathrm{stab}}&=\min(2,6\beta|D_{\mathrm{aux}}\setminus\Lambda|c_a^2
+                                   e^{9uA_nc_a^2}),\\
+ E_{\mathrm{aux}}&=\min\bigl(2,e^{9uA_nc_a^2}
+  [2uA_nL_c\sqrt{\delta_D(\overline\Lambda)}
+  +I\sqrt{\delta_D(K_f)}
+  +2I\sqrt{c_a}\sqrt{\delta_D(K_*)}]\bigr),\\
+ E_{\mathrm{reg}}&=R_n(a)\le M_nC_n\sqrt a,\qquad
+ E_{\mathrm{var}}=d_{a,s}=I(c_s-c_{a,s}),\quad0\le E_{\mathrm{var}}\le27(a/s)^2,\\
+ C_s^*&=(9/5)2^{360}\sqrt{1+1/(Is^4)},\qquad
+ E_n^*(s)=(1/2500)e^{1/128}C_s^*\Theta_n,\\
+ B_s&=3IR_2^2/s^2\le324/s^2,\qquad\Lambda_T=\max(1,2T),\\
+ E_{\mathrm{vol}}&=\Lambda_T E_n^*(s),\qquad
+ E_{\mathrm{clip}}=4\sqrt2 e^{-T^2/(4B_s)},\qquad
+ E_{\mathrm{target}}=K_DL_f\sqrt s .
+\end{align*}
+For both architectures with the same parameters,
+\begin{equation}
+ \cmBL(\mathcal L_{\mathrm{neural}}^{\mathfrak b},\mathcal L_{\mathrm{target}})
+ \le\min(2,E_{\mathrm{width}}+E_{\mathrm{stab}}+E_{\mathrm{aux}}
+       +E_{\mathrm{reg}}+E_{\mathrm{var}}+E_{\mathrm{vol}}
+       +E_{\mathrm{clip}}+E_{\mathrm{target}}).
+ \tag{CA1-BL}\label{cm:budget}
+\end{equation}
+The seven successive normalized pair laws, with $r_D$ denoting restriction
+to $D_{\mathrm{aux}}$, are
+\begin{align*}
+ &(J_s)_\#P_N^{\mathfrak b},\\
+ &(J_s)_\#Q_\beta=(J_s r_D)_\#Q_{\mathrm{res}}^\beta,\\
+ &(J_s r_D)_\#Q_{\mathrm{res}}^0,\\
+ &(X_{\mathrm{obs}},Q_s)_\#\nu_{a,n},\\
+ &(X_{\mathrm{obs}},Q_s)_\#\nu_n,\\
+ &(X_{\mathrm{obs}},Q_s)_\#\nu_\infty,\\
+ &(X_{\mathrm{obs}},Q_0)_\#\nu_\infty.
+\end{align*}
+The regulator arrow has charges $E_{\mathrm{reg}},E_{\mathrm{var}}$ and
+the volume arrow has $E_{\mathrm{vol}},E_{\mathrm{clip}}$, each once.
+Every law retains its normalizer in H1,H3,H5,H6. Alternatively
+$E_{\mathrm{target}}$ may be replaced by any supplied certified joint-law
+bound $r(s)$ for the last arrow; the $K_DL_f\sqrt s$ and $r(s)$ options
+are alternatives, never summed. For the fixed cosine one may replace
+$E_{\mathrm{width}}$ by $C/N$, leaving other charges unchanged.
+These bound expectation differences; no Gaussian-comparator separation follows.
+\end{theorem}
+
+% CMAP ca1-2 | CA1-STATEMENT-ONLY.md:214-222
+\begin{proposition}[CA1.2: subtractions and order]\label{cm:translations}
+For each path/restriction,
+\begin{gather*}
+ J_{T,k_2}=J_{T,k_1}-(0,I(k_2-k_1)),\qquad
+ Q_s(\Phi_a)=Y_{a,s}-d_{a,s},\\
+ J_{T_s,c_s}=J_{T_s,c_{a,s}}-(0,d_{a,s}),\\
+ [B_{\mathrm{id}}(v,v)-Ic_a]-[B_{T_s}(v,v)-Ic_s]
+       =\int f[v^2-(T_sv)^2]+I(c_s-c_a).
+\end{gather*}
+Common translation preserves both distances exactly; translating one law
+costs at most $I|k_2-k_1|$. The raw action uses exact $c_a$.
+The untilted raw endpoint/neural variance is $1/4$, and its smoothed value is
+$c_{\mathrm{end},s}=\int|\hat\rho(sp)|^2\hat C_{\mathrm{end}}\,d\lambda$;
+interacting expectations are separate. Endpoint-own to physical subtraction
+is the shift $+(0,I(c_{\mathrm{end},s}-c_s))$, absent from
+\eqref{cm:budget} because adjacent laws use common $c_s$. No ordering of
+$c_s$ and raw $c_a$ is asserted. Successive limits are allowed in the order
+$N\to\infty$, $\beta\to0$, $R_{\mathrm{aux}}\to\infty$, $a\to0$ at fixed
+$n,s$, $n\to\infty$ at fixed $s$ with clipping controlled, then
+$s\to0$ at the target; reverse nested tolerance choices are allowed.
+The diagonals below are separately controlled. At fixed $a,N$ the neural
+physical-$C_0$-subtracted coordinate tends to $-\infty$ as $s\to0$;
+fixed-stage tightness does not follow.
+\end{proposition}
+
+% CMAP ca1-3 | CA1-STATEMENT-ONLY.md:224-245
+\begin{proposition}[CA1.3: explicit tail and finite rational extension]\label{cm:EXT}
+For every $0<a<1$ and $r>0$,
+\begin{equation}
+ \int|x|^2C_a(x)^2\,dx\le1/16,\qquad
+ \xi_a(r)\le K/(16r^2).\tag{CA1-TAIL}\label{cm:tail}
+\end{equation}
+For integers $n,k\ge1$, $a=2^{-2k}$ and rational
+$0<\eta_A,\eta_S,\eta_W\le1$, the following $\cmEXT$ returns finite
+$R_{\mathrm{aux}},\beta,N$ with auxiliary, stabilizer and width charges
+at most $\eta_A,\eta_S,\eta_W$ for both architectures:
+\begin{gather*}
+ \bar c=2k+3,\quad\bar E=4^{\lceil9uA_n\bar c^2\rceil},\quad
+ \bar H=56uA_n\bar c^2+4+8\bar c,\\
+ r=\max(1,\lceil\bar E\bar H/(4a\eta_A)\rceil),\quad
+ R_{\mathrm{aux}}=1000n+r+1,\quad d=4R_{\mathrm{aux}}^2,\\
+ \beta=\min(u,\eta_S/(6d\bar c^2\bar E)),\quad\alpha=\beta,\quad A=u,\\
+ \bar B=K/2+6u\bar c,\quad\bar L=\bar B^2d/(2\alpha),\quad
+ \overline Z_{\exp}=3ud/16+3u\bar c^2A_n.
+\end{gather*}
+Form $\overline P_Z,\overline P_J$ from H7 by replacing $B$ by $\bar B$
+and $\sqrt d$ by the exact rational $2R_{\mathrm{aux}}$. Put $t_0=1$,
+$t_j=\max(1,j/(2\alpha))^j$ for $1\le j\le12$ and
+\begin{gather*}
+ \bar C=\frac d{96}4^{\lceil\bar L\rceil+\lceil\overline Z_{\exp}\rceil}
+          \sum_{j=0}^{12}(\overline P_Z+\overline P_J)_j t_j,\\
+ N=\max(1,\lceil1024\bar C\eta_W^{-4}\rceil).
+ \tag{EXT}\label{cm:EXT-formula}
+\end{gather*}
+Subscripts are polynomial coefficients, absent coefficients zero.
+Large powers may be symbolic. Exact $c_a,c_s$ and original laws remain
+in the model; $\bar c,\bar C$ only choose sufficient bounds.
+\end{proposition}
+
+% CMAP ca1-4 | CA1-STATEMENT-ONLY.md:247-259
+\begin{theorem}[CA1.4: analytic convergence using finiteness]\label{cm:diagonal}
+For $n\ge1$ take
+\begin{gather*}
+ s_n=2^{-n},\quad T_n=36\sqrt n/s_n,\quad
+ k_n=\max(1,\ell_n+n+\lceil\log_2C_n\rceil,\lceil(3n+5)/4\rceil),\\
+ a_n=2^{-2k_n},
+\end{gather*}
+then use $\cmEXT(n,k_n,2^{-n},2^{-n},2^{-n})$ for
+$R_{\mathrm{aux},n},\beta_n,N_n$. Both actual neural laws satisfy
+\begin{multline}
+ \cmBL(\mathcal L_{\mathrm{neural},n}^{\mathfrak b},\mathcal L_{\mathrm{target}})
+ \le\min\bigl(2,5\,2^{-n}+2^{362}n^{3/2}2^{-2n}\\
+            +4\sqrt2e^{-n}+3K_D2^{-n/2}\bigr)\longrightarrow0 .
+ \tag{CA1-DIAG}\label{cm:diagonal-bound}
+\end{multline}
+The sequence needs no numerical $K_D$; its unknown finite value remains
+in the bound.
+\end{theorem}
+
+% CMAP ca1-5 | CA1-STATEMENT-ONLY.md:261-282
+\begin{theorem}[CA1.5: conditional numerical sufficient selector]\label{cm:selector}
+Supply a certified finite rational $\bar K_D\ge K_D$ for H3's actual
+normalized target-local density, with boundary and pressure, and rational
+$0<\eta\le1$. Define $\cmLtwo$ as in CC1.4, put $e=\eta/2$, and in order take
+\begin{gather*}
+ j=\cmLtwo(12\bar K_D/e),\quad s=2^{-2j},\quad
+ b_{\mathrm{clip}}=\cmLtwo(32/e),\quad T=36b_{\mathrm{clip}}/s,\\
+ n=\max(1,\lceil(364+6j+\cmLtwo(b_{\mathrm{clip}}/e))/4\rceil),\\
+ k=\max(1,\ell_n+\cmLtwo(8C_n/e),
+                 j+\lceil\cmLtwo(216/e)/4\rceil),\quad a=2^{-2k}.
+\end{gather*}
+Invoke $\cmEXT(n,k,\eta/8,\eta/8,\eta/4)$. The finite tuple
+$(s,T,n,a,R_{\mathrm{aux}},\beta,N)$ gives \eqref{cm:budget} at most $\eta$
+for both architectures. Its eight allocations are
+\[
+\begin{array}{c|cccccccc}
+\text{charge}&\text{width}&\text{stab.}&\text{aux.}&\text{reg.}&
+ \text{variance}&\text{volume}&\text{clip}&\text{target}\\ \hline
+\text{allowance}&\eta/4&\eta/8&\eta/8&\eta/16&
+ \eta/16&\eta/8&\eta/8&\eta/8 .
+\end{array}
+\]
+Every operation terminates for finite rational inputs. This is a mathematical
+sufficient procedure, without a bounded-resource executable claim.
+Without $\bar K_D$, CA1.4 remains analytic and this numerical route stays
+conditional. No additional density certificate is extracted from an
+evolving sibling or qualitative finiteness.
+\end{theorem}
+
+% CMAP ca1-5b | CA1-STATEMENT-ONLY.md:284-297
+\begin{theorem}[CA1.5b: alternate certified smoothing bypass]\label{cm:bypass}
+Instead of $\bar K_D$, supply an explicit certified $r(s)\ge0$, on
+positive rational $s\le1$, such that
+\[
+ \cmBL((X_{\mathrm{obs}},Q_s)_\#\nu_\infty,\mathcal L_{\mathrm{target}})
+ \le r(s),\qquad r(s)\to0,
+\]
+and a specified terminating algorithm $S_r$ returning on every rational
+$0<\tau\le1$ a rational $0<s\le1$ with certified $r(s)\le\tau$.
+It concerns exactly the original normalized target and identical physical
+$c_s/Q_0$ prescription, retaining all its source premises as additional
+hypotheses. Qualitative existence or an unverified program is insufficient;
+a certified $L^1$ smoothing modulus suffices.
+
+For rational $0<\eta\le1$ take $e=\eta/2$, $s=S_r(\eta/8)$,
+$h=\cmLtwo(1/s)$, and
+\begin{gather*}
+ b_{\mathrm{clip}}=\cmLtwo(32/e),\quad T=36b_{\mathrm{clip}}/s,\\
+ n=\max(1,\lceil(364+3h+\cmLtwo(b_{\mathrm{clip}}/e))/4\rceil),\\
+ k=\max(1,\ell_n+\cmLtwo(8C_n/e),
+              \lceil(2h+\cmLtwo(216/e))/4\rceil),\quad a=2^{-2k}.
+\end{gather*}
+Then $\cmEXT(n,k,\eta/8,\eta/8,\eta/4)$ gives actual joint distance
+$\le\eta$, with the same eight allocations and $E_{\mathrm{target}}$
+replaced by $r(s)$. This terminating conditional selector needs no certified
+numerical $L^2$ density norm. H3's conditioning and finiteness remain
+in its analytic source basis; the supplied smoothing guarantee is exactly
+the additional bypass premise.
+\end{theorem}
+
+% CMAP ca1-6 | CA1-STATEMENT-ONLY.md:299-299
+\begin{remark}[CA1.6: literal scope]\label{cm:limits}
+CA1 concerns the fixed smoothed physical-$C_0$-subtracted joint observation
+of the original two process-neuron architectures in the original
+two-dimensional massive coefficient-one quartic model. Every finite stage
+has positive $a,\beta,s$ and finite geometry and width. Whole-plane
+process-neuron counts do not specify a finite global random parameter vector.
+The raw growing-volume route, volume-uniform raw Wick Cauchy/UI, finite-bit
+generation, useful estimator/sampler, total work, positive cosine gap,
+matched interacting-covariance Gaussian comparator, comparative advantage,
+priority, broader-QFT and publication claims remain separate. Full G1--G9
+capability flags remain false. No historical access violation, missing
+proof, parser/software defect, unreviewed implication or raw severity is
+repaired by this integration.
+\end{remark}
+
+% CMAP cc-proof-1 | derivation-composite-certificate-20261031.md:5-27
+\subsection{Complete proof of CC1}
+\paragraph{Source identity and local normalization.}
+S1 fixes the actual common FS maximal state, represented on original $X$.
+The strict P1--P6/AP3/AP5 bridge identifies it with the same physical
+free-boundary limit. Both original Section 4 maximal states are among those
+covered by FS Theorem 7.2, so S3 applies to this identified target. The older
+unknown $g_*$ route is unused. The reference is whole-plane $P_1$ restricted
+to $\mathcal C_D$, rather than a Dirichlet reference. Gaussian/common-space
+fourth-Wick uniqueness identifies source $J_D$ with the anisotropic
+own-$c_a$ limit on $D$. The general fixed-square Gaussian/Wick transfer
+and general-rectangle construction apply at this local region independently
+of the exhaustion boxes $B_n$.
+
+A $\mathcal C_D$-measurable version of $U_D$ follows by compactly contained
+interior squares and compactly supported mollifiers. Fourth-chaos pairing
+bounds the squared $L^2$ norm of an omitted boundary layer $E_0$ by
+$24u^2|E_0|\|C_0\|_4^4\to0$; the accepted covariance bounds make
+$\|C_0\|_4$ finite. Interior mollifier limits are local, and Gaussian $L^2$
+uniqueness identifies their limit with $U_D$. This locality does not require
+a positive-$a$ common-space representative to be a local functional of $\Phi$.
+
+Set $V_D=e^{-U_D}$ and $g=g_{\partial D}$. The exact density is
+$k_D=e^{-36\alpha_{\mathrm{pr}}}V_Dg$, $\E k_D=1$, with both minus signs
+and no division by $\E V_D$. For every centered finite square $E$,
+$\E U_E=0$ and finite negative-exponential moments give
+$Z_E=\E e^{-U_E}\ge e^{-\E U_E}=1$. P5/AP3 identifies pressure as the
+same-mass normalized log-partition limit, hence
+\[
+ \alpha_{\mathrm{pr}}=\lim|E|^{-1}\log Z_E\ge0,\qquad
+ 0<e^{-36\alpha_{\mathrm{pr}}}\le1.
+\]
+Existence and source identification of pressure remain premises.
+
+% CMAP cc-proof-2 | derivation-composite-certificate-20261031.md:29-86
+\paragraph{Numerical Gaussian exponential certificate.}
+The general-rectangle Nelson input has semiboundedness coefficient $6u$
+and degree parameter two. Since $\pi>3$,
+\[
+ \kappa_2<1,\quad
+ M_6=(5/(4\pi))^{5/6}<1,\quad384A_D=13824<128^2,
+ \quad K_{A_D}<128u.
+\]
+Also $2<e<3$, $\sqrt2<3/2$ imply $\kappa_0<15/2<8$ and
+$(2/e)\sqrt{\kappa_0}<3$. Thus the second candidate for $K^\sharp_{A_D}$
+is $<384u$, whereas $12uA_D=432u$, proving
+$K^\sharp_{A_D}=432u$. As $432/10^{10}<1/1000^2$,
+$\beta_{A_D}>1500$.
+
+Take $h_0=1/100>K^\sharp_{A_D}$. For $v\ge h_0$, let
+$R(v)=e^{\beta_{A_D}\sqrt v-1}/v$. Then
+\[
+ (\log R)'(v)=(\beta_{A_D}\sqrt v-2)/(2v)>0,\qquad R(h_0)>100>20.
+\]
+The tail therefore gives $P_1(U_D<-v)\le e^{-20v}$ for $v\ge h_0$.
+Layer cake cut at $e^{10h_0}$ yields
+\begin{align*}
+ \E e^{-10U_D}
+ &\le e^{10h_0}+\int_{h_0}^{\infty}10e^{10v}P_1(U_D<-v)\,dv\\
+ &\le e^{1/10}+e^{-1/10}\le10/9+1=19/9<4 .
+\end{align*}
+Here $e^x\le(1-x)^{-1}$, $0\le x<1$, follows by termwise comparison of
+positive series. Since $(4/3)^{10}>4$,
+$\|V_D\|_{10}\le4^{1/10}<4/3$. This proves CC1.1 without numerical
+quadrature or a global finite-box density envelope. Its rational arithmetic
+and the attributed analytic tail have distinct evidentiary roles.
+
+% CMAP cc-proof-3 | derivation-composite-certificate-20261031.md:88-132
+\paragraph{The exact boundary factor and lower exponent.}
+For $l=6,m_0=1$, $e>2$ gives
+\[
+ 4(1-e^{-6})^{-2}<4(1-1/64)^{-2}=16384/3969<5.
+\]
+Thus S3 permits exactly $q=5$:
+$\nu_\infty(H)\le e^{-36\alpha_{\mathrm{pr}}}\|HV_D\|_5$.
+This is the published chessboard conclusion for the actual Section 4 FS
+states, with its retained GRS dependency.
+
+For bounded nonnegative local $G$, let
+$A_M=\{1/M\le V_D\le M\}$ and $H_M=GV_D^{-1}\mathbf1_{A_M}$.
+The test is bounded and local. Substituting the exact density into the source
+inequality and cancelling the positive pressure factor gives
+\[
+ \E[Gg\mathbf1_{A_M}]\le\|G\mathbf1_{A_M}\|_5\le\|G\|_5.
+\]
+Since $U_D$ is finite a.s., $A_M$ increases to full measure. Monotone
+convergence and truncation extend $\E Gg\le\|G\|_5$ to all nonnegative
+local $G\in L^5$. Duality gives $\|g\|_{5/4}\le1$. The factor is a local
+equivalence class through $k_D=e^{-36\alpha_{\mathrm{pr}}}V_Dg$ and positive
+$V_D$; its original boundary-measurable representative in either reading
+is unchanged.
+
+Since $1/(10/9)=1/10+1/(5/4)$, H\"older gives
+\[
+ \|k_D\|_{10/9}\le e^{-36\alpha_{\mathrm{pr}}}\|V_D\|_{10}\|g\|_{5/4}
+ \le4/3.
+\]
+This proves CC1.2, with no inference of an $L^2$ bound from a smaller
+exponent. Equivalently the source inequality and H\"older give
+\[
+ \nu_\infty(H)\le\|H\|_{10}\|V_D\|_{10}\le(4/3)\|H\|_{10}
+\]
+first for bounded nonnegative local $H$, then by monotone truncation
+whenever its Gaussian $L^{10}$ norm is finite. This justifies unbounded
+observables below.
+
+% CMAP cc-proof-4 | derivation-composite-certificate-20261031.md:134-201
+\paragraph{Gaussian square, smoothing and the one Borel version.}
+Write $C(p)=(1+|p|^2)^{-1}$. Parameter integration
+$1/(AB)=\int_0^1[tA+(1-t)B]^{-2}\,dt$ and translation give
+\[
+ \int_{\R^2}C(p)C(k-p)\,dp
+ =\pi\int_0^1[1+t(1-t)|k|^2]^{-1}\,dt\le\pi.
+\]
+With exactly $d\lambda=dp/(2\pi)^2$, Tonelli and Plancherel show
+\[
+ \|K_f\|_{H\otimes H}^2
+ =\iint|\hat f(p+q)|^2C(p)C(q)\,d\lambda(p)d\lambda(q)
+ \le F_2^2/(4\pi).
+\]
+Thus $O_2^P=I_2(K_f)$ exists and $\|O_2^P\|_2\le\sigma$, including
+the isometry's factor two. For $s>0$, $Q_s(\Phi)$ has kernel
+$(r_s\otimes r_s)K_f$. First use finite spectral cutoffs, Wick pairing and
+Bochner integration; dominated tensor convergence and Gaussian Fubini
+identify the limit with the measurable spatial integral. Its centering
+is the physical mass-one $c_s$ at every $s$.
+
+Evenness, nonnegativity, unit integral and support of $\rho$ give
+$|r_s|\le1$ and $0\le1-r_s(p)\le\min(2,s^2|p|^2)$, by
+$1-\cos\theta\le\theta^2/2$ and $|z|^2\le2$ on its support. Denote
+inverse transforms of $C,r_sC,r_s^2C$ by $C_0,C_{s0},C_{ss}$. Their
+$L^2$ norms are bounded by $M_2=1/(2\sqrt\pi)$. The radial Plancherel
+split at $|p|=1/s$ gives, with $D_s=\|C_{s0}-C_0\|_2$,
+\begin{align*}
+ D_s^2&\le s^4\int_{|p|\le1/s}\frac{|p|^4}{(1+|p|^2)^2}\,d\lambda
+       +4\int_{|p|>1/s}|p|^{-4}\,d\lambda
+       \le5s^2/(4\pi),\\
+ \|C_{ss}-C_{s0}\|_2&\le D_s .
+\end{align*}
+For integrable $G_0$, translated-product Cauchy--Schwarz gives
+$\iint|f(x)f(y)G_0(x-y)|\,dxdy\le F_2^2\|G_0\|_1$.
+Wick pairing and $\|A^2-B^2\|_1\le\|A-B\|_2(\|A\|_2+\|B\|_2)$ yield
+\begin{align*}
+ \|Q_s(\Phi)-O_2^P\|_2^2
+ &=2\iint f(x)f(y)(C_{ss}^2+C_0^2-2C_{s0}^2)(x-y)\,dxdy\\
+ &\le8F_2^2M_2D_s\le(2\sqrt5/\pi)F_2^2s=L_f^2s.
+\end{align*}
+For distributional rigor, finite momentum cutoffs converge in tensor norm
+by the preceding bound, covariances converge in $L^2$ and their squares
+in $L^1$, so the translated-product estimate passes both formula and bound
+to the limit. No spatial positivity of $r_s$ or covariance difference is
+assumed. Second-chaos hypercontractivity gives for every real $R\ge2$
+\[
+ \|Q_s(\Phi)-O_2^P\|_R\le(R-1)L_f\sqrt s,\qquad
+ \|O_2^P\|_R\le(R-1)\sigma.
+\]
+
+For positive $s$, distributional smoothing makes $z\mapsto v(h_{s,z})$
+continuous. Its compact integral is a limit of Borel Riemann sums, all
+using tests inside $[-2,2]^2$, so $Q_s$ is Borel and $\mathcal C_D$ local.
+At $s_j=2^{-2j}$, the sum of squared Gaussian errors is finite.
+Tonelli gives almost-sure convergence to $O_2^P$. The convergence event
+and limit are local, hence $Q_0(\Phi)=O_2^P$ a.s. Target-local absolute
+continuity transfers this same full-probability event. Equality of source
+and $X$ representations on compact evaluations transfers the same countable
+construction, giving target $O_2(f)=Q_0$ without another subsequence or
+observable. Finally $F_2\le2,\pi>3,\sqrt5<3$ imply $\sigma<1,L_f<3$.
+
+% CMAP cc-proof-5 | derivation-composite-certificate-20261031.md:203-228
+\paragraph{All orders and numerical target smoothing.}
+For real $r\ge1$, put $E_s=Q_s-Q_0$. Its $r$th absolute power is local.
+Hypercontractivity at $R=10r$ and the preceding local transfer inequality
+give
+\[
+ \E_{\nu_\infty}|E_s|^r
+ \le(4/3)\|E_s\|_{10r,P_1}^r
+ \le(4/3)[(10r-1)L_f\sqrt s]^r,
+\]
+and likewise
+$\E_{\nu_\infty}|Q_0|^r\le(4/3)[(10r-1)\sigma]^r$.
+Taking roots proves CC1.3; $r=1$ yields $12L_f\sqrt s<36\sqrt s$.
+No unknown $K_D$, boundary norm or finite-box $M_n$ occurs.
+
+For $R\ge1$, Minkowski gives
+\[
+ \sup_{0<s\le1}\|Q_s\|_{L^R(\nu_\infty)}
+ \le(4/3)^{1/R}(10R-1)(\sigma+L_f).
+\]
+For any positive moment order $a_0$, choose $R>\max(a_0,1)$.
+Markov/H\"older bounds the $a_0$-moment tail uniformly by a constant times
+the threshold to power $-(R-a_0)$. This proves uniform integrability
+of $\{|Q_s|^{a_0}:0<s\le1\}$, at the target-local scope.
+
+% CMAP cc-proof-6 | derivation-composite-certificate-20261031.md:230-238
+\paragraph{Terminating smoothing selector.}
+For positive rational $x$, $\cmLtwo(x)$ is obtained by finite integer
+numerator/denominator comparisons with powers of two. At $x=36/\tau$,
+$2^j\ge x$, including $j=0$ if $x\le1$. Thus $s=2^{-2j}$ satisfies
+$0<s\le1$ and $36\sqrt s=36\,2^{-j}\le\tau$.
+Replacing $\tau$ by $\epsilon/4$ gives the stated $144/\epsilon$ formula.
+This is exact rational selection with symbolic dyadic output, not
+interacting expectation evaluation. Historical finite selector examples
+are finite checks separate from this proof. CC1.4 follows.
+
+% CMAP cc-proof-7 | derivation-composite-certificate-20261031.md:240-272
+\paragraph{Retained unsuccessful routes and limits.}
+The original direct $L^2$ H\"older route gives
+\[
+ \E_{\nu_\infty}|Q_s-Q_0|\le K_DL_f\sqrt s,\qquad
+ K_D=e^{-36\alpha_{\mathrm{pr}}}\|V_Dg\|_2
+ \le e^{-36\alpha_{\mathrm{pr}}}\|V_D\|_4\|g\|_4.
+\]
+Old qualitative finiteness of $\|g\|_4$ gave no numerical certificate.
+Normalization alone only fixes $\E V_Dg=e^{36\alpha_{\mathrm{pr}}}$ and
+does not bound $\|g\|_4$. Setting $g=1$ or dividing by $\E V_D$ would change
+the target. The smaller-exponent proof retains both factors.
+
+Finite-box marginalization gives
+$\|\E[r_{0,n}\mid\mathcal C_D]\|_2\le\|r_{0,n}\|_2\le M_n$,
+which grows with $n$. The unused raw triangle has sufficient charges
+$M_nL_f\sqrt s$ and $2^{362}n^{3/2}s^{-3}2^{-5n}$.
+Since $\ell_n\ge2n^4/125$, forcing the former small makes that crude
+second majorant grow. This is failure of sufficient majorants, with no
+nonconvergence or all-method impossibility implication.
+
+The linear source bound only gives
+\[
+ \E_{\nu_\infty}|Q_s|\le3I\|\rho_s\|_2^2+Ic_s
+ \le4IR_2^2/s^2\le432/s^2,\quad
+ \E_{\nu_\infty}|Q_s-Q_t|\le432(s^{-2}+t^{-2}).
+\]
+These divergent upper bounds, and the explicitly scale-dependent $H^{-2}$
+local moment constant, supply no small-scale Wick-square Cauchy modulus.
+An unused conditional-boundary proposal would require a correctly normalized
+$\E_{\mathrm{cond},\xi}|Q_s-Q_0|\le C(\xi)\sqrt s$ with explicit finite
+$\E_{\nu_\infty}C(\xi)$, shifted-Dirichlet Wick conversion, conditional
+normalizer and quantitative target-boundary trace control. The linear
+$L^2$ source interface supplies none of this boundary control.
+Finite-tuple AP6 reconstruction likewise cannot certify the missing
+infinite-dimensional density-norm tail by observed stabilization.
+
+The FS source matching retains the GRS checkerboard dependency and the
+original classical/P1--P6 scope. Historical source investigators read the
+primary FS line/page, without claiming a fresh secondary-proof audit.
+Frozen original author candidate headers and operational/access findings
+remain historical; their subsequent accepted decisions govern CC1.
+There is no new outside-expert, statistical-independence or OS-isolation
+claim. The stronger $L^2$ certificate, raw fixed-$a$ limit, assembly from
+CC1 alone, useful sampling/work/comparison/gap and priority remain outside
+CC1.5. This completes the full positive proof and its retained limits.
+
+% CMAP ca-proof-0 | derivation-composite-assembly-20261031.md:7-30
+\subsection{Complete CA1 proof}
+\paragraph{P0: target, local prescription and normalization ledger.}
+H1 fixes the original pressure-identified target, rather than a new state or
+subsequence. Same-mass whole-plane reference, free-boundary interaction and
+physical/classical identification are literal source conditions.
+$8000<10^{10}$ proves the strict cap, without any old $g_*$ inference.
+
+All $h_{s,z}$ are supported in $[-2,2]^2$, strictly inside $D_{\mathrm{loc}}$,
+every $B_n$ and $D_{\mathrm{aux}}$. The accepted CV1 continuity estimate is
+\[
+ |Q_s(v)-Q_s(w)|\le IA_s^2p_3(v-w)[p_3(v)+p_3(w)],\quad
+ A_s^2=s^{-2}R_2^2+2s^{-4}D_\rho^2+s^{-6}\|\Delta\rho\|_2^2 .
+\]
+Alternatively countable Riemann sums show local Borel measurability.
+Zero extension of an $E$ class gives exactly the whole-plane convolution on
+$\supp f$, so the linear coordinate and the actual Borel pair agree.
+
+Each probability has its own normalization before observation:
+\[
+\begin{array}{c|c|c}
+ \text{law}&\text{reference and weight}&\text{normalizer}\\ \hline
+ P_N^{\mathfrak b}&\rho_N^{\mathfrak b},\ e^{-W-\beta J_{\mathrm{out}}
+                                  +(K/2)\int_{D_{\mathrm{aux}}}v^2}
+                                  &Z_N^{\mathfrak b}\\
+ Q_\beta&\rho_\gamma,\ \text{same full weight}&Z_\gamma\\
+ Q_{\mathrm{res}}^\beta&G',\ e^{-W-\beta J_{\mathrm{out}}}&z_\beta\\
+ Q_{\mathrm{res}}^0&G',\ e^{-W}&z_0\\
+ \nu_{a,n}&G_a,\ e^{-W}&Z_{a,n}\\
+ \nu_n&\Phi_\#(e^{-U_{0,n}}P/Z_{0,n})&Z_{0,n}\\
+ \nu_\infty&P_1|_{\mathcal C_D},\ k_D&\E_{P_1}k_D=1
+\end{array}
+\]
+The pure Gaussian mass normalizer $M_{D_{\mathrm{aux}},a}$ is separate;
+HP gives $Z_\gamma=M_{D_{\mathrm{aux}},a}z_\beta$ and the all-Borel
+restriction identity. This does not identify $Q_\beta$ with $\nu_{a,n}$
+at finite geometry and $\beta$. Endpoint covariance $C_{\mathrm{end}}$,
+full tilt $Q_\beta$ and physical reference $C_a$ remain distinct.
+No extra local $Z_D$ is inserted into $k_D$.
+
+% CMAP ca-proof-1 | derivation-composite-assembly-20261031.md:32-69
+\paragraph{P1: fixed-stage width and its normalization.}
+Use the literal NC1 theorem H7. Nonnegative unit-mass convolution after
+zero extension is an $L^4$ contraction. H\"older gives
+$\|v\mapsto\int fv\|\le\|f\|_{4/3}<1$ and
+$\|B_T\|\le F_2<1/2$ for $T_s$ and $T_{\mathrm{id}}$. For
+$x=\|v\|_4$, $J_{T,k}$ therefore has first derivative at most $q_1=1+2x$,
+second at most $q_2=2$, higher derivatives zero. The finite subtraction
+changes none. For $H(v)=G(J_{T,k}(v))$ with $G\in\mathcal U_4$, the scalar
+chain rule gives $p_1,\ldots,p_4$; fourth-order multiplicities $1,6,3$
+correspond to four first derivatives, one second and two first, and two
+second derivatives.
+
+Differentiation and H\"older give $v_1,\ldots,v_4$ for $V$; in particular
+$\|v\|_2^2\le\sqrt d\,x^2$, with quadratic coefficient at most $B$.
+The exponential chain rule bounds $D^4w$ by $we_4$, while Leibniz
+multiplicities $1,4,6,4,1$ give $D^4(Hw)$ at most $wP_J$. Moreover
+\[
+ V(v)\ge\alpha x^4-B\sqrt d\,x^2\ge(\alpha/2)x^4-L,\qquad
+ \max_{x\ge0}x^je^{-\alpha x^4/2}=[j/(2\alpha e)]^{j/4}\quad(j>0).
+\]
+The dropped constant $3uc_a^2A_n$ is positive; the $j=0$ maximum is one.
+Summing nonnegative coefficients gives $M_Z,M_J$ and bounded lower
+derivatives and functions, uniformly in positive $s$ and finite common $k$.
+
+Actual iid neuron signs of magnitude $1/2$ give
+$\E F_N(z)^4=(3-2/N)/16\le3/16$, while $\E\gamma(z)^4=3/16$.
+Tonelli, dropping nonpositive quadratic terms, gives
+$\E V\le3Ad/16+3uc_a^2A_n$ under either reference. Jensen proves the two
+own normalizers at least $z$, while quartic damping makes them finite
+positive. Their equality is never assumed.
+
+For an $E$-$C^4$ function $\Psi$ with $\sup\|D^4\Psi\|\le M$, successively
+replace the $N$ independent normalized neurons by independent normalized
+endpoint copies. Integral Taylor remainder is $M\|h\|_4^4/24$.
+Zero Bochner mean cancels linear terms, the EVERY-bounded-bilinear identity
+at the independent base cancels all quadratic terms, and global sign
+symmetry cancels cubics; lower terms are integrable. Each replacement
+costs at most $M(d/16+3d/16)/(24N^2)=Md/(96N^2)$.
+The telescope ends at the exact Gaussian-sum law $\rho_\gamma$.
+Numerator and denominator errors are $dM_J/(96N)$ and $dM_Z/(96N)$.
+For $A_N=\rho_N^{\mathfrak b}(Hw)$ and $A_\gamma=\rho_\gamma(Hw)$,
+\[
+ \frac{A_N}{Z_N^{\mathfrak b}}-\frac{A_\gamma}{Z_\gamma}
+ =\frac{A_N-A_\gamma}{Z_N^{\mathfrak b}}
+ +\frac{A_\gamma}{Z_\gamma}\frac{Z_\gamma-Z_N^{\mathfrak b}}
+                                 {Z_N^{\mathfrak b}} .
+\]
+Since $|A_\gamma/Z_\gamma|\le1$ and $Z_N^{\mathfrak b}\ge z$, the bound
+is $C/N$, with one $z^{-1}$ and both errors.
+
+For joint $G\in\mathrm{BL}_1(\R^2)$, Gaussian convolution at scale
+$0<\delta\le1$ approximates it uniformly within $\sqrt2\delta$.
+Its first derivative is at most one and its $j$th derivative operator
+norm for $2\le j\le4$ is at most $\sqrt{(j-1)!}\delta^{1-j}$:
+directional integration by parts and the degree-$(j-1)$ Wick polynomial
+$L^2$ bound establish this for arbitrary unit directions. Thus
+\[
+ \text{width error}\le\sqrt6 C/(N\delta^3)+2\sqrt2\delta .
+\]
+Optimization gives $D_JN^{-1/4}$, capped separately by two.
+Taking $\delta=\eta_W/(4\sqrt2)$ proves the sufficient
+$512\sqrt3 C\eta_W^{-4}$ width. These smoothing costs are internal to
+$E_{\mathrm{width}}$, distinct from physical $s$ and counted once.
+The fixed cosine has derivative norms $\le2^{-j/2}$ and lies in
+$\mathcal U_4$ and $\mathrm{BL}_1$, hence its $C/N$ alternative.
+This recalls the first actual-law arrow with all NC1/RL2/NR1 qualifications.
+
+% CMAP ca-proof-2 | derivation-composite-assembly-20261031.md:71-94
+\paragraph{P2: stabilizer between residual normalized probabilities.}
+Put $c=c_a$. Since $x^4-6cx^2+3c^2=(x^2-3c)^2-6c^2$,
+$W\ge-6uA_nc^2$ and write $M=e^{6uA_nc^2}$.
+Under $G'$, point variance $r(z)\in[0,c]$ gives
+\[
+ \E_{G'}W=3u\int_\Lambda(r(z)-c)^2\le3uA_nc^2,\quad
+ \E_{G'}J_{\mathrm{out}}\le3|D_{\mathrm{aux}}\setminus\Lambda|c^2.
+\]
+Jensen gives $z_0\ge z_{0,\mathrm{low}}=e^{-3uA_nc^2}$, distinct from P1's
+$z$. Let $h_\beta=e^{-W-\beta J_{\mathrm{out}}}$ and $h_0=e^{-W}$.
+The nonnegative $\Delta_h=\E_{G'}(h_0-h_\beta)$ satisfies
+$\Delta_h\le3\beta M|D_{\mathrm{aux}}\setminus\Lambda|c^2$ by
+$1-e^{-t}\le t$. The exact subtraction
+\[
+ h_\beta/z_\beta-h_0/z_0
+ =(h_\beta-h_0)/z_0+h_\beta(1/z_\beta-1/z_0)
+\]
+has $L^1$ norm at most $2\Delta_h/z_0$. Thus every bounded Borel whole-path
+test changes by at most $E_{\mathrm{stab}}$. HP's all-Borel restriction
+identity applies on the $Q_\beta$ side and pushforward cannot increase
+the bound. This is the single stabilizer charge.
+
+% CMAP ca-proof-3 | derivation-composite-assembly-20261031.md:96-133
+\paragraph{P3: auxiliary coupling of action and observation.}
+Use independent HP paths $X_a=Y+\psi$, $X_a\sim G_a,Y\sim G'$.
+Their $e^{-W}$ tilts are exactly $\nu_{a,n}$ and $Q_{\mathrm{res}}^0$,
+with normalizers $Z_{a,n}$ and $z_0$. For $p_c(x)=x^4-6cx^2+3c^2$,
+factoring and $(|x|+|y|)(x^2+y^2)\le2(|x|^3+|y|^3)$ give
+\[
+ |p_c(x)-p_c(y)|
+ \le|x-y|\{2(|x|^3+|y|^3)+6c(|x|+|y|)\}.
+\]
+Centered Gaussian marginals of variance at most $c$ have sixth moment
+at most $15c^3$ and second at most $c$. The bracket has $L^2$ norm
+$\le L_c=(4\sqrt{15}+12)c^{3/2}$. Cauchy--Schwarz, integration and the
+defect diagonal yield
+\[
+ \E|W(X_a)-W(Y)|\le uA_nL_c\sqrt{\delta_D(\overline\Lambda)},\quad
+ \E|e^{-W(X_a)}-e^{-W(Y)}|
+ \le M uA_nL_c\sqrt{\delta_D(\overline\Lambda)}.
+\]
+The latter uses the $M$-Lipschitz bound for $e^{-t}$ at $t\ge-6uA_nc^2$.
+
+Positivity of $f$, PSD covariance and Minkowski give
+$\E|X_a(f)-Y(f)|\le I\sqrt{\delta_D(K_f)}$.
+For $z\in\supp f$, let $A_z=T_s(X_a-Y)(z)$ and $B_z=T_s(X_a+Y)(z)$.
+Unit nonnegative convolution gives
+$\|A_z\|_2\le\sqrt{\delta_D(K_s)}$,
+$\|B_z\|_2\le2\sqrt c$, where $K_s=[-1-s,1+s]^2\subset K_*$.
+Cauchy--Schwarz, without independence of these variables, yields
+\[
+ \E|B_{T_s}(X_a,X_a)-B_{T_s}(Y,Y)|
+ \le2I\sqrt c\sqrt{\delta_D(K_*)}.
+\]
+The common subtraction cancels, so the expected Euclidean pair difference
+is at most the sum of its two coordinate bounds.
+
+For $G\in\mathrm{BL}_1$, write $H_X=G(J_s(X_a))$, $H_Y=G(J_s(Y))$,
+$w_X=e^{-W(X_a)},w_Y=e^{-W(Y)}$, $z_X=\E w_X,z_Y=\E w_Y=z_0$.
+Direct normalization subtraction gives
+\[
+ \left|\frac{\E w_YH_Y}{z_Y}-\frac{\E w_XH_X}{z_X}\right|
+ \le\frac{2\E|w_X-w_Y|+\E(w_X|H_Y-H_X|)}{z_Y}
+ \le\frac{2\E|w_X-w_Y|+M\E\|J_s(Y)-J_s(X_a)\|}{z_{0,\mathrm{low}}}.
+\]
+Since $M/z_{0,\mathrm{low}}=e^{9uA_nc^2}$, this is exactly
+$E_{\mathrm{aux}}$ with probability cap two. Densities, own normalizers
+and nonlinear path observations change together.
+
+% CMAP ca-proof-4 | derivation-composite-assembly-20261031.md:135-168
+\paragraph{P4: regulator, physical variance and translations.}
+HC uses the common-space comparison
+\[
+ |\E_{\mu_{a,n}}G(A)-\E_{\mu_{0,n}}G(B)|
+ \le\|r_{a,n}-r_{0,n}\|_1+M_n\|A-B\|_{L^2(P;\R^2)}
+\]
+for $A=(\Phi_a(f),Y_{a,s})$, $B=(\Phi(f),Y_s)$.
+The density term is $4K_nM_n\sqrt a$, the Gaussian linear difference
+at most $aF_2/2$, and the own-smoothed second-chaos difference at most
+$H_f\sqrt a$, uniformly in positive $s$. These are literal accepted
+CMP/HC bounds for actual anisotropic $\tau_a$. They give $R_n(a)$,
+without a finite-box raw smoothing term. Since $a<1,F_2/2\le1,H_f<2$,
+$K_n<n/10^6$, $R_n(a)\le M_nC_n\sqrt a$.
+
+With $D_0=1+w^2+q^2$, $T_0=w^2q^2\le D_0^2/4$, algebra gives
+\[
+ 0\le\hat C_0-\hat C_a=\frac{a^2T_0}{D_0(D_0+a^2T_0)}\le a^2/4,
+\]
+so Plancherel and $\|\rho\|_2=F_2/I$ yield
+\[
+ 0\le d_{a,s}=I\int|\hat\rho(sp)|^2(\hat C_0-\hat C_a)\,d\lambda
+ \le F_2^2a^2/(4Is^2)\le27(a/s)^2 .
+\]
+At every positive-$a$ physical path,
+$Q_s(\Phi_a)=Y_{a,s}-d_{a,s}$. Translating one normalized law costs
+at most $d_{a,s}$, without an $M_n$ factor. The regulator arrow is
+$R_n(a)+d_{a,s}$.
+
+Changing common subtraction $k_1$ to $k_2$ gives
+$J_{T,k_2}=J_{T,k_1}-(0,I(k_2-k_1))$. Translation preserves both test
+classes, hence common translation preserves distances exactly; one-law
+translation costs at most $I|k_2-k_1|$. Using common $c_s$ throughout P1--P3
+adds no endpoint-natural-centering charge. The four quantities
+$c_{\mathrm{end},s},c_{a,s},c_s,c_a$ differ. Untilting gives
+$\E B_{T_s}=Ic_{\mathrm{end},s}$ and $\E B_{\mathrm{id}}=I/4$, with
+no interacting-centering consequence. Endpoint-own to physical translation
+is $+(0,I(c_{\mathrm{end},s}-c_s))$.
+Finally exact subtraction gives the raw-to-smoothed identity in CA1.2,
+whose term $I(c_s-c_a)$ has no asserted sign and cannot be replaced by
+$d_{a,s}$. The action always uses exact $:v^4:_{c_a}$, including when
+upper envelopes later choose stages.
+
+% CMAP ca-proof-5 | derivation-composite-assembly-20261031.md:170-225
+\paragraph{P5: direct nonlinear volume, clipping and target smoothing.}
+Fix $s>0$. H3 implies $\E_\zeta v(h)^2\le3\|h\|_2^2$ for
+$\zeta=\nu_n,\nu_\infty$. For any scalar source $Y$ with the corresponding
+subgaussian proxy $\sigma_h^2$, an independent standard Gaussian and
+Tonelli give
+$\E e^{\lambda Y^2}\le(1-2\lambda\sigma_h^2)^{-1/2}$ for
+$0\le\lambda<(2\sigma_h^2)^{-1}$; this does not make $Y$ Gaussian.
+Here all $h_{s,z}$ have proxy $\sigma_s^2=3R_2^2/s^2$.
+
+Take a finite rectangular partition $(A_i)$ of $[-1,1]^2$ with $z_i\in A_i$,
+exact weights $w_i=\int_{A_i}f$, discarding zero weights. Put
+\[
+ Z_i(v)=\sqrt{w_i}v(h_{s,z_i}),\quad S_{\mathcal P}=\sum_iZ_i^2,\quad
+ Q_{\mathcal P}=S_{\mathcal P}-Ic_s,\quad
+ S_s=\int f(z)v(h_{s,z})^2\,dz .
+\]
+Weights sum exactly to $I$. Jensen with weights $w_i/I$ or $f(z)\,dz/I$
+gives $\E_\zeta e^{S_{\mathcal P}/(4B_s)}\le\sqrt2$ and
+$\E_\zeta e^{S_s/(4B_s)}\le\sqrt2$, $B_s=I\sigma_s^2$.
+Both tails above $T^2$ are bounded by $\sqrt2e^{-T^2/(4B_s)}$.
+No field-evaluation independence is used.
+
+If the largest cell diameter is $\delta_{\mathcal P}$, translated
+mollifier $L^2$ control and source moments give
+\begin{gather*}
+ \|h_{s,z}-h_{s,z_i}\|_2\le D_\rho|z-z_i|s^{-2},\\
+ \E_\zeta|v(h_{s,z})^2-v(h_{s,z_i})^2|
+          \le6R_2D_\rho|z-z_i|s^{-3},\\
+ \E_\zeta|Q_s-Q_{\mathcal P}|\le6IR_2D_\rho\delta_{\mathcal P}s^{-3}.
+\end{gather*}
+Exact total weight cancels subtraction; quadrature tends to zero at each
+fixed $n,s,T$, uniformly for these two endpoint laws.
+
+Apply H3 to $g=(f,\sqrt{w_i}h_{s,z_i})$, $R=2,n_0=1$.
+The square-sum coefficient is exactly
+$e^{-4}[1+1/(Is^4)]$, independently of the number of cells. The same
+$P_*$ gives $C_g\le C_s^*$ and AP6 tuple distance $\le E_n^*(s)$.
+For joint $G\in\mathrm{BL}_1$ define
+$H_T(x,z)=G(x,\min(\|z\|_2^2,T^2)-Ic_s)$.
+Its value is at most one and Lipschitz constant at most
+$\Lambda_T=\max(1,2T)$, so $H_T/\Lambda_T$ is an admissible AP6 test,
+including singular/repeated tuples. Clipping costs at most twice the tail
+at each endpoint. Thus
+\[
+ |\nu_nG(X_{\mathrm{obs}},Q_{\mathcal P})
+       -\nu_\infty G(X_{\mathrm{obs}},Q_{\mathcal P})|
+ \le\Lambda_T E_n^*(s)+4\sqrt2e^{-T^2/(4B_s)} .
+\]
+Removing quadrature costs at most
+$12IR_2D_\rho\delta_{\mathcal P}s^{-3}\to0$. The right side is independent
+of partition and $G$, so the supremum proves the actual nonlinear
+$E_{\mathrm{vol}}+E_{\mathrm{clip}}$ arrow. This is a mathematical
+observation limit, rather than a numerical work procedure.
+
+For the last arrow the normalized local density and H4 give
+\[
+ \E_{\nu_\infty}|Q_s-Q_0|
+ =\E_{P_1}[k_D|Y_s-Q_0(\Phi)|]
+ \le K_D\|Y_s-Q_0(\Phi)\|_2\le K_DL_f\sqrt s.
+\]
+Only local variables enter. Summability of squared errors at $2^{-2j}$
+gives the one Gaussian full-probability convergence set; locality transfers
+it by target absolute continuity, and each $\nu_n$ uses the same prescription
+by its common-space density. The endpoint is the intended physical Borel
+pair, rather than a new pair-law-only variable. A BL test changes by
+at most this $L^1$ coordinate difference. Alternatively a certified bound
+$r(s)$ for this identical joint-law arrow costs $r(s)$ once, with no
+extra density factor.
+
+Taking the triangle over the seven normalized laws proves CA1.1 with
+exactly eight charges and cap two. Width smoothing, variance translation,
+two-endpoint clipping and target smoothing are counted once. The cosine
+belongs to the class and inherits the budget and its sharper width option.
+
+% CMAP ca-proof-6 | derivation-composite-assembly-20261031.md:227-286
+\paragraph{P6: actual anisotropic tail and rational EXT.}
+Let $A_q=1+q^2$, $B_q=1+a^2q^2$. Then
+$\hat C_a(w,q)=(A_q+B_qw^2)^{-1}$ and
+$\partial_w\hat C_a=-2B_qw/(A_q+B_qw^2)^2$.
+Substitute $w=\sqrt{A_q/B_q}\,t$, then $t=\tan\theta$, to obtain
+\[
+ \int_\R\frac{w^2\,dw}{(A_q+B_qw^2)^4}
+ =\frac{\pi}{16A_q^{5/2}B_q^{3/2}}.
+\]
+Including exactly the Fourier measure,
+\[
+ \int|\partial_w\hat C_a|^2\,d\lambda
+ =\frac1{16\pi}\int_\R\frac{\sqrt{1+a^2q^2}}{(1+q^2)^{5/2}}\,dq .
+\]
+The $q$ derivative has the same integral. For $0<a<1$,
+\[
+ \int|\nabla\hat C_a|^2\,d\lambda
+ \le\frac1{8\pi}\int_\R(1+q^2)^{-2}\,dq=1/16.
+\]
+These integrals establish derivative $L^2$ integrability, while
+$\hat C_a\le\hat C_0$ establishes $\hat C_a\in L^2$.
+Distributional Fourier differentiation and Plancherel give
+$\int|x|^2C_a(x)^2\,dx\le1/16$. Its $L^2$ representative is the
+accepted continuous positive-$a$ covariance. The deterministic integral
+tail is $\int_{|x|>r}C_a^2\le1/(16r^2)$, proving \eqref{cm:tail}
+by HP, without spatial positivity or altered regulator.
+
+For $a=2^{-2k}$, $k\ge1$, the accepted exact variance bound gives
+\[
+ c_a\le[\operatorname{arsinh}(1/a)+1]/(2\pi)
+ \le[\log(3/a)+1]/(2\pi)<2k+3=\bar c,
+\]
+using $\log3<2,\log2<1,2\pi>1$. Thus $\bar c\ge1$ and
+$\bar E\ge e^{9uA_nc_a^2}$ since $e^x\le4^{\lceil x\rceil}$ for $x\ge0$.
+Also $L_c\le28\bar c^2$ and, using the weaker $I\le4$,
+$2uA_nL_c+I+2I\sqrt{c_a}\le56uA_n\bar c^2+4+8\bar c=\bar H$.
+The selected $R_{\mathrm{aux}}=1000n+r+1$ contains the closed Euclidean
+$r$ neighborhoods of $\overline\Lambda,K_f,K_*$ with surplus margin.
+The tail and $\sqrt K\le1/a$ imply
+$\sqrt{\delta_D(H)}\le1/(4ar)$ at each compact, hence
+$E_{\mathrm{aux}}\le\bar E\bar H/(4ar)\le\eta_A$.
+All these choices precede $\beta$.
+Because $|D_{\mathrm{aux}}\setminus\Lambda|\le d$, the chosen positive
+$\beta$ gives $E_{\mathrm{stab}}\le6\beta d\bar c^2\bar E\le\eta_S$.
+No $\beta$ limit is interchanged with expanding geometry.
+
+For width, $\beta\le u$ gives $\alpha=\beta,A=u$. Increasing $c_a$ to
+$\bar c$ increases $B,L$ and all nonnegative polynomial coefficients;
+$\sqrt d=2R_{\mathrm{aux}}$ is exact and $z^{-1}\le e^{\overline Z_{\exp}}$.
+For $j>0$,
+\[
+ [j/(2\alpha e)]^{j/4}\le\max(1,j/(2\alpha))^j=t_j:
+\]
+if $j/(2\alpha)\le1$ the left side is at most one; otherwise use
+$e\ge1$ and $j/4\le j$. The maximal polynomial degree is twelve.
+Coefficientwise comparison and
+$e^{\bar L+\overline Z_{\exp}}\le4^{\lceil\bar L\rceil+\lceil\overline Z_{\exp}\rceil}$
+prove $C\le\bar C$. Thus
+$N\ge1024\bar C\eta_W^{-4}\ge512\sqrt3 C\eta_W^{-4}$.
+Moreover $D_J^4=(8192\sqrt3/27)C<1024C$ directly bounds the displayed
+$E_{\mathrm{width}}$ by $\eta_W$. Every coefficient, ceiling and power is
+finite rational/integer. The action still uses exact $c_a$ and observation
+exact $c_s$; envelopes only choose resources. This proves all CA1.3
+claims without a tail or stage-normalizer oracle.
+
+% CMAP ca-proof-7 | derivation-composite-assembly-20261031.md:288-311
+\paragraph{P7: analytic diagonal.}
+The chosen $k_n$ gives
+\[
+ 2^{\ell_n}C_n2^{-k_n}\le2^{-n},\qquad
+ 27\,2^{-4k_n+2n}\le27\,2^{-n-5}<2^{-n},
+\]
+so regulator and variance each cost at most $2^{-n}$ and $0<a_n\le1/4$.
+The first six nonnegative Taylor terms of $e^{125/32}$ exceed 32 by
+exact rational arithmetic. Thus $q<1/32$, and
+\[
+ \Theta_n\le4n2^{-5n},\quad C_s^*<2^{364}s^{-2},\quad
+ E_n^*(s)\le2^{355}ns^{-2}2^{-5n}.
+\]
+The last uses $e^{1/128}\le128/127$ and
+$4(128/127)/2500<1/512$.
+At $T_n=36\sqrt n/s_n$, $\Lambda_T=72\sqrt n/s_n<2^7\sqrt n/s_n$,
+and $T_n^2/(4B_{s_n})\ge n$. Consequently
+\[
+ E_{\mathrm{vol}}\le2^{362}n^{3/2}2^{-2n},\quad
+ E_{\mathrm{clip}}\le4\sqrt2e^{-n},\quad
+ E_{\mathrm{target}}\le3K_D2^{-n/2}.
+\]
+EXT bounds each of width, stabilizer and auxiliary by $2^{-n}$.
+Adding the two regulator/variance terms gives $5\,2^{-n}$ and proves
+\eqref{cm:diagonal-bound}. Every term tends to zero for fixed finite $K_D$.
+Each stage is finite positive and works for both architectures.
+No value of $K_D$ defines the sequence, although finiteness alone yields no
+accuracy-dependent stopping index from this bound.
+
+% CMAP ca-proof-8 | derivation-composite-assembly-20261031.md:313-343
+\paragraph{P8: numerical selector under the density certificate.}
+A normalized density has $K_D\ge\|k_D\|_1=1$, so $\bar K_D\ge1$.
+For rational $x>0$, $x\le2^{\cmLtwo(x)}$ by exact finite comparisons.
+With $e=\eta/2$ the selector has $j\ge4$, $b_{\mathrm{clip}}\ge5$,
+$0<s\le1$, $T>1/2$ and $\Lambda_T=72b_{\mathrm{clip}}/s$.
+The order is $s,T,n,a$, auxiliary box, stabilizer, width.
+
+First $L_f<3$ and the choice of $j$ give
+$E_{\mathrm{target}}\le3\bar K_D2^{-j}\le e/4=\eta/8$.
+Next $B_s\le324/s^2$ gives $T^2/(4B_s)\ge b_{\mathrm{clip}}^2$.
+Using $\sqrt2<2,\exp(1)>2$,
+$E_{\mathrm{clip}}\le8\,2^{-b_{\mathrm{clip}}^2}
+\le8\,2^{-b_{\mathrm{clip}}}\le e/4$.
+For volume use $n\le2^n$:
+\[
+ E_{\mathrm{vol}}\le2^{362}b_{\mathrm{clip}}s^{-3}n2^{-5n}
+ \le2^{362}b_{\mathrm{clip}}2^{6j}2^{-4n}\le e/4
+\]
+by $4n\ge364+6j+\cmLtwo(b_{\mathrm{clip}}/e)$.
+Open-box support and $n\ell\ge2$ already hold at $n=1$.
+Writing $L_A=\cmLtwo(8C_n/e)$ and $L_S=\cmLtwo(216/e)$, the
+selected $k$ satisfies $k\ge\ell_n+L_A$, $4(k-j)\ge L_S$, hence
+\[
+ E_{\mathrm{reg}}\le2^{\ell_n}C_n2^{-k}\le e/8=\eta/16,\qquad
+ E_{\mathrm{var}}\le27\,2^{-4(k-j)}\le e/8.
+\]
+The variance charge is outside $M_n$. These five physical-to-target
+allowances sum to $e$. EXT at the already fixed $n,k$ gives
+$\eta/8,\eta/8,\eta/4$ for auxiliary, stabilizer and width, totaling
+the other $\eta/2$. All eight allocations sum exactly to $\eta$ and
+the cosine inherits the same guarantee.
+
+Termination consists of finite power-of-two comparisons, rational
+$h_2,m_2,\ell_n,C_n$, dyadics $s,a$, finite integer $\bar E,r$, positive
+rational $\beta$, finitely many polynomial coefficients of degree at most
+twelve, the finite integer exponent $\lceil\bar L\rceil+
+\lceil\overline Z_{\exp}\rceil$, rational $\bar C$ and rounded integer $N$.
+Unlimited exact arithmetic terminates; a finite symbolic expression
+also describes the enormous chosen integer. No finite resource or
+performance theorem is asserted. The density certificate is an extra
+mathematical input, not verified by this algorithm. Without it CA1.4
+and conditional CA1.5 remain; $M_n$, a Dirichlet density, bare boundary
+factor or pressure-free expression cannot replace $K_D$.
+
+% CMAP ca-proof-8b | derivation-composite-assembly-20261031.md:345-356
+\paragraph{P8b: alternate certified target modulus.}
+Under exactly CA1.5b's contract, $S_r(\eta/8)$ terminates with rational
+$s\in(0,1]$ and certified last-arrow cost at most $\eta/8$.
+Let $h=\cmLtwo(1/s)$, so $s^{-1}\le2^h$. The P7 majorant and choice of
+$n$ give
+\[
+ E_{\mathrm{vol}}\le2^{362}b_{\mathrm{clip}}s^{-3}n2^{-5n}
+ \le2^{362}b_{\mathrm{clip}}2^{3h}2^{-4n}\le e/4 .
+\]
+The same clipping choice gives $E_{\mathrm{clip}}\le e/4$, and
+$k\ge\ell_n+\cmLtwo(8C_n/e)$ gives $E_{\mathrm{reg}}\le e/8$.
+The condition $4k\ge2h+\cmLtwo(216/e)$ yields
+$E_{\mathrm{var}}\le27\,2^{-4k}s^{-2}\le27\,2^{-4k+2h}\le e/8$.
+The four non-target physical charges have exactly P8's allowances,
+and $r(s)$ occupies the single target allowance. EXT gives the same
+other three. The sum is $\eta$. Composition of the terminating $S_r$
+with finite rational operations terminates; no monotonicity or rounding
+of $r,s$ is used. Dyadic $s$ is unnecessary on this route. This proves
+CA1.5b with neither a numerical $L^2$ certificate nor an unproved
+integration step.
+
+% CMAP ca-proof-9 | derivation-composite-assembly-20261031.md:358-370
+\paragraph{P9: computability, order and retained adverse paths.}
+The selector's explicit envelopes are rational/integer once its extra
+certificate and accuracy are supplied: $2^{360}$, box/support constants,
+$M_n,C_n,\bar c,\bar E,\bar H,\beta$, coefficients, $\bar C,N$.
+The accepted OPT $2^{360}$ version remains a source premise, not a new
+OPT proof. HP/HC are source-qualified Gaussian/physical theorems rather
+than covariance-matching inferences.
+
+Exact positive-stage $c_a,c_s,c_{a,s}$ are specified computable reals.
+Frozen accepted CMP C8 procedures bound the $c_a$ integral tail beyond
+$q=R$ by $1/(2\pi aR)$, and the $c_s,c_{a,s}$ tails outside $[-R,R]^2$
+by $R_2^2/[s^2(1+R^2)]$. Compact elementary quadrature and explicit bump
+derivative bounds enclose the rest. These are mathematical procedures,
+not executed quadratures at astronomical selected parameters. They are
+unnecessary for the rational sufficient selector and compute no normalized
+interacting expectation. Nonlinear normalizers remain positive finite
+source-law integrals with the stated lower/enclosure bounds; no numerical
+values or sampling access follow. CA1.5's extra input is $\bar K_D$;
+CA1.5b's is exactly the certified smoothing/selector contract.
+
+Order is essential. Every finite neural path satisfies
+$|F_N|\le\sqrt N/2$ area-a.e.; nonnegative unit convolution gives
+$B_{T_s}\le IN/4$. But $c_s\to\infty$: on each fixed momentum ball
+$|\hat\rho(sp)|^2\to1$, while expanding-ball integrals of $\hat C_0$
+diverge logarithmically. Thus its physical-$C_0$-subtracted coordinate
+is at most $IN/4-Ic_s\to-\infty$ at fixed $a,N$. Under the continuous
+endpoint full tilt the squared convolution has a finite pathwise limit,
+with the same divergence of subtraction. Uniform NC1 comparison with a
+moving common subtraction supplies no tightness. The stated successive
+limits, reverse nested choices and separately estimated diagonals preserve
+the regulator/smoothing order, proving the remaining CA1.2 assertions.
+
+The unused triangle through finite-box raw $Q_0$ adds $M_nL_f\sqrt s$.
+Its majorant grows as $2^{\mathrm{constant}\,n^4}$, conflicting with the
+selected crude smoothed-volume majorant when both are forced to vanish.
+This is failure of these sufficient estimates, without nonconvergence
+or an all-method lower bound. The actual direct smoothed chain has no
+such arrow, so the charge is absent by law choice rather than bookkeeping
+omission. Growing-volume raw transfer stays separately open.
+
+Original adverse records remain: CMP GAUSS/AUTHOR MAJOR startup-access
+findings and software-v1 NUM DISAGREEMENTS/MAJOR parser-resource defect;
+RL2's MAJOR missing-body issue; and all CV1/NC1 raw findings, severities,
+assessments, separate confirmations and remaining source/positive
+obligations. This integration does not reread unprovided historical raw
+logs or declare their original compliance repaired. Historical author
+pre-execution hook failures remain distinct from the present author's
+own retained command failures. Frozen acceptance decisions supersede
+the historical candidate-status headers for accepted mathematics; they
+do not erase failures or establish expert/model-error independence.
+
+CA1 establishes conditional actual normalized joint-law assembly and finite
+sufficient scales. It establishes no useful estimator, free exact-real
+draw, finite-bit source generation, global-action cost, overlap/mixing,
+complete runtime, matched Gaussian comparator, positive selected-cosine
+gap, comparative benefit, new priority or other model. Full G1--G9 flags
+remain false. The original source review and the present derived-manuscript
+review are distinct. This completes CA1.1--CA1.6 and all retained limits.
+
+% CMAP integration | CLAIM-CCA.md:26-64;CC1-STATEMENT-ONLY.md:76-94;CA1-STATEMENT-ONLY.md:284-297;derivation-composite-assembly-20261031.md:215-225;derivation-composite-assembly-20261031.md:345-356
+\subsection{The same-target CC1--CA1 integration}
+\begin{corollary}[Certified composite selector under the union of premises]\label{cm:union}
+Assume all S1--S4 and H1--H7/Appendix S for their identical original target,
+Gaussian reference, bump, $c_s$ subtraction and one Borel $Q_0$.
+CC1 supplies CA1.5b with
+\[
+ r(s)=36\sqrt s,\qquad S_r(\tau)=2^{-2\cmLtwo(36/\tau)} .
+\]
+For every rational $0<\eta\le1$, CA1.5b therefore selects finite positive
+$s,a,\beta$ and finite $n,R_{\mathrm{aux}},N$ for both architectures with
+$\cmBL(\mathcal L_{\mathrm{neural}}^{\mathfrak b},
+\mathcal L_{\mathrm{target}})\le\eta$. At its target allocation,
+\[
+ j=\cmLtwo(288/\eta),\qquad s=2^{-2j},\qquad h=2j.
+\]
+The alternative CA1.5 density-certificate theorem and the analytic CA1.4
+sequence retain their own distinct premises and bounds.
+\end{corollary}
+\begin{proof}
+S1/H1 identify exactly the same original FS state and physical free-boundary
+limit, and S2--S4/H3--H4 identify the same restricted whole-plane Gaussian,
+pressure/boundary density, bump, physical $c_s$ and countable local
+$Q_0$. For any joint $G\in\mathrm{BL}_1$, coupling both observations on
+one target field keeps $X_{\mathrm{obs}}$ identical and gives
+\[
+ |\E_{\nu_\infty}G(X_{\mathrm{obs}},Q_s)
+       -\E_{\nu_\infty}G(X_{\mathrm{obs}},Q_0)|
+ \le\E_{\nu_\infty}|Q_s-Q_0|\le36\sqrt s.
+\]
+CC1.4 terminates with $r(S_r(\tau))\le\tau$. Thus all literal CA1.5b
+additional premises hold under the union. Take $\tau=\eta/8$ to get the
+$288/\eta$ index, and apply its proved selector without adding a second
+target charge or replacing the target density norm. Since $s=2^{-2j}$
+and $j\ge0$, $\cmLtwo(1/s)=2j$ exactly. Other stages, own normalizers,
+eight allocations and positive-stage/order conditions are those already
+proved. No later-tail theorem or stronger $L^2$ certificate is invoked.
+\end{proof}
+
+% CMAP closure | CLAIM-CCA.md:66-83;../limits/G6-DECISION.json:70-71;CA1-STATEMENT-ONLY.md:299-324
+This update integrates accepted conditional mathematics into the
+preserved manuscript. Its finite symbolic choices are not executed giant
+field stages. The separate G6 STOP / INCOMPLETE decision remains unchanged; earlier
+public editions remain separately archived. Historical internal acceptance of source
+mathematics, fresh manuscript review, finite algebra checks, local LaTeX
+build and visual document QA are separate records in the companion report.
+\endgroup

@@ -1,13 +1,3 @@
 __pycache__/
 *.pyc
-.venv/
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/*.toc
-paper/*.blg
-paper/*.fls
-paper/*.fdb_latexmk
-paper/neural-construction.pdf
-reproduced/
-runs/
+paper/output/

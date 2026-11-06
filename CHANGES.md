@@ -1,0 +1,11 @@
+# Version 2 changes
+
+Version 2 brings the accepted quantitative and renormalized local-square results into Neurons Through the Looking Glass.
+
+The original two-dimensional construction remains the foundation: two process-neuron architectures approach the same classical interacting target, with reflection positivity across the two central coordinate lines at every finite stage. The later results give conditional sufficient parameter choices for specified observations, every allowed dyadic accuracy, and a joint approximation of a linear measurement with its prescribed renormalized local square.
+
+The manuscript includes the complete CC1 and CA1 statements and proofs. Their same-target bridge uses a smoothing bound of 36 times the square root of the smoothing parameter, with each of the eight approximation errors counted once. All named classical, source, representation and normalization premises remain in force.
+
+These are mathematical construction and approximation results. Practical sampling, useful total computational cost, an interaction-resolving benchmark, comparative advantage and broader field models remain open. The bounded computational attempt is stopped. Internal review does not establish independent expert validation or historical priority.
+
+This release candidate contains the paper and its reproducible document source. Private operational records, original private proof packets and symbolic software implementations are excluded. Version 1 remains separately archived.

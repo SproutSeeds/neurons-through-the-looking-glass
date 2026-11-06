@@ -1,40 +1,34 @@
 # Review and provenance
 
-The manuscript was developed under Cody Mitchell's direction with substantial
-contributions from Claude Opus 5.5, GPT-6 Astra and GPT-6.1 Sol. Its provenance
-appendix identifies the adopted argument lineages and source-access limits.
-The short labels such as E, G, W, H1 and AC3 in that appendix refer to internal
-research stages; the complete mathematical arguments needed here appear in the
-manuscript itself, subject to the explicitly stated classical inputs C1–C6.
+The underlying current-model construction has internal acceptance under its
+stated classical inputs. The later quantitative results and CC1/CA1 results
+retain their literal conditional scopes. The private 6 November manuscript
+integration passed its fresh source, actual-proof matching, correction and
+delta reviews before this public derivative was prepared.
 
-The underlying construction and the accepted editorial manuscript received
-internal adversarial model review, including hostile referees, blind proof
-attempts, matching of the actual blind proofs to the claimed statements,
-numerical diagnostics, source and scope reviews, objection triage and revision
-checks. Review evidence applies to the exact versions read, or to revisions
-connected by passing change checks. A later revision does not erase an earlier
-adverse report. The public presentation changes preserve all numbered
-mathematical statements, proof bodies, displays and bibliography entries.
+This public candidate uses that accepted 173-page manuscript as its source.
+Its mathematical statements, proof bodies and 27 bibliography entries are
+preserved. The changes concern version/author metadata, public reading maps,
+historical status explanations and accurate attachment availability.
 
-The project normally pairs Opus 5.5/max and Astra/max. When Opus included quota
-is unavailable, its approved fallback pairs fresh GPT-6.1 Sol/max and Astra/max
-contexts, with each model's contribution checked by a different exact model.
-Sol and Astra belong to the same provider family. This workflow does not
-establish statistical independence of their errors. Internal model review is
-not independent expert peer review or formal machine-checked certification.
+The public candidate has a separate exact-version source/delta review gate.
+Preparation alone is not passage of that gate. The private release-preparation
+record binds its verdicts, corrections, source hashes, build and visual checks
+to the exact approved candidate. Publication requires that gate to pass and
+Cody's approval of the exact PDF, source archive and public wording.
 
-The final release reports in `verification/` bind the public source, PDF and
-package to their checks. SHA256SUMS identifies the exact archived files. The
-executable diagnostics have the narrow scope described in `REPRODUCE.md`;
-passing them does not verify the complete construction theorem.
+The current review configuration uses separate fresh GPT-6.1 Sol/max sessions.
+The inherited mathematical authorship includes Claude Opus 5.5, GPT-6 Astra and
+GPT-6.1 Sol, as disclosed in the manuscript. Fresh sessions of one model may
+share errors. This is internal model review, without a claim of statistical
+independence, outside expert review or machine-checked proof.
 
-This public repository is a curated release with fresh history. The full
-private research history, review dispatch records, raw model transcripts,
-correspondence and account information are outside this export. Third-party
-classical source scans and licensed excerpts are also excluded. The manuscript
-retains citations, attributions and the recorded limits of source access.
+Original adverse findings, historical revisions, source-access qualifications
+and the stopped computational attempt remain in the private research record.
+Source and classical assumptions are not discharged by an editorial review,
+a checksum, a build or agreement between reviewers. Public export does not
+change the limits of accepted mathematics.
 
-The new public presentation is derived from the accepted 23 October 2026 PV4
-source with SHA-256
-`a0140b133024be4e445bd5e4d0c965603ae160c9bcd3677eaf528fc412b318a1`.
-The public source and PDF have their own hashes in the release manifest.
+This export includes the manuscript and local document reproduction files.
+It excludes private decision ledgers, session transcripts, account/quota data,
+correspondence, operational receipts and the private computational software.

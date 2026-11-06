@@ -1,0 +1,2429 @@
+% Exact source appendix embedded in the standalone manuscript.
+\clearpage
+\begingroup
+\normalsize
+\renewcommand{\theHequation}{uda.\arabic{equation}}
+% Current manuscript integration of accepted conditional UDAv2; no manuscript self-acceptance.
+% Exact accepted sources and contributing draft provenance are bound in PROOF-MAP.json.
+% MAP: status | S:1-6 P:1-7 C:3-8
+\section{A conditional schedule for every dyadic accuracy}
+\label{uda:current}
+This appendix gives all six clauses of the internally accepted conditional
+UDA-STAGE-RELATIVE-v2 and their complete proof. Its source statement and proof
+are the exact bytes bound by the current decision. The manuscript presentation
+awaits its own fresh source and actual-proof reviews. Every integer below is a
+finite mathematical integer; software resource refusal does not make the
+mathematical definition partial. Section~\ref{udc:contract} supplies the separately
+accepted UDC implementation contract.
+
+% MAP: model | S:10-21 P:11-19 C:18-21
+\subsection{Model, observations and the literal conditional interface}
+Fix $m=1$, $u=10^{-10}$, $\ell=1000$ and $K_{\mathrm{cov}}=1$.
+The model is the original whole-plane, coefficient-one, same-mass,
+own-variance Wick interaction $u{:}\phi^4{:}$, with no factorial.
+The original complete state space is $X=H^{-2}_{\mathrm{loc}}$, and
+$\nu^X$ is the original pressure-identified common Fr\"ohlich--Simon state.
+The literal P1--P6, Gaussian/Wick, DSS/BD/BBD/Griffiths--Simon/SK-q/$P^*$,
+H1/MIX/REG/smoothed-CT/FLOW/TP/T and classical/source premises retain their
+original finite scopes. The quantitative bridge uses strict AP6,
+$0<u/m^2<1/8000$. The original fixed $g_*$ and the inequality
+$10^{-10}<g_*$ remain unknown and unused. NR1's sharper author constants and
+larger statement-only blind core retain their separate original scopes;
+excluded NR2 E4/r0 material is absent. The inherited source interface is
+spelled out in Section~\ref{uda:source}; its source bodies are not newly proved.
+
+% MAP: tests | S:23-46 P:21-39
+Let
+\[
+ b(t)=\begin{cases}e^{-1/(1-t^2)},&|t|<1,\\0,&|t|\ge1,\end{cases}
+ \qquad f_h(z)=b(z_1-h_1)b(z_2-h_2).
+\]
+A request is an ordered tuple $(h_1,\ldots,h_r)$ with $r\in\{1,2,3,4\}$.
+Each coordinate is a canonical dyadic $P/2^k\in[-8,8]$, $0\le k\le16$:
+integers and zero have $k=0$, and $P$ is odd if $k>0$.
+Decimal numerators have no plus sign, leading zeros or negative zero.
+Order and repetitions remain; amplitudes, signs, dilations and rotations
+are unchanged. The primary accuracy is $\tau=2^{-q}$ for every integer
+$q\ge3$; $\tau=1/5$ is a separate compatibility case. Set
+\begin{align*}
+ K&=\bigcup_{i=1}^r[h_{i1}-1,h_{i1}+1]\times[h_{i2}-1,h_{i2}+1],&
+ R&=1+\max_{i,j}|h_{ij}|,\\
+ c_r&=\lceil\sqrt r\rceil,&
+ F_j&=\left(\sum_{i=1}^r\|f_{h_i}\|_j^2\right)^{1/2},
+ \qquad F=F_{4/3},\quad\overline F=3c_r.
+\end{align*}
+For field laws $\rho$, let $\mathcal L_f(\rho)=(\mathcal O_f)_*\rho$, where
+$\mathcal O_f(v)=(v(f_{h_i}))_{i=1}^r$ takes values in the full Euclidean
+$\R^r$. The bounded-Lipschitz distance is
+\[
+ d_{\mathrm{BL}}(\rho,\sigma)
+ =\sup_{\|G\|_\infty\le1,\ \operatorname{Lip}_{\R^r}(G)\le1}
+ |\rho(G)-\sigma(G)|.
+\]
+The two constraints are separate. Write $\mathcal U_4(r)$ for real $C^4$
+functions on $\R^r$ satisfying
+\[\max_{0\le j\le4}\sup\|D^jG\|_{\mathrm{op}}\le1.\]
+order zero means absolute value, and higher orders use full multilinear
+Euclidean operator norms.
+
+% MAP: coefficient | S:48-68 P:40-47
+The literal CL1 coefficient uses the same chosen $C_H<2^{16}$ and
+$C_{H2}=2^{384}$ in every expression. With $\kappa=1/256$,
+$\epsilon_*=1/4$ and $c_{\mathrm{CT}}=81/5$, define
+\begin{align*}
+ \beta_{\mathrm{CT}}&=1+c_{\mathrm{CT}}\kappa,
+ &\Gamma_G&=4\sqrt{2\pi}\,\kappa,\\
+ C_*&=6c_{\mathrm{CT}}\kappa+c_{\mathrm{CT}}^2\kappa^2
+       +\beta_{\mathrm{CT}}^2(\Gamma_G+3300u),\\
+ g_{\mathrm{CL1}}(v)&=1+\frac{2}{10^6}\log\frac1{1-e^{-4000}}
+                  +\frac\pi{16}\log(1+1/v),\quad0<v\le1,\\
+ M(v)&=32\ell^{-2}\left[\frac{C_H^2g_{\mathrm{CL1}}(v)^3}{12}
+                     +\frac{u^2 C_{H2}^2g_{\mathrm{CL1}}(v)^7}{9}\right],\\
+ J_{\mathrm{CL1}}&=e^{8\sqrt2\kappa}\beta_{\mathrm{CT}}^2
+ \left[e^{C_*}\int_0^1\sqrt{M(v)}\,dv
+            +\frac{e^{2C_*}\sqrt{M(1)}}2\right],\\
+ C_f(\mathbf h;R)&=(2R+1/2)\sqrt r\,e^{-2}J_{\mathrm{CL1}},&
+ C_f(\mathrm{base};1)&=\tfrac52 e^{-2}J_{\mathrm{CL1}}.
+\end{align*}
+Assume the accepted literal base enclosure $C_f(\mathrm{base};1)\le2^{360}$
+with its exact finite-source premises, and put
+$\overline C=2^{360}c_r(4R+1)/5$. The separate factor $e^{R/256}$ remains.
+No independently optimized coefficient replaces the source integral.
+
+% MAP: covariance | S:70-92
+For every fixed $0<a<1$ and finite $D=\Omega=[-R_{\mathrm{aux}},R_{\mathrm{aux}}]^2$
+containing the physical interaction-square closure and every test support,
+assume the original finite-law interface below. Its finite-positive-stage
+provenance is EB1/NR1/P6. Bounded SVA or fixed-$n75$ VEC acceptance is not
+an all-stage premise, and no all-$q$ conclusion is assumed. The physical
+covariance and variance are
+\begin{align*}
+ C_a(z)&=(2\pi)^{-2}\int_{\R^2}
+ \frac{e^{i(\omega,\xi)\cdot z}}{1+\omega^2+\xi^2+a^2\omega^2\xi^2}
+ \,d\omega\,d\xi,\\
+ c=c_a&=\frac1{2\pi}\int_0^\infty
+ \frac{d\xi}{\sqrt{(1+\xi^2)(1+a^2\xi^2)}},
+ &\kappa_a^2&=a^{-2}-1,\\
+ c&\le\overline c(a)=\frac{\operatorname{asinh}(1/a)+1}{2\pi}.
+\end{align*}
+On the separable real Banach space $E=L^4(D)$, $\gamma$ is the original
+centered continuous Gaussian endpoint, strongly measurable, with zero
+Bochner mean, global sign symmetry and covariance
+$C_{\mathrm{end}}(z,z')=e^{-|z-z'|_1/a}/4$. Its point variance is $1/4$.
+The Fourier integration variable $\xi$ above is local and does not denote
+an observation or the standard Gaussian vector used for smoothing.
+
+% MAP: neurons | S:94-116
+For $b\in\{\mathrm{product},\mathrm{Mondrian}\}$, $g^b$ is the restriction
+of the original whole-plane process neuron. The product neuron is
+$g(z)=\sigma(z_1)\tau(z_2)/2$ for independent stationary symmetric
+telegraph processes of flip rate $1/(2a)$. The Mondrian neuron uses the
+projectively consistent whole-plane axis-parallel partition at budget
+$1/a$, independently uniformly signed cells, and point values half the
+cell sign. A rectangle of sides $w,h$ splits at rate $w+h$, vertically
+with probability $w/(w+h)$ and otherwise horizontally, at a uniform
+coordinate; daughters evolve independently for the remaining budget.
+Use the original lower-left half-open representative. Retain the original
+existence, projective-consistency and measurability premises. Each $g^b$
+is strongly measurable and $E$-valued, half-valued almost everywhere almost
+surely, has zero Bochner mean, global sign symmetry and covariance
+$C_{\mathrm{end}}$. Boundary representatives agree in $E$. For \emph{every}
+bounded bilinear form $B_0:E\times E\to\R$, assume
+\[
+ \E B_0(g^b,g^b)=\E B_0(\gamma,\gamma).
+\]
+Independent copies may be combined on product probability spaces. These
+are the original full laws and their restrictions; point-pair covariance
+does not define this full interface.
+
+% MAP: potential | S:118-142
+For $\Lambda=(-1000n,1000n)^2$ with $\overline\Lambda\subset\Omega$, the
+actual potential, weight and normalized laws are
+\begin{align*}
+ V(v)&=u\int_\Lambda(v^4-6cv^2+3c^2)
+       +\epsilon\int_{\Omega\setminus\Lambda}v^4
+       -\frac{\kappa_a^2}{2}\int_\Omega v^2,&w(v)&=e^{-V(v)},\\
+ F_N^b&=N^{-1/2}\sum_{i=1}^N g_i^b,&
+ P_N^b&=\frac{w\,\Law(F_N^b)}{\E w(F_N^b)},\qquad
+ Q_\epsilon=\frac{w\,\Law(\gamma)}{\E w(\gamma)}.
+\end{align*}
+Their observation laws are exactly the original whole-plane neural and
+full-Gaussian-tilt laws. The physical $c$ remains in $V$; a positive
+majorant $c_*$ never changes it. Width counts whole-plane process neurons,
+each with countably many internal variables. The ambient L0 premise says
+that for unit BL $G$ on $\R^r$ and standard Gaussian $\xi\in\R^r$,
+\begin{align*}
+ G_\zeta(y)&=\E G(y-\zeta\xi),&
+ \|G-G_\zeta\|_\infty&\le\sqrt r\,\zeta,\\
+ \|G_\zeta\|_\infty&\le1,&\|DG_\zeta\|_{\mathrm{op}}&\le1,\\
+ \|D^jG_\zeta\|_{\mathrm{op}}&\le\sqrt{(j-1)!}\,\zeta^{1-j},&&j\ge2.
+\end{align*}
+For $0<\zeta\le1$, every norm through order four is at most
+$\sqrt6\zeta^{-3}$, even for singular observation covariance.
+
+% MAP: endpoints | S:144-175 C:22-24
+The full Gaussian tilt $Q_\epsilon$ has the original residual/mass-tilt
+representation. Its zero-stabilizer residual endpoint is $Q_0$, the
+positive-regulator physical law is $Q_a$, and its own-variance
+zero-regulator fourth-chaos limit is $Q_{\mathrm{phys}}$. On the actual
+common Gaussian space, $Q_a$ has density $e^{-U_{a,\Lambda}}/Z_a$,
+$\E U_{a,\Lambda}=0$ and $Z_a\ge1$. The compact-test laws of
+$Q_{\mathrm{phys}}$ are the original classical free finite-volume laws.
+AP5/AP6 identify the same original target $\nu^X$. These are inherited
+conditional identifications, with the literal conventions of
+Section~\ref{uda:source}. For $A=|\Lambda|>0$, $U_A=uA$,
+$O=|\Omega|$ and $B_{\mathrm{ext}}=O-A$, put
+\begin{align*}
+ K_\Lambda^2&=\frac{75\sqrt{85}}{2\pi^3}u^2 A,&
+ \kappa_0&=e(1+\sqrt2),\\
+ K_{\mathrm{sharp}}&=\max\{12U_A,(2/e)K_\Lambda\sqrt{\kappa_0}\},&
+ b_{\mathrm{Nelson}}&=\frac{\pi^2}{48U_A},\\
+ T_\Lambda(H)&=\exp[-\exp(\sqrt{b_{\mathrm{Nelson}}H}-1)],\\
+ \Xi_2&=e^{2K_{\mathrm{sharp}}}
+       +\int_{K_{\mathrm{sharp}}}^\infty2e^{2H}T_\Lambda(H)\,dH,\\
+ H_2&=\max\left\{K_{\mathrm{sharp}},
+ \frac4{b_{\mathrm{Nelson}}}
+ \left[\log_+\frac{64}{e b_{\mathrm{Nelson}}}\right]^2\right\},&
+ \overline\Xi_2&=2e^{2H_2},\quad\Xi_2\le\overline\Xi_2,\\
+ \rho_a(s)&=\frac{\kappa_a^2}{4\pi}\min\{1,2e^{-\sqrt2s}\},&
+ q_{\mathrm{sp}}&=e^{-1000/256},\\
+ T_n&=q_{\mathrm{sp}}^n\left[\frac{2n+1}{1-q_{\mathrm{sp}}}
+               +\frac{2q_{\mathrm{sp}}}{(1-q_{\mathrm{sp}})^2}\right].
+\end{align*}
+Here $e$ is Euler's number and $\log_+x=\max(0,\log x)$.
+EC1.a--c apply at every fixed finite positive physical area; $\Xi_2$ is
+not volume-uniform. With $\Delta=C_a-C'_{\Omega,a}$ positive semidefinite,
+$\delta_\Omega(H)=\sup_{z\in H}\Delta(z,z)$ is at most $\rho_a(s)$
+whenever the strict Euclidean $s$-neighborhood of $H$ lies in $\Omega$.
+
+% MAP: errors | S:177-193
+The actual successive errors $Q_\epsilon\to Q_0\to Q_a\to
+Q_{\mathrm{phys}}\to\nu^X$, in the stated observation metric (variation
+for the first arrow), are bounded by
+\begin{align*}
+ S&=\min\{2,6\epsilon B_{\mathrm{ext}}c^2e^{9U_Ac^2}\},\\
+ A_{\mathrm{aux}}&=\min\left\{2,e^{9U_Ac^2}
+ \left[2U_A(4\sqrt{15}+12)c^{3/2}\sqrt{\delta_\Omega(\overline\Lambda)}
+                 +F_1\sqrt{\delta_\Omega(K)}\right]\right\},\\
+ R_{\mathrm{phys}}&=\min\{2,\sqrt{\Xi_2}[4K_\Lambda\sqrt a+(a/2)F_2]\},\\
+ E_n&=4C_f(\mathbf h;R)u\ell^2e^{R/256}T_n,
+ \qquad n\ge1,\quad1000n\ge R.
+\end{align*}
+The strict source geometry remains mandatory. On the physical common
+space, $\E|w_a-w_0|\le2K_\Lambda\sqrt{\Xi_2}\sqrt a$,
+$\|w_0\|_2\le\sqrt{\Xi_2}$ and
+$\E|(\Phi_a-\Phi_0)(f)|^2\le(a^2/4)\|f\|_2^2$.
+Full neural/Gaussian normalizers, physical $Z_a\ge1$ and the residual
+Jensen normalizer are distinct. Strict AP6 supplies this original-target
+route without using or establishing $10^{-10}<g_*$.
+
+% MAP: relative-constants | S:195-225
+\subsection{Relative constants and the complete old coefficient}
+At finite positive stages with $0<\epsilon<u$ and $c_*\ge c$ used only
+in positive majorants, define
+\begin{align*}
+ \alpha&=\epsilon,& U&=u,\\
+ B&=\kappa_a^2/2+6uc_*,&L&=B^2O/(2\alpha),\\
+ J_z&=3UO/16+3uc_*^2 A,&H&=L+J_z.
+\end{align*}
+\begin{align*}
+ v_1(x)&=4Ux^3+2B\sqrt O\,x,&v_2(x)&=12Ux^2+2B\sqrt O,\\
+ v_3(x)&=24Ux,&v_4(x)&=24U.
+\end{align*}
+\begin{align*}
+ e_0&=1,&e_1&=v_1,&e_2&=v_1^2+v_2,\\
+ e_3&=v_1^3+3v_1v_2+v_3,\\
+ e_4&=v_1^4+6v_1^2v_2+3v_2^2+4v_1v_3+v_4.
+\end{align*}
+\begin{align*}
+ P_F(x)&=2e_4(x)+\sum_{j=1}^4\binom4j F^j e_{4-j}(x),\\
+ X_{\mathrm{rel}}&=[2(H+4)/\alpha]^{1/4},&
+ Y_{\mathrm{rel}}&=2O^{1/4}(H+10)^{1/2},\\
+ K_1&=v_1(X_{\mathrm{rel}})Y_{\mathrm{rel}},&
+ N_0&=\max\{1,\lceil16K_1^2\rceil\},\\
+ K_4(F)&=P_F(X_{\mathrm{rel}})Y_{\mathrm{rel}}^4/6.
+\end{align*}
+Derivative norms use $E=L^4(D)$. The scalar moment bounds
+$X_{\mathrm{rel}},Y_{\mathrm{rel}}$ are distinct from the field space $X$.
+For $P(x)=\sum_k a_kx^k$ with nonnegative coefficients, put
+\begin{align*}
+ \beta_0&=1,&\beta_k&=\left(\frac{k}{2\alpha e}\right)^{k/4}\ (k>0),\\
+ \mathcal T(P)&=e^L\sum_k a_k\beta_k,\\
+ M_Z&=\mathcal T(e_4),&
+ M_A&=\mathcal T\left(\sum_{j=0}^4\binom4jF^je_{4-j}\right),\\
+ z&=e^{-J_z},&C_{\mathrm{old}}&=\frac{O(M_A+M_Z)}{96z},\\
+ D_{\mathrm{old}}^4&=\frac{2048\sqrt6}{27}r^{3/2}C_{\mathrm{old}}.
+\end{align*}
+One may replace $F$ by $\overline F$ and $c$ by $p$ only in positive
+majorants. The complete old coefficient retains coercivity and both Jensen terms.
+
+% MAP: selection | S:227-255
+\subsection{Universal rational stage prescription}
+For positive rational $v$, let $\operatorname{clog}_2(v)$ be the least
+integer $h\ge0$ with $v\le2^h$ (the source's \texttt{ceil\_log2}).
+For $\tau=2^{-q}$ set $d=q+3$; for $\tau=1/5$ set $d=5$.
+Let $\eta=2^{-d}$ and, in the displayed order, define
+\begin{align*}
+ \overline{\exp R}&=\frac{256}{256-R},\\
+ \overline E(i)&=\frac4{10000}\overline C\,\overline{\exp R}\,2^{-5i}
+              \left[(2i+1)\frac{32}{31}+\frac{64}{961}\right],\\
+ n&=\min\{i\ge1:\overline E(i)\le\eta\},\\
+ A&=4000000n^2,\quad U_A=uA,\quad b_0=3/(16U_A),\\
+ h_K&=\min\{h\ge0:14u^2 A\le2^{2h}\},\\
+ \overline K&=2^{h_K},\\
+ L_{10}(k)&=\sum_{j=0}^{10}\frac{k^j}{j!},\\
+ k&=\min\{i\ge1:L_{10}(i)>32/b_0\},\\
+ H_N&=1+\left\lceil\max\{12U_A,4\overline K,4k^2/b_0\}\right\rceil,\\
+ p&=4H_N+2h_K+2d+8,\\
+ a&=2^{-p},\\
+ j&=\lceil18U_Ap^2\rceil,\\
+ B_{\mathrm{aux}}&=64U_Ap^2+4c_r,\\
+ h_{\mathrm{aux}}&=\operatorname{clog}_2(B_{\mathrm{aux}}),\\
+ h_s&=1+\operatorname{clog}_2(j+h_{\mathrm{aux}}+p+d),\\
+ s&=2^{h_s},\\
+ R_{\mathrm{aux}}&=1000n+s+1,\\
+ O&=4R_{\mathrm{aux}}^2,\\
+ o&=\operatorname{clog}_2(O),\\
+ h_{\mathrm{stab}}&=\operatorname{clog}_2(6Op^2),\\
+ t&=\max\{34,j+h_{\mathrm{stab}}+d\},\quad\epsilon=2^{-t},\\
+ \Lambda&=(-1000n,1000n)^2,\\
+ \Omega=D&=[-R_{\mathrm{aux}},R_{\mathrm{aux}}]^2.
+\end{align*}
+Use $c_*=p$ in relative majorants and put
+\begin{align*}
+ o_+&=\max\{o,78\},\\
+ T_{1/2}&=\lceil t/2\rceil,\\
+ x&=T_{1/2}+p+\left\lceil\frac{o_++3}{4}\right\rceil,\\
+ y&=T_{1/2}+2p+\left\lceil\frac{3o_++8}{4}\right\rceil,\\
+ k_1&=3x+y+3,\\
+ n_0&=2k_1+4,\quad k_4=12x+4y+36,\\
+ \zeta&=2^{-d-3},\\
+ e_{\mathrm{new}}&=k_4+4d+12,
+ \qquad N_{\mathrm{new}}=2^{e_{\mathrm{new}}}.
+\end{align*}
+The notation $o_+,T_{1/2}$ translates the source's \texttt{oplus,T\_half}.
+
+% MAP: old-selection | S:257-267
+At these same outer stages, define
+\begin{align*}
+ h_{\mathrm{root}}&=\operatorname{clog}_2(2R_{\mathrm{aux}}),&
+ v_{\mathrm{old}}&=2p+h_{\mathrm{root}}+2,\\
+ q_{\mathrm{old}}&=4v_{\mathrm{old}}+3t+28,&
+ l_{\mathrm{old}}&=t+4p+o,\\
+ H_{\mathrm{small}}&=q_{\mathrm{old}}+o+11+4d.
+\end{align*}
+Start at $w=l_{\mathrm{old}}+2$ and increment until both
+$w>l_{\mathrm{old}}+2$ and
+$\operatorname{bitlen}(H_{\mathrm{small}})\le l_{\mathrm{old}}+2$ hold.
+Call the result $w_{\mathrm{old}}$ and put
+$N_{\mathrm{old}}=2^{2^{w_{\mathrm{old}}}}$.
+For positive integer $M$, $\operatorname{bitlen}(M)$ is the least positive
+$h$ with $M<2^h$. These are sufficient-width rules, rather than necessary
+costs or canonical inner least-index definitions.
+
+% MAP: legacy-selection | S:269-322
+\subsection{The explicitly defined legacy comparator}
+For $\tau\in\{1/5\}\cup\{2^{-q}:3\le q\le12\}$, use the same ordered
+tuple, $r,R,c_r,\overline C,\overline E$ and $L_{10}$. The suffix $L$
+denotes a separately defined legacy rule. Its termination, sufficiency
+and equality with the universal rule will be proved, rather than assumed.
+Define in order
+\begin{align*}
+ d_L&=\min\{i\ge0:5\cdot2^{-i}\le\tau\},\\
+ \eta_L&=2^{-d_L},\\
+ n_L&=\min\{1\le i\le80:\overline E(i)\le\eta_L\},\\
+ A_L&=4000000n_L^2,\\
+ U_{AL}&=uA_L,\quad b_{0L}=3/(16U_{AL}),\\
+ k_L&=\min\{1\le i\le7:L_{10}(i)>32/b_{0L}\},\\
+ H_L&=1+\lceil\max\{12U_{AL},4,4k_L^2/b_{0L}\}\rceil,\\
+ p_L&=\min\left\{\begin{array}{l}i\ge4\text{ even}:\\
+ 2H_L+3-i/2\le-d_L-1,\\
+ 2H_L+2-i\le-d_L-1\end{array}\right\},
+ \\
+ a_L&=2^{-p_L},\\
+ j_L&=\lceil18U_{AL}p_L^2\rceil,\\
+ B_{\mathrm{aux},L}&=64U_{AL}p_L^2+4c_r,\\
+ h_{\mathrm{aux},L}&=\operatorname{clog}_2(B_{\mathrm{aux},L}),\\
+ h_{sL}&=\min\{i\ge1:j_L+h_{\mathrm{aux},L}+p_L-2^{i-1}\le-d_L\},\\
+ s_L&=2^{h_{sL}},\\
+ R_{\mathrm{aux},L}&=1000n_L+s_L+1,\\
+ O_L&=4R_{\mathrm{aux},L}^2,\\
+ o_L&=\operatorname{clog}_2(O_L),\\
+ h_{\mathrm{stab},L}&=\operatorname{clog}_2(6O_Lp_L^2),\\
+ t_L&=\max\{34,j_L+h_{\mathrm{stab},L}+d_L\},\\
+ \epsilon_L&=2^{-t_L},\\
+ \Lambda_L&=(-1000n_L,1000n_L)^2,\\
+ D_L=\Omega_L&=[-R_{\mathrm{aux},L},R_{\mathrm{aux},L}]^2.
+\end{align*}
+For the legacy old-width rule, put
+\begin{align*}
+ h_{\mathrm{root},L}&=\operatorname{clog}_2(2R_{\mathrm{aux},L}),\\
+ v_{\mathrm{old},L}&=2p_L+h_{\mathrm{root},L}+2,\\
+ q_{\mathrm{old},L}&=4v_{\mathrm{old},L}+3t_L+28,\\
+ l_{\mathrm{old},L}&=t_L+4p_L+o_L,\\
+ H_{\mathrm{small},L}&=q_{\mathrm{old},L}+o_L+11+4d_L.
+\end{align*}
+Start at $w=l_{\mathrm{old},L}+2$ and increment by one until both
+$w>l_{\mathrm{old},L}+2$ and
+$\operatorname{bitlen}(H_{\mathrm{small},L})\le l_{\mathrm{old},L}+2$ hold.
+The selected value is $w_{\mathrm{old},L}$, with
+$N_{\mathrm{old},L}=2^{2^{w_{\mathrm{old},L}}}$. The legacy SVC relative
+exponents are
+\begin{align*}
+ T_L&=\lceil t_L/2\rceil,\\
+ x_L&=T_L+p_L+21,\\
+ y_L&=T_L+2p_L+61,\\
+ k_{1L}&=4T_L+5p_L+127,\\
+ n_{0L}&=8T_L+10p_L+258,\\
+ k_{4L}&=16T_L+20p_L+532,\\
+ \zeta_L&=2^{-d_L-3},\\
+ e_L&=k_{4L}+4d_L+12,\\
+ N_L&=2^{e_L}.
+\end{align*}
+These mathematical rational/integer definitions remain meaningful if a
+software run refuses for a resource limit. They identify no request or
+certificate with another and assert no software execution.
+
+% MAP: clause-a | S:324-349
+\subsection{Six exact candidate clauses}
+\begin{theorem}[UDA.a: finite selection and four downstream errors]
+\label{uda:clause-a}
+Every allowed request has finite selected stages, with termination witnesses
+\[
+ n\le\left\lceil\frac{d+356}{4}\right\rceil,\quad
+ k\le\lceil32/b_0\rceil,\quad
+ h_K\le\lceil14u^2A\rceil,\quad
+ \operatorname{clog}_2(v)\le\lceil v\rceil.
+\]
+The last bound holds for every positive argument used. All subsequent
+formulas are finite compositions. The integer $p$ is the first even
+integer at least four satisfying both
+\[
+ 2H_N+h_K+3-p/2\le-d-1,\qquad2H_N+2-p\le-d-1,
+\]
+and $h_s$ is the first integer at least one satisfying
+$j+h_{\mathrm{aux}}+p-2^{h_s-1}\le-d$. Moreover
+\begin{gather*}
+ 1\le R\le9,\quad K\subset\Lambda_1\text{ (open)},\quad
+ F_1\le4c_r\le8,\quad F_2\le2c_r\le4,\quad F\le\overline F\le6,\\
+ C_f(\mathbf h;R)\le\overline C<2^{364},\qquad
+ R_{\mathrm{aux}}-\max(1000n,R)-s=1,\\
+ 0<a<1,\quad0<\epsilon<u,\quad c\le\overline c(a)<p,\\
+ K_\Lambda<\overline K,\quad H_2<H_N,\quad
+ \sqrt{\overline\Xi_2}<2^{2H_N+1},\\
+ E_n\le\overline E(n)\le\eta,\qquad
+ R_{\mathrm{phys}}\le\eta,\quad A_{\mathrm{aux}}\le\eta,\quad S\le\eta.
+\end{gather*}
+\end{theorem}
+
+% MAP: clause-b | S:351-396
+\begin{theorem}[UDA.b: arbitrary finite-stage joint laws and derivatives]
+\label{uda:clause-b}
+At any fixed finite stage satisfying the premises above, for either
+architecture, $N\ge1$, $0\le j\le N-1$, and an independent direction
+$h$ with neuron or Gaussian law, let
+\begin{align*}
+ S_j&=N^{-1/2}\left[\sum_{i=1}^j\gamma_i+
+                         \sum_{i=j+1}^{N-1}g_i^b\right],\\
+ v&=S_j+\theta h/\sqrt N,&Z_{j,h}(\theta)&=\E w(v),\\
+ \Pi_{j,h,\theta}&=w(v)\Law(S_j,h)/Z_{j,h}(\theta),&&0\le\theta\le1.
+\end{align*}
+The untilted $v$ has almost-everywhere point variance at most $1/4$ and
+fourth moment at most $3/16$. Every $Z$ is positive finite. Writing
+$x(v)=\|v\|_4$, for $z\ge0$ and every real $1\le q_0\le16$,
+\begin{gather*}
+ w(v)\le e^{L-\alpha x(v)^4/2},\quad Z\ge e^{-J_z},\quad
+ 0<\frac{d\Pi}{d\Law(S_j,h)}\le e^{H-\alpha x(v)^4/2}\le e^H,\\
+ \Pi(x(v)^4>z)\le\min\{1,e^{H-\alpha z/2}\},\\
+ \|x(v)\|_{L^{q_0}(\Pi)}\le X_{\mathrm{rel}},\quad
+ \|\|h\|_4\|_{L^{q_0}(\Pi)}\le Y_{\mathrm{rel}},\quad
+ \E e^{\|\gamma\|_4^2/(4\sqrt O)}<4.
+\end{gather*}
+Each $Z$ and $\log Z$ extends $C^1$ to a neighborhood of $[0,1]$, with
+\[
+ (\log Z)'=-N^{-1/2}\E_\Pi DV(v)[h],\qquad
+ |(\log Z)'|\le K_1/\sqrt N.
+\]
+The zero-amplitude partitions agree. For $N\ge N_0$,
+\[
+ \frac{Z_{j,g}(\theta)}{Z_{j,g}(1)}\le e^{K_1/\sqrt N},\qquad
+ \frac{Z_{j,\gamma}(\theta)}{Z_{j,g}(1)}\le e^{2K_1/\sqrt N}<2.
+\]
+The potential is $C^4(E)$, with
+$\|D^kV(v)\|_{\mathrm{op}}\le v_k(x(v))$ for $1\le k\le4$ and
+$\|D^kw(v)\|_{\mathrm{op}}\le w(v)e_k(x(v))$ for $0\le k\le4$.
+All derivatives of $w$ through four are globally bounded. For
+$G\in\mathcal U_4(r)$, define
+\begin{align*}
+ m_j&=\frac{\E[G(\mathcal O_f(S_j+\gamma/\sqrt N))
+                       w(S_j+\gamma/\sqrt N)]}{Z_{j,\gamma}(1)},\\
+ \Phi_j(v)&=[G(\mathcal O_f(v))-m_j]w(v).
+\end{align*}
+Then $|m_j|\le1$, $\Phi_j\in C_b^4(E)$, $\deg P_F\le12$, and under
+each actual joint $\Pi$,
+\[
+ \|D^4\Phi_j(v)\|_{\mathrm{op}}\le w(v)P_F(x(v)),\qquad
+ \E_\Pi[P_F(x(v))\|h\|_4^4]\le P_F(X_{\mathrm{rel}})Y_{\mathrm{rel}}^4.
+\]
+This is a joint-law estimate, without a product of tilted marginal expectations.
+\end{theorem}
+
+% MAP: clause-c | S:398-414
+\begin{theorem}[UDA.c: normalized laws, ambient BL and selected width]
+\label{uda:clause-c}
+At the arbitrary finite stages of UDA.b and for every $N\ge N_0$, each
+actual adjacent normalized replacement has $\mathcal U_4$ error at most
+$K_4(F)/N^2$, and
+\begin{align*}
+ |P_N^b(G\circ\mathcal O_f)-Q_\epsilon(G\circ\mathcal O_f)|
+ &\le\min\{2,K_4(F)/N\},\quad G\in\mathcal U_4(r),\\
+ d_{\mathrm{BL}}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\epsilon))
+ &\le\min\{2,\sqrt6K_4(F)/(N\zeta^3)+2\sqrt r\zeta\},\quad0<\zeta\le1,\\
+ d_{\mathrm{BL}}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\epsilon))
+ &\le\min\{2,D_rN^{-1/4}\},\qquad
+ D_r^4=\frac{2048\sqrt6}{27}r^{3/2}K_4(F).
+\end{align*}
+At every selected stage, including both parities of $t$,
+\begin{gather*}
+ X_{\mathrm{rel}}<2^x,\quad Y_{\mathrm{rel}}<2^y,\quad
+ K_1<2^{k_1-2},\quad16K_1^2<2^{2k_1},\\
+ N_0\le2^{2k_1}<2^{n_0}<N_{\mathrm{new}},\quad
+ K_4(F)\le K_4(\overline F)<2^{k_4},\\
+ d_{\mathrm{BL}}(\mathcal L_f(P_{N_{\mathrm{new}}}^b),
+                  \mathcal L_f(Q_\epsilon))<7\eta/8<\eta.
+\end{gather*}
+\end{theorem}
+
+% MAP: clause-d | S:416-424
+\begin{theorem}[UDA.d: actual target at every dyadic accuracy]
+\label{uda:clause-d}
+For both original architectures, every integer $q\ge3$ and every allowed
+ordered request,
+\[
+ d_{\mathrm{BL}}(\mathcal L_f(P_{N_{\mathrm{new}}}^b),\mathcal L_f(\nu^X))
+ \le\overline E(n)+4\eta\le5\eta\le2^{-q}.
+\]
+The separate $1/5$ case has the same conclusion with right side $\tau$.
+The five actual arrows are
+\[
+ P_{N_{\mathrm{new}}}^b\longrightarrow Q_\epsilon\longrightarrow Q_0
+ \longrightarrow Q_a\longrightarrow Q_{\mathrm{phys}}\longrightarrow\nu^X.
+\]
+\end{theorem}
+
+% MAP: clause-e | S:426-442
+\begin{theorem}[UDA.e: complete old coefficient and same-stage order]
+\label{uda:clause-e}
+At all selected stages, the complete $C_{\mathrm{old}}$ gives, for every
+$N\ge1$ and $G\in\mathcal U_4(r)$,
+\begin{gather*}
+ |P_N^b(G\circ\mathcal O_f)-Q_\epsilon(G\circ\mathcal O_f)|
+ \le\min\{2,C_{\mathrm{old}}/N\},\\
+ d_{\mathrm{BL}}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\epsilon))
+ \le\min\{2,D_{\mathrm{old}}N^{-1/4}\}.
+\end{gather*}
+With $c_*=p$ and $\overline F$ in positive majorants,
+\begin{gather*}
+ C_{\mathrm{old}}<2^{\,2^{l_{\mathrm{old}}+2}+q_{\mathrm{old}}+o},\qquad
+ H_{\mathrm{small}}\le7l_{\mathrm{old}}+47<2^{l_{\mathrm{old}}+2},\\
+ w_{\mathrm{old}}=l_{\mathrm{old}}+3,\qquad
+ d_{\mathrm{BL}}(\mathcal L_f(P_{N_{\mathrm{old}}}^b),
+                  \mathcal L_f(Q_\epsilon))\le\eta,\\
+ e_{\mathrm{new}}\le12l_{\mathrm{old}}+553<2^{l_{\mathrm{old}}+3}
+ =2^{w_{\mathrm{old}}},\qquad N_{\mathrm{new}}<N_{\mathrm{old}}.
+\end{gather*}
+The sufficient mathematical integers are compared at identical stages,
+allocations, model, source premises, architectures, tests and target.
+\end{theorem}
+
+% MAP: clause-f | S:444-461
+\begin{theorem}[UDA.f: exact old-domain compatibility]
+\label{uda:clause-f}
+For $\tau\in\{1/5\}\cup\{2^{-q}:3\le q\le12\}$ the explicit legacy
+rules terminate. Every common outer variable
+\[
+\begin{gathered}
+ d,\eta,n,A,U_A,b_0,k,H_N,p,a,j,B_{\mathrm{aux}},h_{\mathrm{aux}},h_s,s,
+ R_{\mathrm{aux}},O,o,h_{\mathrm{stab}},t,\epsilon,\\
+ \Lambda,D,\Omega,h_{\mathrm{root}},v_{\mathrm{old}},q_{\mathrm{old}},
+ l_{\mathrm{old}},H_{\mathrm{small}},w_{\mathrm{old}}
+\end{gathered}
+\]
+equals its displayed legacy counterpart, with $H_N$ corresponding to $H_L$
+and $U_A$ to $U_{AL}$. Also
+\[
+ (T_{1/2},x,y,k_1,n_0,k_4,\zeta,e_{\mathrm{new}},N_{\mathrm{new}})
+ =(T_L,x_L,y_L,k_{1L},n_{0L},k_{4L},\zeta_L,e_L,N_L),
+\]
+and $N_{\mathrm{old}}=N_{\mathrm{old},L}$. In particular
+\begin{gather*}
+ h_K=0,\quad o_+=78,\quad n\le80,\quad k\le7,\quad H_N\le3137,\\
+ p\le12586,\quad h_s\le36,\quad O<2^{76},\quad o\le76,\quad t<2^{36},\\
+ x=T_{1/2}+p+21,\qquad y=T_{1/2}+2p+61,\\
+ k_1=4T_{1/2}+5p+127,\qquad n_0=8T_{1/2}+10p+258,\\
+ k_4=16T_{1/2}+20p+532,\qquad
+ e_{\mathrm{new}}=16\lceil t/2\rceil+20p+4d+544.
+\end{gather*}
+This mathematical compatibility identifies no old/new request or certificate
+and supplies no software extension.
+\end{theorem}
+
+% MAP: theorem-scope | S:463-470 P:767-776 C:34-35
+All clauses retain ordered repeats, overlap, touching, separation and singular
+laws in the full ambient $\R^r$. They assert no independence of interacting
+observations. Widths are sufficient, possibly astronomical, whole-plane
+process-neuron counts, each retaining countably many internal variables.
+Practical, minimal or necessary complexity, finite global scalar weights,
+measured speedup, canonical least inner indices, an observable-independent
+effective common sequence, global neural Schwartz control, whole-field rates,
+larger models/dimensions/test families, novelty priority and public release
+remain outside these clauses.
+
+% Full proof translation. Source ranges are the registered PROOF.md, unchanged.
+% MAP: proof-intro | P:1-19 S:1-21 C:18-21
+\subsection{Complete conditional proof}
+\label{uda:proof}
+The following is the author derivation of the exact frozen conditional
+statement. Its premise is the explicit finite interface above and the literal
+inherited qualifications below. The original source truths and NR1
+author-versus-blind-core scopes are retained. In particular, the full laws
+are supplied at every finite positive stage by EB1/NR1/P6; bounded SVA and
+fixed-$n75$ VEC acceptances are not extrapolated. Strict AP6 applies because
+$0<10^{-10}<1/8000$ and identifies the original FS $\nu^X$ without the old
+$g_*$ inequality. Finite diagnostics are evidence, rather than premises.
+
+% MAP: proof-1-smooth | P:21-28 S:23-36
+\subsubsection{Observation geometry and the literal coefficient}
+For $|t|<1$, each derivative of $b(t)$ is $e^{-1/(1-t^2)}$ times a rational
+function whose endpoint poles have finite order. For every integer $k\ge0$,
+$x^ke^{-x}\to0$ as $x\to\infty$, for example by the positive exponential
+series. All derivatives therefore extend by zero at both endpoints.
+Thus $b$ and its translates are real, nonzero and compact smooth. Since
+$\max b=e^{-1}$, $f_h\le e^{-2}<1$, and its support is the stated closed
+square of area four. Hence $1\le R\le9$, all supports lie in $[-9,9]^2$,
+and $K\subset\Lambda_1=(-1000,1000)^2$, with the latter square open.
+
+% MAP: proof-1-norms | P:30-39 S:34-46
+Translation invariance and the support/height bounds give
+$\|f_h\|_1\le4$, $\|f_h\|_2\le2$ and
+$\|f_h\|_{4/3}\le4^{3/4}<3$, because $64<81$.
+Taking the square sum over the actual ordered $r$ coordinates gives
+$F_1\le4\sqrt r\le4c_r$, $F_2\le2c_r$ and
+$F\le3c_r=\overline F\le6$. H\"older's inequality coordinate by coordinate gives
+\begin{equation}
+ |\mathcal O_f(v)|_2^2\le\|v\|_4^2\sum_i\|f_{h_i}\|_{4/3}^2
+ =F^2\|v\|_4^2.\tag{1.1}
+\end{equation}
+Repeated tests remain in this sum. No support separation, covariance rank
+or inverse matrix enters the argument.
+
+% MAP: proof-1-ratio | P:40-47 S:48-68
+The same $J_{\mathrm{CL1}}$ and chosen H1/H2 coefficients occur in both
+literal source coefficients, so their ratio is exactly
+\[
+ \frac{C_f(\mathbf h;R)}{C_f(\mathrm{base};1)}
+ =\frac{\sqrt r(4R+1)}5.
+\]
+The base enclosure gives $C_f\le\overline C$. Since
+$c_r(4R+1)/5\le74/5<16$, $\overline C<2^{364}$.
+The separate factor $e^{R/256}$ is retained. This proves the observation
+and coefficient portion of UDA.a.
+
+% MAP: proof-2-accuracy | P:49-54 S:229-230
+\subsubsection{Universal outer selection and the four actual errors}
+For $q\ge3$, $d=q+3$ is the least integer with
+$5\cdot2^{-d}\le2^{-q}$, since $4<5\le8$. For $\tau=1/5$ the least
+integer is $d=5$. Thus $d\ge5$, $\eta=2^{-d}>0$ and $5\eta\le\tau$.
+There is no upper bound on $d$ in proof steps 2--11.
+
+% MAP: proof-2-spatial | P:56-82 S:168-185 S:232-235
+The positive degree-eight exponential partial at $125/32$ is
+\[
+ \sum_{j=0}^8\frac{(125/32)^j}{j!}
+ =\frac{432528188408407789}{8866461766385664}>32.
+\]
+Therefore $0<q_{\mathrm{sp}}=e^{-125/32}<1/32$.
+For $0\le v<1$, the exponential series is termwise at most the geometric
+series, so $e^v\le(1-v)^{-1}$. In particular
+$e^{R/256}\le256/(256-R)<2$. Both positive shell bracket terms increase
+with $q_{\mathrm{sp}}\in(0,1)$; substituting $1/32$ gives exactly
+$(2n+1)32/31+64/961$. Since $4u\ell^2=4/10000$ and $C_f\le\overline C$,
+\begin{equation}E_n\le\overline E(n).\tag{2.1}\end{equation}
+The rational bracket is $(1984n+1056)/961<4n$ for $n\ge1$.
+Also $(4/10000)\overline{\exp R}<8/10000<2^{-10}$ and
+$\overline C<2^{364}$. Thus
+\begin{equation}
+ \overline E(n)<2^{356}n2^{-5n}\le2^{356-4n},\qquad n\ge1,\tag{2.2}
+\end{equation}
+where $n\le2^n$ follows by induction. The positive integer
+$n_w=\lceil(d+356)/4\rceil$ is a termination witness. The defining set
+for $n$ is nonempty and its minimum is obtained by finite exact rational
+comparisons. Furthermore $\overline E$ decreases strictly: the ratio of
+successive positive linear brackets is below two, while $2^{-5n}$
+contributes $1/32$. At the selected $n$, $1000n\ge R$, so the actual AP6
+geometry and (2.1) give $E_n\le\overline E(n)\le\eta$.
+The physical area $A=4000000n^2$ is positive finite; $n\le80$ is not used.
+
+% MAP: proof-2-nelson | P:84-112 S:156-175 S:237-240
+For positive rational $v$, $2^h\ge h+1$ for integers $h\ge0$.
+Hence $\operatorname{clog}_2(v)$ terminates no later than
+$h=\lceil v\rceil$. Likewise $4^h\ge h+1$ makes
+$\lceil14u^2 A\rceil$ a termination witness for $h_K$.
+These rational bounds may be loose. Using $\sqrt{85}<10$ and $\pi>3$,
+\[
+ K_\Lambda^2=\frac{75\sqrt{85}}{2\pi^3}u^2 A
+ <14u^2 A\le\overline K^2.
+\]
+Thus $K_\Lambda<\overline K$. Since $e>2$ and $\sqrt2<2$, the second
+$K_{\mathrm{sharp}}$ branch is
+$2K_\Lambda\sqrt{(1+\sqrt2)/e}<4\overline K$. Consequently
+$K_{\mathrm{sharp}}\le\max\{12U_A,4\overline K\}$. Also
+\[
+ b_{\mathrm{Nelson}}=\frac{\pi^2}{48U_A}>b_0=\frac3{16U_A}>0,
+ \qquad \frac{64}{e b_{\mathrm{Nelson}}}<\frac{32}{b_0}.
+\]
+The integer $k_w=\lceil32/b_0\rceil\ge1$ satisfies
+$L_{10}(k_w)\ge1+k_w>32/b_0$, so $k\le k_w$ is a finite minimum.
+The positive exponential remainder gives
+$e^k>L_{10}(k)>32/b_0>64/(e b_{\mathrm{Nelson}})$, hence
+$\log_+(64/(e b_{\mathrm{Nelson}}))<k$. Therefore the original,
+volume-dependent Nelson bound obeys
+\begin{align}
+ H_2&\le\max\{12U_A,4\overline K,4k^2/b_0\}<H_N,\notag\\
+ \sqrt{\Xi_2}&\le\sqrt{\overline\Xi_2}=\sqrt2 e^{H_2}
+                         <2^{2H_N+1}.\tag{2.3}
+\end{align}
+Here $\log2>1/2$, because $e^{1/2}=\sqrt e<\sqrt3<2$, so
+$e^z\le2^{2z}$ for $z\ge0$. The strict extra unit in the integer $H_N$
+preserves strictness even when the first maximum branch is attained.
+This uses the actual $\Xi_2$ at this physical area and its original
+common-space fourth-chaos/$L^2$ interface. Finite-regulator stability and
+Jensen alone would not establish the zero-regulator bound, and no
+volume-uniform $\Xi_2$ is claimed.
+
+% MAP: proof-2-p | P:114-125 S:241-241 S:333-337
+The selected even integer $p=4H_N+2h_K+2d+8$ is at least four.
+The actual regulator bound with $F_2\le4$ gives
+\begin{equation}
+ R_{\mathrm{phys}}<2^{2H_N+h_K+3-p/2}+2^{2H_N+2-p}.\tag{2.4}
+\end{equation}
+The first exponent is exactly $-d-1$; the second is
+$-2H_N-2h_K-2d-6\le-d-1$. Their sum is at most $\eta$.
+The first two-summand predicate is equivalent to
+$p\ge4H_N+2h_K+2d+8$. This even value satisfies the second predicate,
+so it is exactly the first even sufficient $p\ge4$.
+Thus $0<a=2^{-p}<1$ and $R_{\mathrm{phys}}\le\eta$.
+The actual $K_\Lambda$ contribution has not been replaced by one.
+
+% MAP: proof-2-variance | P:127-137 S:79-86 S:118-130 S:987-994
+For $p\ge4$, $\sqrt{1+2^{2p}}<2\cdot2^p$, whence
+$\operatorname{asinh}(2^p)<\log(3\cdot2^p)<p+2$, using
+$\log2<1$ and $\log3<2$. Since $2\pi>6$,
+\begin{equation}c\le\overline c(a)<(p+3)/6\le p.\tag{2.5}\end{equation}
+Only positive majorants use $p$; the physical $c$ remains in $V$ and the
+Wick ordering. Finite-regulator Wick stability is the pointwise identity
+$z^4-6cz^2+3c^2=(z^2-3c)^2-6c^2\ge-6c^2$.
+The physical/residual weights are therefore bounded by $e^{6U_Ac^2}$,
+the physical Jensen normalizer is at least one, and the residual Jensen
+normalizer is at least $e^{-3U_Ac^2}$, exactly as in the original
+conditional interface. None requires $U_A<3$.
+
+% MAP: proof-2-aux | P:139-166 S:242-247 S:173-183
+Let $j=\lceil18U_Ap^2\rceil$. By (2.5) and $\log2>1/2$,
+$e^{9U_Ac^2}<2^j$. Since $\sqrt{15}<4$ and $p\ge1$,
+$(4\sqrt{15}+12)c^{3/2}<32p^2$. The complete auxiliary bracket satisfies
+\begin{equation}
+ 2U_A(4\sqrt{15}+12)c^{3/2}+F_1
+ <64U_Ap^2+4c_r=B_{\mathrm{aux}}\le2^{h_{\mathrm{aux}}}.\tag{2.6}
+\end{equation}
+All arguments before their $\operatorname{clog}_2$ operations are finite
+positive rationals. In particular $Z_s=j+h_{\mathrm{aux}}+p+d>1$, and
+$h_s=1+\operatorname{clog}_2(Z_s)$ is exactly the first integer at least
+one with $2^{h_s-1}\ge Z_s$. Thus $s=2^{h_s}\ge2$ is finite, and
+\[
+ R_{\mathrm{aux}}-\max(1000n,R)-s=1,
+\]
+because $R\le9<1000n$. A Euclidean displacement of length less than $s$
+changes each coordinate by less than $s$. The strict $s$-neighborhoods
+of both $\overline\Lambda$ and $K$ lie in $\Omega$, so the original
+covariance-defect bound applies to both. Discarding the minimum in
+$\rho_a(s)$ gives
+\begin{equation}
+ \sqrt{\rho_a(s)}\le\sqrt{\frac{\kappa_a^2}{2\pi}}e^{-s/\sqrt2}
+ <2^p e^{-s/2}<2^{p-s/2}.\tag{2.7}
+\end{equation}
+The final strict inequality uses $e>2$, $s>0$ and no upper bound on $p$.
+Multiply by the same physical exponential and both vector terms in (2.6):
+\begin{equation}
+ A_{\mathrm{aux}}<2^{j+h_{\mathrm{aux}}+p-s/2}\le2^{-d}=\eta.\tag{2.8}
+\end{equation}
+
+% MAP: proof-2-stabilizer | P:168-180 S:245-247 S:180-180
+Since $O=4R_{\mathrm{aux}}^2>A$, $B_{\mathrm{ext}}=O-A>0$.
+With $h_{\mathrm{stab}}=\operatorname{clog}_2(6Op^2)$ and
+$t=\max\{34,j+h_{\mathrm{stab}}+d\}$, the actual stabilizer error obeys
+\begin{equation}S<2^{j+h_{\mathrm{stab}}-t}\le\eta.\tag{2.9}\end{equation}
+Also $\epsilon=2^{-t}\le2^{-34}<u$, because $2^{34}>10^{10}$.
+Thus $\alpha=\epsilon$ and $U=u$ in every width formula.
+All later stages are finite compositions of these integers and rational
+searches, and $\operatorname{clog}_2(v)\le\lceil v\rceil$ covers each
+remaining search. No equality oracle, canonical inner index or expansion
+of an infinite sequence is used. This proves the rest of UDA.a, including
+the four actual downstream errors.
+
+% MAP: proof-3-point | P:182-202 S:351-370
+\subsubsection{Arbitrary bridges, coercivity and full normalizers}
+Fix any finite positive stage satisfying the premises, with $0<\epsilon<u$;
+proof steps 3--8 use no selected-stage or bounded-$q$ consequence.
+Fix an architecture, $N\ge1$, $j$, a branch $h$ and $\theta\in[0,1]$.
+Before tilt, $v$ is a sum of $N$ independent centered process random
+elements, $N-1$ with coefficient $1/\sqrt N$ and one with coefficient
+$\theta/\sqrt N$. At almost every point $z$ each unscaled variance is
+$1/4$; neuron and Gaussian fourth moments are $1/16$ and $3/16$,
+respectively. Independence of summands and centering give, for real $\beta_i$,
+\begin{align}
+ \E\left(\sum_i\beta_i\xi_i(z)\right)^2&=\frac14\sum_i\beta_i^2,\notag\\
+ \E\left(\sum_i\beta_i\xi_i(z)\right)^4
+ &=\sum_i\beta_i^4\E\xi_i(z)^4
+          +\frac6{16}\sum_{i<k}\beta_i^2\beta_k^2\notag\\
+ &\le\frac3{16}\left(\sum_i\beta_i^2\right)^2.\tag{3.1}
+\end{align}
+Here the squared coefficient sum is $(N-1+\theta^2)/N\le1$.
+This includes $N=1$, both endpoint amplitudes and every extreme $j$.
+No spatial independence or Gaussian domination of neuronal joint moments
+is used. Tonelli on finite $D$ gives a finite fourth $E$-norm moment.
+
+% MAP: proof-3-coercivity | P:204-227 S:197-212 S:365-367
+Write $x=\|v\|_4$ and take $c_*\ge c$. The quartic coefficient in $V$
+lies in $[\alpha,U]$, the negative quadratic coefficient is pointwise at
+most $B$, and the constant is nonnegative. H\"older and completion of the
+square in $x^2$ give
+\begin{equation}
+ V(v)\ge\alpha x^4-B\sqrt O\,x^2
+       \ge\alpha x^4/2-\frac{B^2O}{2\alpha}
+       =\alpha x^4/2-L.\tag{3.2}
+\end{equation}
+Therefore $0<w(v)\le e^{L-\alpha x^4/2}\le e^L$.
+Every $Z$ is finite and strictly positive, as the expectation of a strictly
+positive finite random variable. Every term of $V$ is integrable by (3.1).
+Discarding negative quadratic terms only in the upper bound yields
+$\E V(v)\le3UO/16+3uc^2A\le J_z$. Jensen gives $Z\ge e^{-J_z}$.
+For the actual joint law $\Pi$ of $(S_j,h)$ it follows that
+\begin{equation}
+ \frac{d\Pi}{d\Law(S_j,h)}\le e^{H-\alpha x(v)^4/2}\le e^H,
+ \qquad\Pi(x(v)^4>z)\le\min\{1,e^{H-\alpha z/2}\}.\tag{3.3}
+\end{equation}
+These are full neural/Gaussian-tilt partitions. The physical Wick
+normalizer $Z_a\ge1$ is neither used here nor asserted for $Z$.
+
+% MAP: proof-4-field | P:229-245 S:368-370
+\subsubsection{Joint tilted field and direction moments through sixteen}
+If $T\ge0$ and $\PP(T>z)\le\min\{1,e^{a-z}\}$ with $a\ge0$, then
+$T$ is stochastically dominated by $a+E_1$, where $E_1$ has unit
+exponential law. This is a distribution-function comparison, rather than
+a joint independence assumption. Integrating
+$qz^{q-1}\PP(T>z)$, and integrating by parts for exponential moments,
+gives for every positive integer $q$
+\begin{equation}\|T\|_q\le a+(q!)^{1/q}.\tag{4.1}\end{equation}
+For $T=\alpha x(v)^4/2$, (3.3) gives $a=H$. At order four,
+$\|T\|_4\le H+24^{1/4}<H+4$, so
+\begin{equation}
+ \|x(v)\|_{L^{16}(\Pi)}\le[2(H+4)/\alpha]^{1/4}=X_{\mathrm{rel}}.\tag{4.2}
+\end{equation}
+Lyapunov's inequality gives every real order between one and sixteen.
+
+% MAP: proof-4-gaussian | P:247-265 S:370-370
+For the Gaussian direction, Minkowski exchanges
+$L^{2k}(\text{probability})$ and $L^4(D)$ for $k\ge2$.
+Its point variance is $1/4$, hence
+\begin{equation}
+ \E\|\gamma\|_4^{2k}
+ \le O^{k/2}\E|\gamma(z)|^{2k}
+ =O^{k/2}\frac{(2k-1)!!}{4^k}
+ \le O^{k/2}(k/2)^k.\tag{4.3}
+\end{equation}
+The equality is the constant point-moment value; the first comparison is
+an inequality and needs no spatial independence. At $k=1$, use
+$\E\|\gamma\|_4^2\le\sqrt{\E\int_D\gamma^4}
+=\sqrt{3O}/4\le\sqrt O/2$. The positive exponential series for
+$T_\gamma=\|\gamma\|_4^2/(4\sqrt O)$ therefore gives
+\begin{equation}
+ \E e^{T_\gamma}\le1+\sum_{k\ge1}\frac{k^k}{8^kk!}
+ \le\sum_{k\ge0}(e/8)^k<8/5<4.\tag{4.4}
+\end{equation}
+
+% MAP: proof-4-direction | P:266-281 S:368-370
+The factorial bound $k!\ge(k/e)^k$ follows by integrating $\log$ on
+$[1,k]$. Tonelli and positivity justify the series interchange.
+Under the actual joint $\Pi$, density domination (3.3) gives
+$\E_\Pi e^{T_\gamma}<4e^H$. Markov's inequality and $\log4<2$ imply
+$\Pi(T_\gamma>z)\le\min\{1,e^{H+2-z}\}$.
+Apply (4.1) at order eight and use $(8!)^{1/8}<8$:
+$\|T_\gamma\|_{L^8(\Pi)}<H+10$. Consequently
+\begin{equation}
+ \|\|\gamma\|_4\|_{L^{16}(\Pi)}
+ \le2O^{1/4}(H+10)^{1/2}=Y_{\mathrm{rel}}.\tag{4.5}
+\end{equation}
+For a neuron, $\|g^b\|_4=O^{1/4}/2$ deterministically, including after
+tilt, and the same $Y_{\mathrm{rel}}$ bounds it. Lyapunov gives every
+real order through sixteen. Conditional independence of $v,h$ after
+tilt is never used.
+
+% MAP: proof-5-potential | P:283-295 S:203-207 S:382-384
+\subsubsection{Full Fr\'echet derivatives and differentiable partitions}
+Quartic and quadratic integrals on $L^4(D)$ are continuous Fr\'echet
+polynomials. For unit $L^4$ directions $h_i$, the first derivative is the
+integral of $4k(z)v^3h_1-2b(z)vh_1$, with quartic coefficient $k(z)\le U$
+and quadratic coefficient $b(z)\le B$. The constant $3uc^2A$
+differentiates to zero. Higher derivatives have coefficients
+$12k(z),24k(z),24k(z)$, with a quadratic contribution only at order two.
+H\"older for four $L^4$ factors and the factor $\sqrt O$ for two give
+\begin{align}
+ \|DV(v)\|&\le4Ux^3+2B\sqrt O\,x=v_1(x),\notag\\
+ \|D^2V(v)\|&\le12Ux^2+2B\sqrt O=v_2(x),\notag\\
+ \|D^3V(v)\|&\le24Ux=v_3(x),\qquad
+ \|D^4V(v)\|\le24U=v_4(x).\tag{5.1}
+\end{align}
+These are full multilinear norms.
+
+% MAP: proof-5-bell | P:297-309 S:205-207 S:382-384
+The exponential chain rule, written as a sum over partitions of
+$\{1,\ldots,k\}$, expresses $D^kw$ as $w$ times products of derivatives
+of $-V$. Norms give exactly $e_0,\ldots,e_4$. At order four the
+multiplicities are $1,6,3,4,1$ for
+$v_1^4,v_1^2v_2,v_2^2,v_1v_3,v_4$. Thus
+\begin{equation}
+ \|D^kw(v)\|_{\mathrm{op}}\le w(v)e_k(x),\qquad0\le k\le4.\tag{5.2}
+\end{equation}
+Each $e_k$ is a nonnegative-coefficient polynomial of degree at most $3k$.
+By (3.2), its bound is a polynomial times $e^{L-\alpha x^4/2}$.
+Each monomial is globally bounded: for $k>0$,
+$\sup_{x\ge0}x^ke^{-\alpha x^4/2}=(k/(2\alpha e))^{k/4}$.
+Hence $w$ and all derivatives through four are globally bounded.
+
+% MAP: proof-5-partition | P:311-324 S:372-375
+Differentiation of $Z(\theta)$ is dominated by
+$M\|h\|_4/\sqrt N$ for a finite deterministic global derivative bound $M$.
+The untilted direction has finite first $E$-norm moment. Dominated
+convergence therefore gives a continuous derivative on every compact real
+$\theta$ interval. In fact $Z$ extends $C^1$ to all real $\theta$ and stays
+positive; therefore $\log Z$ also extends $C^1$. On $[0,1]$,
+\begin{equation}
+ (\log Z)'=-N^{-1/2}\E_\Pi DV(v)[h].\tag{5.3}
+\end{equation}
+Under the same joint $\Pi$, H\"older at order four for $x^3\|h\|_4$ and
+at order two for $x\|h\|_4$, together with (4.2),(4.5), gives
+\begin{equation}
+ \E_\Pi|DV(v)[h]|\le4UX_{\mathrm{rel}}^3Y_{\mathrm{rel}}
+       +2B\sqrt O X_{\mathrm{rel}}Y_{\mathrm{rel}}=K_1.\tag{5.4}
+\end{equation}
+
+% MAP: proof-5-ratios | P:326-335 S:377-380
+Integrate (5.3) between $\theta$ and one on the neuron branch to obtain
+the stated neuron/neuron ratio. At zero both branches have the same
+$S_j$, so their partitions agree. Integrating from zero on both branches gives
+\begin{equation}
+ \frac{Z_{j,\gamma}(\theta)}{Z_{j,g}(1)}
+ \le e^{(\theta+1)K_1/\sqrt N}\le e^{2K_1/\sqrt N}.\tag{5.5}
+\end{equation}
+If $N\ge N_0$, then $N\ge16K_1^2$, so the last expression is at most
+$e^{1/2}=\sqrt e<2$. This also bounds the neuron/neuron ratio by two.
+The denominator is the actual neuron endpoint partition, rather than a
+physical normalizer.
+
+% MAP: proof-6-product | P:337-350 S:384-394
+\subsubsection{The complete centered product derivative and mixed moments}
+For $G\in\mathcal U_4(r)$, (1.1) bounds
+$D^q(G\circ\mathcal O_f)$ by $F^q$ for $1\le q\le4$, and its absolute
+value by one. The deterministic $m_j$ lies in $[-1,1]$.
+The full fourth product rule for $\Phi_j=(G\circ\mathcal O_f-m_j)w$ gives
+\begin{equation}
+ \|D^4\Phi_j(v)\|_{\mathrm{op}}
+ \le w(v)\left[2e_4(x)+\sum_{q=1}^4\binom4qF^q e_{4-q}(x)\right]
+ =w(v)P_F(x).\tag{6.1}
+\end{equation}
+The leading two copies of $e_4$ account for $|G-m_j|\le2$.
+Every observation binomial term and every Bell multiplicity remains.
+The lower-order product calculations followed by (3.2) likewise show
+$\Phi_j\in C_b^4(E)$.
+
+% MAP: proof-6-holder | P:352-363 S:390-396
+Write $P_F(x)=\sum_{k=0}^{12}a_kx^k$ with $a_k\ge0$ and
+$r_h=\|h\|_4$. For $k>0$, H\"older with conjugate exponents
+$(k+4)/k$ and $(k+4)/4$ gives
+\begin{align}
+ \E_\Pi x^kr_h^4
+ &\le(\E_\Pi x^{k+4})^{k/(k+4)}
+          (\E_\Pi r_h^{k+4})^{4/(k+4)}\notag\\
+ &\le X_{\mathrm{rel}}^kY_{\mathrm{rel}}^4.\tag{6.2}
+\end{align}
+At $k=0$ this is the fourth direction-moment bound. Since $k+4\le16$,
+all moments used are established. Summing nonnegative coefficients yields
+$\E_\Pi[P_F(x)r_h^4]\le P_F(X_{\mathrm{rel}})Y_{\mathrm{rel}}^4$.
+The actual joint law is used throughout; dependent marginal expectations
+are never multiplied.
+
+% MAP: proof-7-cancellations | P:365-384 S:351-360 S:390-404
+\subsubsection{Centered adjacent replacement and the normalized telescope}
+Taylor's theorem for $\Phi_j$ at $S_j$ in direction $h/\sqrt N$, through
+order three, has remainder
+\begin{equation}
+ R_h=N^{-2}\int_0^1\frac{(1-\theta)^3}{6}
+ D^4\Phi_j(S_j+\theta h/\sqrt N)[h,h,h,h],d\theta.\tag{7.1}
+\end{equation}
+Global derivative bounds and the finite untilted fourth $E$-norm moment
+justify exchanging expectations, conditioning on $S_j$ and integration.
+Independence is used before tilt. Conditional on $S_j$, the first terms
+vanish by zero Bochner means. The second terms agree by the premise for
+every bounded bilinear form, applied to the continuous form
+$D^2\Phi_j(S_j)$. The third terms vanish by global sign symmetry against
+each continuous homogeneous cubic; the third $E$-moment guarantees
+integrability. Constant terms agree. The forms are measurably evaluable
+because $E$ is separable, the random elements are strongly measurable,
+and derivatives are continuous. The full bilinear match is an explicit
+premise, rather than an inference from point-pair covariance.
+
+% MAP: proof-7-adjacent | P:386-401 S:398-404
+By definition of $m_j$, $\E\Phi_j(S_j+\gamma/\sqrt N)=0$.
+Consequently, for the actual normalized endpoint expectations,
+\begin{equation}
+ L_g(G)-L_\gamma(G)=\frac{\E R_g-\E R_\gamma}{Z_{j,g}(1)}.\tag{7.2}
+\end{equation}
+For branch $h$ and amplitude $\theta$, the expected absolute integrand
+in (7.1), divided by $Z_{j,g}(1)$, is at most
+\[
+ \frac{Z_{j,h}(\theta)}{Z_{j,g}(1)}P_F(X_{\mathrm{rel}})Y_{\mathrm{rel}}^4.
+\]
+For $N\ge N_0$ each ratio is at most two by (5.5), and
+$\int_0^1(1-\theta)^3/6\,d\theta=1/24$. The two branch remainders sum to
+\begin{equation}
+ \frac{4P_F(X_{\mathrm{rel}})Y_{\mathrm{rel}}^4}{24N^2}
+ =\frac{K_4(F)}{N^2}.\tag{7.3}
+\end{equation}
+
+% MAP: proof-7-endpoints | P:403-414 S:398-404
+Let $H_j$ be the law of the normalized $N$-summand mixture with $j$
+Gaussian and $N-j$ neuronal summands, then tilted by the same $w$ and
+its own normalizer. The neuron endpoint of $S_j$ is $H_j$ and the
+Gaussian endpoint is $H_{j+1}$. This follows from the original independent
+product copies and equality in law, hence also equality after common tilt
+and normalization. Thus $H_0=P_N^b$ is the actual neural law. The normalized
+sum of $N$ independent copies of the centered Gaussian $E$-valued element
+$\gamma$ has exactly the $\gamma$ law: all finite continuous-linear-functional
+laws agree, and these determine Borel probabilities on separable $E$.
+Hence $H_N=Q_\epsilon$ is the actual full Gaussian tilt. Summing (7.3)
+over $j=0,\ldots,N-1$ gives $K_4(F)/N$. The bound $|G|\le1$ supplies
+the cap two. This proves the normalized part of UDA.c and completes UDA.b.
+
+% MAP: proof-8-smoothing | P:416-430 S:133-142 S:402-407
+\subsubsection{Ambient smoothing, including singular observation laws}
+Apply the ambient $\R^r$ L0 premise to a unit BL $G$.
+For $0<\zeta\le1$,
+$G_\zeta/(\sqrt6\zeta^{-3})\in\mathcal U_4(r)$.
+The two smoothing errors are each at most $\sqrt r\zeta$, so
+\begin{equation}
+ d_{\mathrm{BL}}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\epsilon))
+ \le\min\{2,\sqrt6K_4(F)/(N\zeta^3)+2\sqrt r\zeta\}.\tag{8.1}
+\end{equation}
+Put $A_0=\sqrt6K_4(F)$, $B_0=2\sqrt r$ and $N_*=3A_0/B_0$.
+For $N\ge N_*$, choose $\zeta=(N_*/N)^{1/4}\le1$. This gives
+$(4/3)(3A_0)^{1/4}B_0^{3/4}N^{-1/4}$, whose coefficient has fourth
+power $(2048\sqrt6/27)r^{3/2}K_4(F)$.
+For $N<N_*$ that expression exceeds $(4/3)B_0\ge8/3>2$, so the cap
+two gives the same optimized bound. Both cases retain $N\ge N_0$.
+
+% MAP: proof-8-degeneracy | P:432-436 S:463-465
+Smoothing stays on the full original $\R^r$. If two tests coincide,
+their coordinates coincide under every law, but (1.1), (6.1) and (8.1)
+retain both coordinates. Touching, overlap and separation change neither
+these arguments nor the moment estimates. No covariance inverse, density,
+rank reduction or independence of interacting observations was assumed.
+
+% MAP: proof-9-b | P:438-454 S:249-255
+\subsubsection{Stage-dependent logarithmic enclosures for every finite accuracy}
+Specialize the arbitrary finite-stage result to the universal selection,
+with $c_*=p$. We have $p\ge4$, $t\ge34$, $A<O$, $O\le2^o$ and $d\le t$.
+No old-domain bound on $n,U_A,p,O,t$ or $e_{\mathrm{new}}$ is used.
+Since $u<1/6$ and $p\le2^{2p-1}$ for $p\ge4$,
+\begin{equation}
+ B=(2^{2p}-1)/2+6up<2^{2p-1}+p\le2^{2p}.\tag{9.1}
+\end{equation}
+The polynomial-exponential comparison holds at $p=4$ and persists because
+the right side multiplies by four and $(p+1)/p\le5/4$.
+Similarly $3p^2<2^{4p}$ holds at four and persists since
+$((p+1)/p)^2\le25/16<16$. These are universal integer inequalities;
+$6up<1$ is unnecessary and eventually fails.
+
+% MAP: proof-9-moments | P:456-476 S:201-212 S:251-253
+Write $l=l_{\mathrm{old}}=t+4p+o$ and $l_+=t+4p+o_+$.
+The full coercivity and Jensen terms satisfy
+\begin{align*}
+ L&=B^2O/(2\alpha)<2^{t+4p+o-1}=2^{l-1},\\
+ 3uO/16&<O\le2^o\le2^{l-1},\\
+ 3up^2A&<3up^2O<2^{t+4p+o-1}=2^{l-1}.
+\end{align*}
+The last bound uses $A<O$, $3up^2<3p^2<2^{4p}$ and $t\ge34$.
+Thus $J_z<2^l$ and $H=L+J_z<2^{l+1}\le2^{l_++1}$.
+Since $l\ge50$, both $H+4,H+10<2^{l_++2}$.
+Every term of the physical-area contribution $3up^2A$ remains, with
+$A\le O$; no bounded-$U_A$ shortcut is hidden. Hence
+\begin{align}
+ X_{\mathrm{rel}}^4&<2^{2t+4p+o_++3},\notag\\
+ Y_{\mathrm{rel}}^4=16O(H+10)^2&<2^{2t+8p+3o_++8}.\tag{9.2}
+\end{align}
+The actual $o$ is first bounded by $o_+$ in the second line.
+Since $4T_{1/2}\ge2t$ at both parities of $t$, the definitions of $x,y$
+give $X_{\mathrm{rel}}<2^x$, $Y_{\mathrm{rel}}<2^y$.
+Strictness survives even when a ceiling has an integer argument.
+
+% MAP: proof-9-k1 | P:478-495 S:409-410
+The quadratic derivative coefficient obeys
+\begin{equation}
+ 2B\sqrt O<2^{2p+\lceil o/2\rceil+1},\qquad
+ 2p+\lceil o/2\rceil+1\le2x.\tag{9.3}
+\end{equation}
+Indeed $2\lceil(o_++3)/4\rceil\ge(o_++3)/2\ge\lceil o/2\rceil+1$,
+and the extra $2T_{1/2}$ is nonnegative. Since $4u<1$,
+\begin{align}
+ v_1(X_{\mathrm{rel}})&<2^{3x}+2^{2p+\lceil o/2\rceil+1+x}
+                         <2^{3x+1},\notag\\
+ K_1&<2^{3x+y+1}=2^{k_1-2}.\tag{9.4}
+\end{align}
+In particular $16K_1^2<2^{2k_1}$. The right side is an integer;
+the ceiling of a real number strictly below integer $M$ is at most $M$.
+Consequently
+\begin{equation}
+ N_0=\max\{1,\lceil16K_1^2\rceil\}\le2^{2k_1}
+       <2^{2k_1+4}=2^{n_0}.\tag{9.5}
+\end{equation}
+This handles the ceiling without asserting strictness at that same exponent.
+
+% MAP: proof-9-k4 | P:497-520 S:411-414
+Let $W=2^{3x+5}\ge1$. At $X_{\mathrm{rel}}$, (9.3)--(9.4) give $v_1<W$.
+For $v_2$ the two terms are bounded by $2^{2x+4}$ and $2^{2x}$; their
+sum is below $2^{2x+5}\le W$. Similarly $v_3<2^{x+5}\le W$ and
+$v_4<2^5\le W$. The complete Bell polynomials therefore satisfy
+\[
+ e_0\le1,\quad e_1\le W,\quad e_2\le2W^2,\quad e_3\le5W^3,
+ \quad e_4\le15W^4.
+\]
+Each is at most $16W^4$. Keeping both centered copies of $e_4$ and all
+four observation derivative terms, with $F\le\overline F\le6$, gives
+\begin{align}
+ P_F(X_{\mathrm{rel}})&\le P_{\overline F}(X_{\mathrm{rel}})\notag\\
+ &\le16W^4\left[2+\sum_{j=1}^4\binom4j6^j\right]
+ =16(1+7^4)W^4\notag\\
+ &=38432W^4<2^{12x+36}.\tag{9.6}
+\end{align}
+Here $38432<2^{16}$ is the full vector coefficient; the smaller scalar
+coefficient is not substituted. Combining $Y_{\mathrm{rel}}^4<2^{4y}$
+and enlarging only upward by dropping the divisor six yields
+\begin{equation}
+ K_4(F)\le K_4(\overline F)<2^{12x+4y+36}=2^{k_4}.\tag{9.7}
+\end{equation}
+All volume, variance, stabilizer and physical-area dependence remains.
+There is no use of $q\le12$, $n\le80$, $U_A<3$, $p<20000$,
+$O<2^{76}$, $t<2^{36}$ or $e_{\mathrm{new}}<2^{40}$.
+This proves UDA.c's universal exponent part from the arbitrary finite-stage
+joint-law proof.
+
+% MAP: proof-10-width | P:522-538 S:255-255 S:409-414
+\subsubsection{Sufficient width and the actual five-arrow target triangle}
+Take $\zeta=2^{-d-3}$, $e_{\mathrm{new}}=k_4+4d+12$ and
+$N_{\mathrm{new}}=2^{e_{\mathrm{new}}}$. These are finite positive
+mathematical numbers and $0<\zeta\le1$. Exact integer algebra gives
+\begin{equation}
+ e_{\mathrm{new}}-n_0=6x+2y+4d+38>0.\tag{10.1}
+\end{equation}
+Thus $N_{\mathrm{new}}>2^{n_0}>N_0$. Apply (8.1) with $\sqrt6<3$,
+$\sqrt r\le2$ and (9.7):
+\begin{align}
+ \frac{\sqrt6K_4(F)}{N_{\mathrm{new}}\zeta^3}
+ &<3\cdot2^{k_4-e_{\mathrm{new}}+3d+9}=3\eta/8,\notag\\
+ 2\sqrt r\zeta&\le4\cdot2^{-d-3}=\eta/2.\tag{10.2}
+\end{align}
+The actual neural-to-full-Gaussian-tilt distance is below $7\eta/8<\eta$.
+This completes the selected-width part of UDA.c; steps 3--8 already prove
+all its arbitrary finite-stage clauses.
+
+% MAP: proof-10-target | P:540-557 S:144-193 S:416-424
+The four quantities bounded in step 2 belong to the same actual
+$Q_\epsilon,Q_0,Q_a,Q_{\mathrm{phys}},\nu^X$ chain in the source premises,
+with the same physical and auxiliary squares. They do not depend on $N$.
+Physical and full endpoint-reference normalizers have stayed separate;
+$Q_\epsilon$ is the full Gaussian tilt, distinct from a physical
+zero-regulator law. Strict AP6 identifies the last endpoint with the
+original pressure target. On the full original $\R^r$, the triangle gives
+\begin{align}
+ d_{\mathrm{BL}}(\mathcal L_f(P_{N_{\mathrm{new}}}^b),\mathcal L_f(\nu^X))
+ &\le E_{\mathrm{width}}+S+A_{\mathrm{aux}}+R_{\mathrm{phys}}+E_n\notag\\
+ &\le\overline E(n)+4\eta\le5\eta\le\tau.\tag{10.3}
+\end{align}
+The width error has the strict margin (10.2). This holds for every
+$q\ge3$ with $d=q+3$ and for the separate $1/5$ case with $d=5$.
+It proves UDA.d for the unchanged target, architectures and observations.
+The optional probability cap two does not repair an allocation or a failed stage.
+
+% MAP: proof-11-raw | P:559-579 S:426-430
+\subsubsection{The complete old coefficient and same-stage comparison}
+First derive the old law coefficient at arbitrary finite stages from the
+same full reference laws; bounded SVA/ACC acceptance is not extrapolated.
+For $\Psi\in C_b^4(E)$ with fourth derivative norm bounded by $M$,
+expand around the common $S_j$ through order three. The centering,
+every-bilinear match and global sign-symmetry cancellations of step 7
+apply. Each fourth remainder is at most $M\|h\|_4^4/(24N^2)$.
+Tonelli and the point moments give
+$\E\|g\|_4^4=O/16$, $\E\|\gamma\|_4^4=3O/16$.
+After $N$ replacements,
+\begin{equation}
+ |\Law(F_N^b)(\Psi)-\Law(\gamma)(\Psi)|\le\frac{OM}{96N}.\tag{11.1}
+\end{equation}
+The normalized Gaussian iid sum has exactly the $\gamma$ law on separable
+$E$, as above. No tilt, independence after tilt, normalizer premise or
+threshold $N_0$ is required in this raw estimate.
+
+% MAP: proof-11-normalization | P:581-611 S:214-225 S:426-430
+The polynomial-exponential bound (3.2) and the complete derivatives
+(5.1)--(5.2) give
+\begin{align}
+ \sup\|D^4w\|&\le\mathcal T(e_4)=M_Z,\notag\\
+ \sup\|D^4[(G\circ\mathcal O_f)w]\|
+ &\le\mathcal T\left(\sum_{j=0}^4\binom4jF^je_{4-j}\right)=M_A.\tag{11.2}
+\end{align}
+For $k>0$, differentiation shows
+$\sup_{x\ge0}x^ke^{-\alpha x^4/2}=\beta_k$, and $\beta_0=1$.
+Summing nonnegative coefficients bounds the polynomial supremum from above.
+Lower derivatives are also bounded, so (11.1) applies legitimately.
+Let $A_N,A_\gamma$ be weighted $G$ expectations and $Z_N,Z_\gamma$ their
+actual full partitions. Then $\delta_A\le OM_A/(96N)$ and
+$\delta_Z\le OM_Z/(96N)$. Both partitions are at least
+$z=e^{-J_z}$ by the separate endpoint-reference Jensen estimate, while
+$|A_\gamma/Z_\gamma|\le1$. The exact identity
+\[
+ \frac{A_N}{Z_N}-\frac{A_\gamma}{Z_\gamma}
+ =\frac{A_N-A_\gamma}{Z_N}
+ +\frac{A_\gamma}{Z_\gamma}\frac{Z_\gamma-Z_N}{Z_N}
+\]
+gives normalized error at most $(\delta_A+\delta_Z)/z=C_{\mathrm{old}}/N$,
+using one power of $1/z$. It is also at most two. The same ambient L0
+smoothing and optimizer as in step 8, with the cap two handling an
+optimizer above the allowed smoothing scale, give
+\begin{equation}
+ d_{\mathrm{BL}}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\epsilon))
+ \le\min\{2,D_{\mathrm{old}}N^{-1/4}\},\quad
+ D_{\mathrm{old}}^4=\frac{2048\sqrt6}{27}r^{3/2}C_{\mathrm{old}},
+ \quad N\ge1.\tag{11.3}
+\end{equation}
+This proves the first part of UDA.e at all finite stages.
+Nonnegative coefficients ensure that replacing $F$ by $\overline F$ and
+$c$ by $p$ only enlarges the old coefficient; $V$ itself is unchanged.
+
+% MAP: proof-11-polynomial | P:613-642 S:257-262 S:432-435
+At universal selected stages let
+$h_{\mathrm{root}}=\operatorname{clog}_2(2R_{\mathrm{aux}})$,
+$v=v_{\mathrm{old}}=2p+h_{\mathrm{root}}+2$ and $V_0=2^v$.
+Then $\sqrt O=2R_{\mathrm{aux}}\le2^{h_{\mathrm{root}}}$.
+By (9.1), the coefficient sums of $v_1,v_2$ are strictly below
+$4+2^{2p+h_{\mathrm{root}}+1}$ and $12+2^{2p+h_{\mathrm{root}}+1}$,
+respectively. Since $p\ge4$, $h_{\mathrm{root}}\ge0$, each is at most
+$V_0$. Those of $v_3,v_4$ are below $24<V_0$.
+The Bell coefficient sums are consequently bounded by
+$1,V_0,2V_0^2,5V_0^3,15V_0^4$, each at most $16V_0^4$.
+The polynomial for $M_A+M_Z$ has coefficient sum
+\begin{equation}
+ P_{\overline F}(1)\le16V_0^4
+ \left[1+\sum_{j=0}^4\binom4j6^j\right]
+ =38432V_0^4<2^{4v+16}.\tag{11.4}
+\end{equation}
+This is the whole vector polynomial, including both $e_4$ copies, of
+degree at most twelve. For $1\le k\le12$, $\alpha=2^{-t}$ and $e>2$ give
+\[
+ \beta_k=\left(\frac{k}{2\alpha e}\right)^{k/4}
+ <[2^{t+4}]^{k/4}\le2^{3t+12}.
+\]
+This also covers $\beta_0=1$. Thus the complete polynomial part is below
+$2^{q_{\mathrm{old}}}$, where $q_{\mathrm{old}}=4v+3t+28$.
+Step 9 gave the full $H=L+J_z<2^{l_{\mathrm{old}}+1}$ without a bounded-area
+shortcut. Since $e^H\le2^{2H}$,
+\begin{equation}
+ C_{\mathrm{old}}=(O/96)e^H\sum_k a_k\beta_k
+ <2^{\,2^{l_{\mathrm{old}}+2}+q_{\mathrm{old}}+o}.\tag{11.5}
+\end{equation}
+Neither Jensen remainder, the physical-area term nor the $O/96$ prefactor
+has been discarded downward. The same-stage old remainder guards also
+hold: $o\le l_{\mathrm{old}}-1$ and
+$\operatorname{clog}_2(3U_Ap^2)\le l_{\mathrm{old}}-1$, by step 9's strict bound.
+
+% MAP: proof-11-old-width | P:644-667 S:434-437
+The vector coefficient in (11.3) is below $2^{11}$:
+$(2048\sqrt6/27)<256$ follows from $\sqrt6<5/2$, and $r^{3/2}\le8$.
+Hence $N\ge2^{11+4d}C_{\mathrm{old}}$ suffices for old first-arrow error
+at most $\eta$. The old symbolic guard must retain both
+$2^{l_{\mathrm{old}}+2}$ and $H_{\mathrm{small}}=q_{\mathrm{old}}+o+11+4d$.
+Since $O\ge1$ gives $h_{\mathrm{root}}\le o$, and $t\ge d$, exact expansion yields
+\begin{align}
+ H_{\mathrm{small}}&=8p+4h_{\mathrm{root}}+3t+o+47+4d\notag\\
+ &\le8p+5o+7t+47\le7l_{\mathrm{old}}+47.\tag{11.6}
+\end{align}
+For every integer $l\ge5$, $7l+47<2^{l+2}$: it holds at five and its
+strict gap grows because $2^{l+2}>7$. Here $l_{\mathrm{old}}\ge50$.
+Thus $\operatorname{bitlen}(H_{\mathrm{small}})\le l_{\mathrm{old}}+2$.
+The first candidate $w=l_{\mathrm{old}}+2$ fails the explicit strict
+predicate; the next, $w_{\mathrm{old}}=l_{\mathrm{old}}+3$, satisfies it
+and the unchanged guard. Equations (11.5)--(11.6) give
+\begin{equation}
+ \log_2[2^{11+4d}C_{\mathrm{old}}]
+ <2^{l_{\mathrm{old}}+2}+H_{\mathrm{small}}
+ <2^{l_{\mathrm{old}}+3}=\log_2N_{\mathrm{old}}.\tag{11.7}
+\end{equation}
+Thus $N_{\mathrm{old}}$ is sufficient at these same stages, with first-arrow
+error at most $\eta$ by (11.3). The coefficient is unchanged, and no
+necessary-width lower bound is proved.
+
+% MAP: proof-11-order | P:669-686 S:438-442
+For integer $a$, $\lceil a/4\rceil\le(a+3)/4$. Expand
+\begin{align*}
+ e_{\mathrm{new}}
+ &=16T_{1/2}+20p+12\left\lceil\frac{o_++3}{4}\right\rceil
+     +4\left\lceil\frac{3o_++8}{4}\right\rceil+4d+48\\
+ &\le16T_{1/2}+20p+6o_++4d+77.
+\end{align*}
+Since $T_{1/2}\le(t+1)/2$, $o_+\le o+78$ and $d\le t$,
+\begin{equation}
+ e_{\mathrm{new}}\le12t+20p+6o+553\le12l_{\mathrm{old}}+553.\tag{11.8}
+\end{equation}
+For every integer $l\ge8$, $12l+553<2^{l+3}$: it holds at eight and the
+gap grows because $2^{l+3}>12$. Hence
+\begin{equation}
+ e_{\mathrm{new}}<2^{l_{\mathrm{old}}+3}=2^{w_{\mathrm{old}}},\qquad
+ N_{\mathrm{new}}=2^{e_{\mathrm{new}}}<2^{2^{w_{\mathrm{old}}}}=N_{\mathrm{old}}.
+ \tag{11.9}
+\end{equation}
+This proves UDA.e universally. It compares sufficient mathematical integers;
+there is no fixed bound $e_{\mathrm{new}}<2^{40}$.
+
+% MAP: proof-12-history | P:688-695 S:269-275 C:3-8
+\subsubsection{Exact recovery of each formerly supported stage and formula}
+Version 2 gives the complete legacy comparator explicitly. The comparisons
+here concern those definitions, so their equality needs no external ACC/SVC
+statement. Version 1's original statement and proof remain preserved; its
+standalone UDA.f omitted the comparator definitions. The repair specifies
+the theorem conclusion fully without adding an analytic premise.
+
+% MAP: proof-12-compact | P:698-711 S:277-289 S:451-453
+On the old tolerance set, $d\in\{5,\ldots,15\}$. At $n=80$ the spatial
+bracket is $159776/961<256$, so
+$\overline E(80)<2^{-38}\le\eta$. The unbounded minimum $n$ therefore
+equals the old first witness in $1,\ldots,80$.
+Then $U_A=n^2/2500\le64/25<3$ and
+\[
+ 14u^2A\le358400000000/10^{20}<1.
+\]
+Thus $h_K=0$ and $\overline K=1$ exactly. Also $b_0>1/16$ and
+$32/b_0<512$. The degree-ten rational partial at seven exceeds $512$,
+so the unbounded minimum $k$ is the same old first witness in $1,\ldots,7$.
+Since $12U_A<36$ and $4k^2/b_0<4\cdot49\cdot16=3136$, the identical
+integer formula gives $H_N\le3137$. The regulator formula reduces to
+$p=4H_N+2d+8\le12586$, exactly the legacy first even two-predicate
+witness. This proves equality of $n,k,H_N,p$, rather than merely another
+sufficient choice.
+
+% MAP: proof-12-outer | P:713-721 S:290-308 S:452-453
+At these bounds $j=\lceil18U_Ap^2\rceil\le21600000000<2^{35}$ and
+$B_{\mathrm{aux}}<76800000008<2^{37}$.
+Hence $h_{\mathrm{aux}}\le37$ and
+$j+h_{\mathrm{aux}}+p+d<2^{35}$. The original first auxiliary predicate
+gives $h_s\le36$. Step 2 showed that the new formula is exactly this same
+minimum, so $h_s,s,R_{\mathrm{aux}},O,o,h_{\mathrm{stab}},t$ recover the
+legacy stages exactly. Moreover
+$R_{\mathrm{aux}}=1000n+s+1<2^{37}$, $O<2^{76}$, $o\le76$, and thus
+$o_+=78$. From $6Op^2<2^{109}$ we get $h_{\mathrm{stab}}\le109$ and
+$t=\max\{34,j+h_{\mathrm{stab}}+d\}<2^{36}$.
+Every common value uses the same literal predicate and tie rule;
+no finite diagnostic-grid inference is required.
+
+% MAP: proof-12-exponents | P:723-733 S:310-316 S:455-458
+With $o_+=78$, the ceilings are $\lceil81/4\rceil=21$ and
+$\lceil242/4\rceil=61$. Therefore
+\begin{align*}
+ x&=T_{1/2}+p+21,&y&=T_{1/2}+2p+61,\\
+ k_1&=3x+y+3=4T_{1/2}+5p+127,\\
+ n_0&=2k_1+4=8T_{1/2}+10p+258,\\
+ k_4&=12x+4y+36=16T_{1/2}+20p+532,\\
+ e_{\mathrm{new}}&=k_4+4d+12=16\lceil t/2\rceil+20p+4d+544.
+\end{align*}
+These are exactly the legacy SVA/SVC exponents and width at those identical
+stages, including odd-$t$ rounding. Step 11 also gives the identical old
+index $w_{\mathrm{old}}=l_{\mathrm{old}}+3$, with the same $l_{\mathrm{old}}$.
+
+% MAP: proof-12-every-variable | P:734-749 S:444-461
+For completeness, $d_L=d$, $\eta_L=\eta$ by their definition.
+The same spatial predicates and $n\le80$ give $n_L=n$, hence $A_L=A$,
+$U_{AL}=U_A$, $b_{0L}=b_0$. The identical finite Nelson predicates and
+$k\le7$ give $k_L=k$; $h_K=0$ gives $H_L=H_N$. The first-even predicates
+give $p_L=p$, $a_L=a$. Successive substitution gives
+\begin{gather*}
+ j_L=j,\ B_{\mathrm{aux},L}=B_{\mathrm{aux}},\
+ h_{\mathrm{aux},L}=h_{\mathrm{aux}},\ h_{sL}=h_s,\ s_L=s,\\
+ R_{\mathrm{aux},L}=R_{\mathrm{aux}},\ O_L=O,\ o_L=o,\
+ h_{\mathrm{stab},L}=h_{\mathrm{stab}},\ t_L=t,\ \epsilon_L=\epsilon,\\
+ \Lambda_L=\Lambda,\quad D_L=D,\quad\Omega_L=\Omega.
+\end{gather*}
+Substitution in the old-index definitions gives
+$h_{\mathrm{root},L}=h_{\mathrm{root}}$,
+$v_{\mathrm{old},L}=v_{\mathrm{old}}$,
+$q_{\mathrm{old},L}=q_{\mathrm{old}}$,
+$l_{\mathrm{old},L}=l_{\mathrm{old}}$ and
+$H_{\mathrm{small},L}=H_{\mathrm{small}}$.
+Their guard succeeds by step 11 and the first strict predicate selects
+$w_{\mathrm{old},L}=w_{\mathrm{old}}$, so $N_{\mathrm{old},L}=N_{\mathrm{old}}$.
+Finally, the displayed legacy relative formulas and the preceding algebra give
+\[
+ (T_L,x_L,y_L,k_{1L},n_{0L},k_{4L},\zeta_L,e_L,N_L)
+ =(T_{1/2},x,y,k_1,n_0,k_4,\zeta,e_{\mathrm{new}},N_{\mathrm{new}}).
+\]
+Every variable in UDA.f is defined and its equality proved. The separate
+$1/5$ case uses $d=5$ without conflating its request with a dyadic one.
+This completes UDA.f.
+
+% MAP: proof-13-evidence | P:751-758 C:33-35
+\subsubsection{Evidence, retained adverse facts and scope}
+Steps 1--12 are symbolic proofs over all declared integers $q$; a finite
+case list supplies no universal quantifier. The source author records a
+portable audit reconstructing rational stages and checking arithmetic and
+enclosures beyond $q=12$, in noncompact volume/variance regimes and at both
+$t$ parities. Those recorded runs are author evidence, distinct from fresh
+independent review or field-law simulation. Those historical runs are attributed to their recorded roles. Any current
+manuscript replay is separately identified in the companion execution receipt.
+
+% MAP: proof-13-counterexample | P:760-765
+The product neuron shows why Gaussian joint-moment domination is not a
+permitted shortcut. At rectangle corners $(0,0),(a,0),(0,a),(a,a)$ its
+fourfold product is exactly $1/16$, whereas the Gaussian pairing sum is
+$(2e^{-2}+e^{-4})/16<1/16$. The proof uses one-point moments before
+tilt and coercivity/density domination under the actual joint tilt.
+The given full bilinear interface remains explicit.
+
+% MAP: proof-13-limits | P:767-776 S:463-484 C:34-42
+All original source/classical/strict-AP6/NR1/unknown-$g_*$ qualifications
+remain, as do the physical-versus-endpoint covariances and normalizers.
+Old-domain bounded quantities and numerical guards are not theorem premises.
+Existing ACC/SVC software and certificates keep their original domains
+and identities. The mathematical derivation supplies the every-$q$ implication.
+The separate UDC contract below gives its finite partial software realization.
+Canonical least inner indices, practical/minimal/necessary costs, full-field
+rates, global neural Schwartz control, broader models/test families and
+novelty/priority remain separate. Both widths count whole-plane process
+neurons with countably many internal variables. The accepted source decisions
+and the fresh manuscript reviews have distinct scopes.\hfill$\square$
+
+
+% Literal inherited interface, typeset from the frozen statement only.
+% MAP: source-intro | S:472-488 C:37-42
+\subsection{Literal inherited source interface and attribution}
+\label{uda:source}
+The accepted statement includes a statement-only transcription of the
+inherited SVA source appendix. The direct finite interfaces stated earlier
+are its usable premises. The original private source-availability map identifies
+which exact historical bodies were supplied in that integration packet.
+Historical paths retain their attribution and source-access limits; supplying
+a body does not newly prove it, authenticate its authorship or remove an
+original qualification.
+Source mesh $\varepsilon$ and flow time $s$ are local to this subsection,
+distinct from the outer stabilizer $\epsilon$ and selected auxiliary radius.
+Gaussian coupling fields are distinct from the field state space $X$.
+The historical global EB1 hypothesis involving $g_*$ is not asserted;
+strict AP6 supplies the target route. The old EB1 coefficient is retained
+for scope and rederived at every finite stage in proof step 11.
+Its bounded SVA acceptance does not supply a universal premise.
+The source records the inherited ADMIT statement digest
+\par\noindent{\small\texttt{3e361ceb474a571783015c802c75a2314a58005052f07eb46e09bfb18034c997}}\par
+
+% MAP: source-common | S:492-506
+For $m>0$, let $P_m$ be the real whole-plane Gaussian free field with
+covariance $(-\Delta+m^2)^{-1}$ and Fourier measure $dp/(2\pi)^2$.
+For a centered axis-parallel square $B=(-b,b)^2$, $b>0$, let $J_B$ be its
+coefficient-one fourth Wick integral on this same Gaussian space, with the
+same mass and no factorial. Put
+\[
+ U_B=uJ_B,\quad Z_B(h)=\E_{P_m}e^{-U_B+h\phi(\mathbf1_B)},\quad
+ \nu_B=e^{-U_B}P_m/Z_B(0).
+\]
+The Gaussian $L^2$ extension defines $\phi(\mathbf1_B)$, and every subsequent
+tilt uses that same random variable. The source in $Z_B(h)$ is confined to
+$B$; its boundary is Lebesgue null. The following remain named premises
+with their original authorship, source qualifications and accepted scopes.
+
+% MAP: source-p1 | S:508-523
+\paragraph{P1: finite ferromagnetic DSS and SK-q.}
+On the shifted torus
+$T=\varepsilon(\Z+1/2)^2/L\Z^2$, with $L/\varepsilon$ even and at least
+four, use physical inner product $\varepsilon^2\sum$, operator
+$A=-\Delta^\varepsilon+m^2$, and the plane lattice variance
+$c_\varepsilon$. For every profile $q:T\to[0,1]$, the law
+\[
+ d\nu\propto\exp\left[-u\varepsilon^2\sum_xq_x
+                {:}\psi_x^4{:}_{c_\varepsilon}\right]dP_{A^{-1}}
+\]
+satisfies the accepted SK-q inequality. At every finite real physical
+field $H$, its tilt by $\exp(\varepsilon^2\sum_xH_x\psi_x)$ satisfies
+\[
+ 0\le\operatorname{Cov}_{\nu^H}(\psi_x,\psi_y)
+       \le\E_\nu(\psi_x\psi_y).
+\]
+The analogous clauses hold with added physical mass $1/s$ for every finite
+$s>0$. These finite DSS-q/SKQ clauses include Gaussian sites and retain the
+frozen BD/BBD/Griffiths--Simon, Ising-FKG and Robbins--Stirling
+qualifications. They have no $g_*$ premise.
+
+% MAP: source-p2 | S:525-543
+\paragraph{P2: exact finite-positive-scale $P^*$.}
+If
+\[
+ 0<\varepsilon\le\min(1/4,18/(5m)),\quad
+ L\ge\max(1,\sqrt2/m),\quad L/\varepsilon\in2\N,\quad
+ L/\varepsilon\ge4,\quad0<u\le m^2/8000,
+\]
+then core $P^*$ using P1, $S_{\max}=\infty$, $\Phi=1$ and $\kappa=0$
+gives, for finite $s>0$ and every profile $q:T\to[0,1]$,
+\begin{align*}
+ \chi_{s,q}&=\max_x\varepsilon^2\sum_y S_{s,q}(x,y),&
+ S_{s,q}(x,y)&=\E_{\mu_{s,q}}(\psi_x\psi_y),\\
+ d\mu_{s,q}&\propto\exp\left[-u\varepsilon^2\sum_xq_x
+                 {:}\psi_x^4{:}_{c_\varepsilon}\right]dP_{(A+1/s)^{-1}},\\
+ \chi_{s,q}&\le\frac{s}{1+m^2s}+\frac{2s}{2+m^2s}.
+\end{align*}
+This combines the accepted $\|S-C_s\|_{1,0}\le\tau_s$ with
+$\tau_s=2s/(2+m^2s)$ and the exact Gaussian row sum. P2 includes no
+original-law endpoint conclusion.
+
+% MAP: source-p3 | S:545-561
+\paragraph{P3: fixed-square Gaussian/Wick transfer.}
+At fixed $B=(-b,b)^2$, take commensurate $\varepsilon=b/N\to0$ on the
+shifted plane lattice. Accepted T1--T4/GQ/W(b)/W-laws place the plane
+Gaussian field, the variables
+\[
+ J_B^\varepsilon=\varepsilon^2\sum_{x\in B}{:}\psi_x^4{:}_{c_\varepsilon},
+ \qquad Y_f^\varepsilon=\varepsilon^2\sum_x f(x)\psi_x,
+\]
+and their continuum counterparts on one Gaussian space.
+For every real compact smooth $f$, $J_B^\varepsilon\to J_B$ and
+$Y_f^\varepsilon\to\phi(f)$ in Gaussian $L^2$.
+For each fixed finite $p\ge1$,
+$\sup_{\varepsilon\ \mathrm{sufficiently\ small}}\E e^{-puJ_B^\varepsilon}<\infty$.
+The continuum density has positive finite normalizer and finite Gaussian
+$L^p$ density at every finite $p$. These finite-volume statements have no
+weak-coupling or $g_*$ premise. Coefficient-one Wick and finite-law
+identifications are precisely those of the original construction.
+
+% MAP: source-p4 | S:563-567
+\paragraph{P4: fixed-mesh Gaussian periodization.}
+At fixed $\varepsilon$, torus Gaussian covariances converge entrywise on
+every finite set of fixed sites to the plane lattice covariance as
+$L\to\infty$ through admissible even multiples. The plane variance used
+for Wick ordering is the same on both sides. This is the accepted H1-PREQ
+Gaussian periodization/envelope input.
+
+% MAP: source-p5 | S:569-585
+\paragraph{P5: original Fr\"ohlich--Simon source facts.}
+Use the original same-mass whole-plane free-boundary convention with
+$P_h(X)=uX^4-hX$, $u>0$. The free pressure $\alpha_m(P_h)$ is the
+normalized log-partition limit. Its dyadic-square realization is attributed
+to \citet[Proposition 2.1 and the remark after (2.3), pp.~502--503]{FS1977}.
+The equality of the two original maximal states
+$\nu_{m,u,+}=\nu_{m,u,-}$ is equivalent to differentiability of
+$h\mapsto\alpha_m(P_h)$ at zero by the original Corollary 4.3(ii), p.~510.
+Theorem 5.2, p.~512, then gives ordinary exhaustion convergence of the
+classical free finite-volume states to their common state, read via the
+compact-test generating functional at every real frequency.
+These are attributed published facts; the source reports a source match,
+and their original proofs are not reproved here. The historical
+\texttt{SOURCE-MAP.md/json} record paths, hashes, locations and primary-PDF
+access in the upstream packet; those files are not supplied to this role.
+P5 uses the converse in the actual Corollary 4.3(ii); the manuscript's
+narrower C1(iii) formulation by itself would not suffice.
+
+% MAP: source-p6-a | S:587-602
+\paragraph{P6: additional explicit bridge inputs.}
+For AP5--AP6 retain the following frozen accepted inputs at their actual
+parameter scopes. First, retain the all-$m,u>0$ physical/classical identity
+at historical \texttt{CT.tex:2135--2166}, Gaussian common-space/Wick laws,
+and the original complete local $H^{-2}$ field-space, cutoff/Fourier
+coordinate, Borel-determining and compactness definitions.
+Second, the all-semibounded-polynomial FS C1(ii) local density and positive
+boundary factorization at historical \texttt{CT.tex:701--711} give
+\[
+ dv_{m,u}|_{\mathcal C_B}
+ =e^{-uJ_B-\alpha_m(uX^4)|B|}g_{\partial B}\,dP_m,
+\]
+with positive boundary-measurable $g$ and finite local Gaussian $L^p$
+densities. Either recorded boundary-algebra reading is retained.
+Third, retain the finite DSS, SKQ, $P^*$, H1-PREQ, H1, MIX, REG, smoothed-CT, FLOW,
+TP and T interfaces reproduced at historical \texttt{CL1-ST.md:138--1828},
+qualified by their separate decisions and later source-normalization
+correction. That file's new CL1 conclusion is excluded as a premise.
+FLOW's own cap is $0<u\le m^2/8000$; TP/T1--T4 are fixed-square transfers.
+
+% MAP: source-p6-b | S:603-619
+Finally, retain the raw fixed-stage NR1/L0 and Gaussian/common-space/Wick
+inequalities of the historical EB-ST accepted-input appendix, at $m,u>0$
+and fixed positive regulator/stabilizer/finite geometry. In particular
+NR1 gives $\delta_Z\le d_D M_Z/(96N)$,
+$\delta_A\le d_D M_A/(96N)$, with $Z_Q\ge z$.
+L0 smooths unit BL functions with error at most $\sqrt r\delta$ and
+order-through-four operator bounds at most $\sqrt6\delta^{-3}$ for
+$0<\delta\le1$. Keep the sharper-author/larger-blind-core scope, Gaussian
+mass tilt, independent covariance-defect coupling and actual physical
+common-space Wick bounds/normalizers. These are finite raw statements.
+Old EB1/FV/CL1 conclusions with global $g_*$ hypotheses are excluded from
+this bridge's premises. Prior argument ports give author provenance,
+rather than a proof a blind solver must read. The source records the
+literal statements, separate decision hashes and ranges in historical
+\texttt{support/UPSTREAM-STATEMENTS.md}, \texttt{support/} decisions and
+\texttt{SOURCE-MAP.json}; their bodies are unavailable to this role.
+P6 excludes AHKZ C2(ii) and C2(iii).
+
+% MAP: source-ap1 | S:621-633
+\paragraph{AP1: original finite-lattice endpoint and source bound.}
+Under P1--P5 and $0<u\le m^2/8000$, for all lattices, tori and profiles
+of P2 the original zero-field law obeys
+\[
+ \max_x\varepsilon^2\sum_y\E_\nu(\psi_x\psi_y)\le3/m^2.
+\]
+For real vectors $f$ on $T$ and real $t$,
+\[
+ 0\le\log\E_\nu\exp\left[t\varepsilon^2\sum_xf_x\psi_x\right]
+       \le\frac{3t^2}{2m^2}\varepsilon^2\sum_xf_x^2.
+\]
+
+% MAP: source-ap2 | S:635-643
+\paragraph{AP2: actual free-boundary continuum source bound.}
+For centered squares $B$, real compact smooth $f$ and real $t$,
+\[
+ 0\le\log\E_{\nu_B}e^{t\phi(f)}\le\frac{3t^2\|f\|_2^2}{2m^2}.
+\]
+The same holds for real $f\in L^2(\R^2)$ via the Gaussian extension.
+In particular $0\le\log[Z_B(h)/Z_B(0)]\le3h^2|B|/(2m^2)$ for real $h$.
+
+% MAP: source-ap3 | S:645-653
+\paragraph{AP3: pressure and the exact original FS target.}
+With P5's pressure,
+\[
+ 0\le\alpha_m(uX^4-hX)-\alpha_m(uX^4)\le3h^2/(2m^2),\quad h\in\R.
+\]
+It is differentiable at zero with derivative zero. The actual two original
+FS maximal states coincide; write their common value as $v_{m,u}$.
+For every $\ell>0$, finite real compact-smooth tuple $f$, and centered
+$\Lambda_n=(-n\ell,n\ell)^2$, their joint test laws under the original
+classical free $\nu_{m,u,\Lambda_n}$ converge to those under $v_{m,u}$.
+
+% MAP: source-ap4 | S:655-667
+\paragraph{AP4: reference-pair identity and the fixed instance.}
+For $M>0$, set $s=m/M$ and $\lambda=u/s^2$.
+Then $\lambda/M^2=u/m^2\le1/8000$, and under the manuscript's exact
+dilation $(T_s\psi)(f)=\psi(s^{-2}f(\cdot/s))$,
+\[
+ v_{m,u}=(T_s)_*v_{M,\lambda}.
+\]
+The source-defined target is therefore the original common FS maximal
+state and the same reference/dilation expression as in the construction,
+with identical physical finite-volume approximants, rather than an arbitrary
+subsequential limit. The fixed $m=1,u=10^{-10}$ has this original-target
+existence/equality/free-limit witness under P1--P5 since $10^{-10}<1/8000$.
+
+% MAP: source-ap5 | S:669-677
+\paragraph{AP5: physical source identity, field version and interactingness.}
+Also assuming P6, the physical zero-regulator finite-volume laws have
+exactly the classical $\nu_B$ compact-joint laws. They converge weakly on
+the original $X=H^{-2}_{\mathrm{loc}}$ to a unique probability $\nu^X$
+representing $v_{m,u}$; all compact-test polynomial moments converge and
+are uniformly integrable at every fixed positive order. For every $u>0$
+in this ratio range, $v_{m,u}$ is non-Gaussian by the retained positive local
+quartic boundary-density structure. This interactingness check is separate
+from equality of the two maximal states.
+
+% MAP: source-ap6-a | S:679-699
+\paragraph{AP6: strict numerical-budget applicability.}
+Also assume P6, $0<u/m^2<1/8000$ and a fixed finite compact-smooth tuple.
+Finite-stage definitions/constants are precisely the inherited
+\texttt{EB-ST.md:7--55}. For $K\subset[-R_{\mathrm{obs}},R_{\mathrm{obs}}]^2$
+use the exact \texttt{CL1-ST.md:47--68} coefficient with
+$R=R_{\mathrm{obs}}$, its H1/MIX constants furnished by the separately
+accepted finite interfaces after their actual premises are discharged.
+The formula has $\epsilon_*=\min(1/4,1/m)$, $K_{\mathrm{cov}}=1$,
+$c_{\mathrm{CT}}=16.2$ and $\kappa=m/256$; AP6 itself supplies no
+numerical $C_f$. If $K\subset\Lambda_{n_0}$ open, the actual continuum
+finite-box interpolation obeys, for $n\ge n_0$, $t\in[0,1]$ and
+$G\in C_b^1$ with separately bounded value and Euclidean gradient,
+\begin{align*}
+ &\left|\operatorname{Cov}_{\nu_{n,t}}
+ \left(G(Y_f),u[J_{\Lambda_{n+1}}-J_{\Lambda_n}]\right)\right|\\
+ &\hspace{1cm}\le C_f u\,4\ell^2(2n+1)e^{-\kappa\operatorname{dist}(K,S_n)}.
+\end{align*}
+For $n\ell\ge R_{\mathrm{obs}}$, define
+\[
+ q=e^{-\kappa\ell},\quad
+ T_n=q^n\left[\frac{2n+1}{1-q}+\frac{2q}{(1-q)^2}\right],\qquad
+ E_n=4C_f u\ell^2e^{\kappa R_{\mathrm{obs}}}T_n.
+\]
+
+% MAP: source-ap6-b | S:701-718
+The actual physical observation law then has BL$_1$ distance at most
+$E_n$ from the same source target $v_{m,u}$, equivalently $\nu^X$.
+For both original process-neuron architectures and every positive finite
+stage in EB-ST, the same five-term expression holds:
+\begin{align*}
+ &d_{\mathrm{BL}}\left(\mathcal L_f(P^b_{N,\epsilon,\Omega,a;\Lambda_n}),
+                                 \mathcal L_f(\nu^X)\right)\\
+ &\hspace{1cm}\le\min\{2,\min(2,D_{\mathrm{law}}N^{-1/4})
+              +S+A_{\mathrm{aux}}+R_{\mathrm{phys}}+E_n\}.
+\end{align*}
+Here $D_{\mathrm{law}},S,A_{\mathrm{aux}},R_{\mathrm{phys}}$ are the exact
+finite-stage formulas of historical \texttt{EB-ST.md:32--44,72--98}, with
+the required geometry and physical covariance. BL$_1$ retains its two
+separate constraints. With certified coefficient/test/support envelopes,
+the EC1.e reverse-stage argument applies using the distinct
+\texttt{FS-pressure-target-v1} certificate in place of an old $g_*$
+inequality. It supplies no unsupplied envelope and neither amends prior
+acceptance nor certifies the original observable-independent sequence.
+
+% MAP: source-eb-intro | S:721-732
+\subsubsection{Inherited EB1 finite normalized-law and removal interfaces}
+The recorded EB1 statement digest is
+\par\noindent{\small\texttt{d6b400d4d47c6f8e28f7344b678b2ed2114504336c1635585a192bcf25319c83}}\par
+Definitions and EB1.a--d,f retain their finite-stage scopes, with AP6
+supplying the explicit-cap final arrow. EB1.e,g are unused and omitted;
+excluded E4/r0 material is absent. The historical global header fixed
+$m,u,\ell>0$ with $0<u/m^2<\min(g_*,1/8000)$ and an admissible reference
+pair/target. Its $g_*$ condition is preserved as historical scope, rather
+than assumed for the present strict-AP6 route. The physical squares
+$\Lambda_n=(-n\ell,n\ell)^2$ restrict the interaction; all field laws
+occupy the whole plane. The observations, support and BL$_1$ convention
+are those already defined. The physical multiplier is
+$(m^2+\omega^2+\xi^2+a^2\omega^2\xi^2)^{-1}$, $0<a<1/m$,
+$\kappa_a^2=a^{-2}-m^2$, $c=C_a(0)$. The endpoint covariance is
+$e^{-|z-z'|_1/a}/4$, a distinct covariance. Stabilizer $\epsilon>0$ and
+$\Omega$ are as above. A width is a count of iid product/Mondrian whole-plane
+process neurons, each with countably many variables. Lattice mesh,
+spectral cutoff and covariance-flow time are not approximation parameters
+in this chain.
+
+% MAP: source-eb-width-data | S:734-760
+For the fixed-stage width clause allow nested centered physical squares
+$\Lambda_0\subset\Lambda_1$, including equality, enclosed by $\Omega$,
+and a bounded box $D$ containing $\Omega$ and all supports.
+Put $d_D=|D|$, $O=|\Omega|$, $E_D=L^4(D)$, $Y=\mathcal O_f$, and
+\begin{align*}
+ V_i(v)&=u\int_{\Lambda_i}(v^4-6cv^2+3c^2)
+       +\epsilon\int_{\Omega\setminus\Lambda_i}v^4
+       -\frac{\kappa_a^2}{2}\int_\Omega v^2,\\
+ V_t&=(1-t)V_0+tV_1,\qquad0\le t\le1.
+\end{align*}
+Let $Q_N^b$ be the law of the normalized neuronal sum restricted to $D$,
+and $Q_\gamma$ the endpoint Gaussian law. Write
+$w_t=e^{-V_t}$, $Z_Q=Q(w_t)$,
+$A_Q(t,G)=Q[G(Y)w_t]$, $\rho_{Q,t}=Y_*(w_tQ/Z_Q)$ and
+$L_Q(t,G)=A_Q/Z_Q$. Their $t=i$ endpoints are the actual associated
+neural/full-Gaussian-tilt observation laws. The inherited constants are
+\begin{align*}
+ \alpha&=\min(u,\epsilon),&U&=\max(u,\epsilon),\\
+ B_N&=\kappa_a^2/2+6uc,&L_N&=B_N^2O/(2\alpha),\\
+ F&=\left(\sum_i\|f_i\|_{4/3,D}^2\right)^{1/2}.
+\end{align*}
+Use $v_1=4Ux^3+2B_N\sqrt O\,x$, $v_2=12Ux^2+2B_N\sqrt O$,
+$v_3=24Ux$, $v_4=24U$, and precisely the $e_0,\ldots,e_4$ Bell
+polynomials displayed earlier. With $\beta_0=1$,
+$\beta_k=(k/(2\alpha e))^{k/4}$ for $k>0$, put
+\begin{align*}
+ \mathcal T_N\left(\sum p_kx^k\right)&=e^{L_N}\sum p_k\beta_k\quad(p_k\ge0),\\
+ M_Z&=\mathcal T_N(e_4),&
+ M_A&=\mathcal T_N\left(\sum_{j=0}^4\binom4jF^je_{4-j}\right),\\
+ z&=e^{-3UO/16-3uc^2|\Lambda_1|},&
+ C_{\mathrm{law}}&=d_D(M_A+M_Z)/(96z),\\
+ D_{\mathrm{law}}&=\tfrac43(3\sqrt6C_{\mathrm{law}})^{1/4}(2\sqrt r)^{3/4}\\
+ &=2^{23/8}3^{-5/8}r^{3/8}C_{\mathrm{law}}^{1/4},&
+ D'_{\mathrm{law}}&=\sqrt6C_{\mathrm{law}}+2\sqrt r.
+\end{align*}
+Euler's number $e$ is distinct from $e_j$.
+
+% MAP: source-eb-laws | S:762-778
+For one physical $\Lambda$, set $A=|\Lambda|$,
+$B_{\mathrm{ext}}=|\Omega\setminus\Lambda|$,
+$F_p=(\sum_i\|f_i\|_p^2)^{1/2}$ and
+$L_c=(4\sqrt{15}+12)c^{3/2}$. The literal laws are
+\begin{gather*}
+ P=P^b_{N,\epsilon,\Omega,a;\Lambda},\quad
+ Q_\epsilon=\nu^v_{\epsilon,\Omega,a;\Lambda}=\iota_*\operatorname{Res}_\epsilon,
+ \quad Q_0=\nu^{(2)}_{\Omega,a;\Lambda}=\iota_*\operatorname{Res}_0,\\
+ Q_a=\nu_{a,\Lambda},\quad Q_{\mathrm{phys}}=\nu_{0,\Lambda},
+ \quad Q_{\mathrm{target}}=\nu=\nu_\infty^X.
+\end{gather*}
+The residual law has normalized density $e^{-W_{a,\Lambda}-\epsilon J}$
+against $G'_{\Omega,a}$, where
+$W=u\int_\Lambda(x^4-6c_ax^2+3c_a^2)$ and
+$J=\int_{\Omega\setminus\Lambda}x^4$.
+$Q_\epsilon$ is the positive-stabilizer full tilt and $Q_0$ its residual
+endpoint. $Q_a$ is the normalized $e^{-U_{a,\Lambda}}$ tilt on the actual
+common realization $\Phi_a$; $U_{0,\Lambda}$ is the fourth-chaos limit.
+Classical finite-volume compact-test laws equal those of $Q_{\mathrm{phys}}$,
+and $\nu$ is the existing target. Mass, factorial and normalization stay fixed.
+Define
+\begin{align*}
+ \Delta_{\Omega,a}&=C_a-C'_{\Omega,a},&
+ \delta_\Omega(H)&=\sup_{x\in H}\Delta_{\Omega,a}(x,x),
+ \quad\delta_\Omega(\varnothing)=0,\\
+ \xi_a(s)&=\kappa_a^2\int_{|x|>s}C_a(x)^2\,dx,\\
+ \kappa_0&=e(1+\sqrt2),&\kappa_2&=(2\pi)^{-1}\sqrt{17\pi/16},\\
+ M_6&=(2\pi)^{-5/3}(5\pi)^{5/6}m^{-1/3},&
+ K_\Lambda&=u\sqrt{384A\kappa_2M_6^3},\\
+ K_{\mathrm{sharp}}&=\max\{12uA,(2/e)K_\Lambda\sqrt{\kappa_0/m}\},\\
+ T_\Lambda(H)&=\exp[-\exp((\pi/2)\sqrt{H/(12uA)}-1)],\\
+ \Xi_p(\Lambda)&=e^{pK_{\mathrm{sharp}}}
+    +\int_{K_{\mathrm{sharp}}}^\infty pe^{pH}T_\Lambda(H)\,dH.
+\end{align*}
+
+% MAP: source-eb-a | S:780-791
+\paragraph{EB1.a: actual fixed-stage neural law.}
+For either architecture and every $N\ge1$, uniformly in $t\in[0,1]$,
+\begin{align*}
+ \sup_{G\in\mathcal U_4(r)}|L_{Q_N^b}(t,G)-L_{Q_\gamma}(t,G)|
+ &\le\min\{2,C_{\mathrm{law}}/N\},\\
+ d_{\mathrm{BL}}(\rho_{Q_N^b,t},\rho_{Q_\gamma,t})
+ &\le\sqrt6C_{\mathrm{law}}/(N\delta^3)+2\sqrt r\delta,
+ \quad0<\delta\le1,\\
+ \sup_t d_{\mathrm{BL}}(\rho_{Q_N^b,t},\rho_{Q_\gamma,t})
+ &\le\min\{2,D_{\mathrm{law}}N^{-1/4}\},\qquad
+ D_{\mathrm{law}}\le D'_{\mathrm{law}}.
+\end{align*}
+All derivative norms are full multilinear operator norms and endpoint
+identification is included. The inherited finite clause covers all widths,
+singular/repeated/sign-reversed tests, tests outside $\Omega$, constant $G$,
+$u=\epsilon$ and empty shells. Zero shell response does not identify neural
+and full-tilt laws. Empty/all-zero tuples have zero error directly; $r=0$
+does not need smoothing. Uniformity is only for fixed positive parameters
+and bounded geometry. The current theorem retains its narrower original
+ordered bump family.
+
+% MAP: source-eb-b | S:793-798
+\paragraph{EB1.b: stabilizer.}
+With variation $\sup_{\text{Borel }|H|\le1}$, whose maximum is two,
+\[
+ \|Q_\epsilon-Q_0\|_{\mathrm{var}}
+ \le\min\{2,6\epsilon B_{\mathrm{ext}}c_a^2e^{9uAc_a^2}\}=S.
+\]
+This includes $\epsilon=0$ through the residual laws and gives zero when
+$B_{\mathrm{ext}}=0$.
+
+% MAP: source-eb-c | S:800-806
+\paragraph{EB1.c: auxiliary region.}
+In the same tuple metric,
+\[
+ d_{\mathrm{BL}}(\mathcal L_f(Q_0),\mathcal L_f(Q_a))
+ \le\min\left\{2,e^{9uAc_a^2}
+ [2uAL_c\sqrt{\delta_\Omega(\overline\Lambda)}
+                         +F_1\sqrt{\delta_\Omega(K)}]\right\}.
+\]
+If $\Omega$ contains all points at Euclidean distance less than $s>0$
+from compact $H$, then $\delta_\Omega(H)\le\xi_a(s)$, which tends to
+zero at fixed $a$ as $s\to\infty$. Thus the error vanishes for fixed
+$a,\Lambda,f$ as $\Omega$ grows. It suffices that
+$\overline\Lambda\cup K\subset[-R_H,R_H]^2$ and
+$0<s<R_{\mathrm{aux}}-R_H$. This inherited clause asserts no
+uniform-in-$a$ or exponential auxiliary rate by itself.
+
+% MAP: source-eb-d | S:808-813
+\paragraph{EB1.d: physical regulator.}
+At fixed $\Lambda$ and $0<a<1/m$,
+\[
+ d_{\mathrm{BL}}(\mathcal L_f(Q_a),\mathcal L_f(Q_{\mathrm{phys}}))
+ \le\min\{2,\Xi_2(\Lambda)^{1/2}[4K_\Lambda\sqrt a+(a/2)F_2]\}.
+\]
+It tends to zero at fixed $\Lambda,f$; neither $\Xi_2$ nor $K_\Lambda$
+is asserted uniform in $\Lambda$.
+
+% MAP: source-eb-f | S:815-826
+\paragraph{EB1.f: compatible budget and literal limits.}
+For the fixed tuple, let accepted CL1-FV1 furnish $n_0$ with
+$K\subset\Lambda_{n_0}$. For $n\ge n_0$, $n\ell\ge R_{\mathrm{obs}}$,
+use $\kappa=m/256$, $q=e^{-\kappa\ell}$ and the same $T_n,E_n$ as AP6.
+Choose the EB1.a constants with $\Lambda_0=\Lambda_1=\Lambda_n$.
+For every admissible positive $a,\epsilon$, bounded $\Omega$ enclosing
+$\overline\Lambda_n$, a box $D$ containing $\Omega$ and supports, and
+$N\ge1$, the five-term budget is the AP6-displayed expression with its
+historical $\nu$ target. It passes exactly through
+$Q_\epsilon,Q_0,Q_a,Q_{\mathrm{phys}},\nu$ and implies the literal
+iterated limit: $N$ first, then $\epsilon\to0$, $R_{\mathrm{aux}}\to\infty$,
+$a\to0$, $n\to\infty$. A tolerance schedule reverses these dependencies:
+$n,a,R_{\mathrm{aux}},\epsilon,N$.
+Historical $C_f,g_*$ retain their possibly noneffective source meaning;
+there is no arbitrary simultaneous schedule, practical numerical width,
+new dimension, stronger coupling or priority assertion in that clause.
+
+% MAP: source-ec-intro | S:830-847
+\subsubsection{Inherited EC1.a--c coefficient bounds}
+The corrected EC1 statement digest recorded in the source is
+\par\noindent{\small\texttt{1406f33ad2370b8f5c59751ec73d06ada0c3a9c159fd75e3ec6b4abbb748b4fe}}\par
+These are rules for the physical variance, covariance tail and fixed-square
+Nelson constant; the accepted positive-accuracy selector is not an oracle
+for the present tuple. Use the exact massive covariance/Fourier convention
+at historical \texttt{CONSTRUCTION.tex:303--330},
+\[
+ C_a(z)=(2\pi)^{-2}\int_{\R^2}
+ \frac{e^{ip\cdot z}}{m^2+\omega^2+\xi^2+a^2\omega^2\xi^2}\,dp,
+\]
+\[m>0,\quad0<a<1/m,\quad\kappa_a^2=a^{-2}-m^2>0,\quad c_a=C_a(0).
+\]
+Tail norms are Euclidean. The physical covariance differs from the
+variance-$1/4$ endpoint covariance. Retain the exact EB1
+$K_\Lambda,K_{\mathrm{sharp}},T_\Lambda,\Xi_p$ for $u>0$ and positive
+finite area $A$, with $\log_+x=\max(0,\log x)$.
+For width clauses use the same possibly equal nested squares, $O>0$,
+$d_D>0$, $\alpha=\min(u,\epsilon)>0$, $U=\max(u,\epsilon)$,
+$B_N=\kappa_a^2/2+6uc_a$ and tuple norm $F$. No convention changes.
+
+% MAP: source-ec-a | S:849-869
+\paragraph{EC1.a: point variance and certified enclosures.}
+For $h=ma\in(0,1)$,
+\begin{gather*}
+ \max\left\{\frac14,\frac{\log(1/h)-(1-h^2)/2}{2\pi}\right\}
+ \le c_a\le\overline c(a)=\frac{\operatorname{asinh}(1/h)+1}{2\pi},\\
+ \operatorname{asinh}(x)=\log(x+\sqrt{1+x^2}).
+\end{gather*}
+Hence $c_a=(2\pi)^{-1}\log(1/(ma))+O(1)$ as $a\downarrow0$ at fixed
+$m$. Upper-bound uses, including positive-coefficient EB1 widths, may
+replace $c_a$ by $\overline c(a)$. For $Q>0$ and a partition
+$0=q_0<\cdots<q_M=Q$, define
+\begin{align*}
+ H(q)&=[(m^2+q^2)(1+a^2q^2)]^{-1/2},\\
+ c_{\mathrm{lo}}&=(2\pi)^{-1}\sum_j(q_{j+1}-q_j)H(q_{j+1}),\\
+ c_{\mathrm{hi}}&=(2\pi)^{-1}
+ \left[\sum_j(q_{j+1}-q_j)H(q_j)+1/(aQ)\right].
+\end{align*}
+Then $c_{\mathrm{lo}}\le c_a\le c_{\mathrm{hi}}$ and
+\[
+ c_{\mathrm{hi}}-c_{\mathrm{lo}}
+ \le\frac{\max_j(q_{j+1}-q_j)/m+1/(aQ)}{2\pi}.
+\]
+Thus positive computable $m,a$ satisfying the strict regulator condition
+give computability of $c_a$ by certified elementary operations.
+
+% MAP: source-ec-b | S:871-888
+\paragraph{EC1.b: exponential squared-covariance tail.}
+For $s\ge0$,
+\begin{gather*}
+ \int_{|z|>s}C_a(z)^2\,dz
+ \le\min\{1/(4\pi m^2),e^{-\sqrt2ms}/(2\pi m^2)\},\\
+ \xi_a(s)\le\rho_a(s)=\frac{\kappa_a^2}{4\pi m^2}
+                         \min\{1,2e^{-\sqrt2ms}\}.
+\end{gather*}
+At fixed $a$ this vanishes explicitly. The rate depends on $m$ and the
+prefactor retains its regulator dependence. The same strict source geometry
+is mandatory: if the Euclidean $s$-neighborhood of compact $H$ lies in
+$\Omega$, $\delta_\Omega(H)\le\rho_a(s)$. Thus if
+$\overline\Lambda\cup K\subset[-R_H,R_H]^2$ and
+$0<s<R_{\mathrm{aux}}-R_H$, the auxiliary error is at most
+\[
+ \min\{2,H_{\mathrm{aux}}\sqrt{\rho_a(s)}\},\qquad
+ H_{\mathrm{aux}}=e^{9uA\overline c(a)^2}
+ [2uA(4\sqrt{15}+12)\overline c(a)^{3/2}+F_1].
+\]
+No regulator-uniform defect modulus or interchange of limits is asserted.
+
+% MAP: source-ec-c1 | S:890-908
+\paragraph{EC1.c: elementary bounds and enclosures for $\Xi_p$.}
+For every fixed $p\ge1$ set
+\[
+ b=\frac{\pi^2}{48uA},\qquad
+ H_p=\max\left\{K_{\mathrm{sharp}},\frac4b
+                      \left[\log_+\frac{32p}{eb}\right]^2\right\}.
+\]
+Then
+\[
+ e^{pK_{\mathrm{sharp}}}\le\Xi_p(\Lambda)
+ \le e^{pH_p}+e^{-pH_p}\le2e^{pH_p}.
+\]
+These finite elementary values give explicit certified
+$\Xi_2^{1/2}$ and fixed-volume regulator bounds. The exact equivalent
+formula $K_\Lambda^2=[75\sqrt{85}/(2\pi^3m)]u^2A$ avoids fractional
+cube-root powers in numerical evaluation.
+
+% MAP: source-ec-c2 | S:910-924
+For $T\ge H_p$ and a partition $K_{\mathrm{sharp}}=x_0<\cdots<x_M=T$,
+the lower and upper enclosures for $\Xi_p$ are respectively
+\begin{align*}
+ &e^{pK_{\mathrm{sharp}}}
+   +\sum_j(x_{j+1}-x_j)pe^{px_j}T_\Lambda(x_{j+1}),\\
+ &e^{pK_{\mathrm{sharp}}}
+   +\sum_j(x_{j+1}-x_j)pe^{px_{j+1}}T_\Lambda(x_j)+e^{-pT}.
+\end{align*}
+The degenerate interval $T=K_{\mathrm{sharp}}$ has empty sum.
+Increasing $T$ and refining the partition makes the enclosure arbitrarily
+tight, proving computability for computable $m,u,A,p$ without evaluating
+any CL1 source coefficient. At fixed $m,u,p$, as $A$ grows,
+\begin{align*}
+ \log\Xi_p&\ge12puA,\\
+ \log\Xi_p&\le p\max\left\{K_{\mathrm{sharp}},\frac{192uA}{\pi^2}
+           \left[\log_+\frac{1536puA}{e\pi^2}\right]^2\right\}+\log2.
+\end{align*}
+This upper bound grows as $O_{m,u,p}(A\log^2A)$ and concerns the source
+Nelson bound, without a volume-uniform moment assertion.
+
+% MAP: source-opt-intro | S:928-942
+\subsubsection{Inherited OPT coefficients and physical Gaussian facts}
+The accepted OPT statement digest recorded in the frozen source is
+\par\noindent{\small\texttt{1c178d728e6ffbf744b19eff30433fff75961b67365dcbfec0ef17f196e61e5b}}\par
+Use the same chosen explicit H1 coefficient $C_H<2^{16}$ in every
+$C_f$ formula. OPT.a--b supply the usable H2 value $C_{H2}=2^{384}$
+in the literal $J$ expression and its scalar $R=1$ coefficient
+$C_f\le2^{360}$. Their finite-source assumptions and attribution remain.
+The source appendix describes these as inherited inputs for SELECT;
+that historical label does not change the present UDA interface. The
+finite-lattice variables below are local to that inherited theorem,
+and its original scalar tuple is unused. Reproving the earlier coefficient
+theorem is outside the present translation.
+
+% MAP: source-opt-a | S:944-951
+\paragraph{OPT.a: explicit finite H2 coefficient.}
+At the fixed $m,u,\ell,K_{\mathrm{cov}}=1$, on the entire remaining
+finite-lattice domain, with actual posterior, actual outer law and literal
+A1--A6 from the finite-interface appendix, the physical Wick covariance obeys
+\[
+ \left\|\varepsilon^2\sum_{z\in S_n^\varepsilon}e^{d_L(x,z)/128}
+ \left|\operatorname{Cov}({:}\psi_z^4{:}_c,{:}\psi_x^3{:}_c\mid Y_s)\right|
+ \right\|_{L^2(\nu_s)}\le2^{384}g(s)^{7/2}.
+\]
+This includes every permitted $\varepsilon,n,t,L$, all $0<s\le1$, both
+$t$ endpoints, zero-profile sites and coincident $x,z$.
+The squared envelope is $2^{768}g(s)^7$, with finite required square-root
+integral. No unquantified spatial score constant or translated-moment
+premise is added.
+
+% MAP: source-opt-b | S:953-957
+\paragraph{OPT.b: literal bump coefficient.}
+With the earlier explicit H1 formula, OPT.a's H2 coefficient, $R=1$,
+$n_0=1$, $\epsilon_*=1/4$, $\kappa=1/256$ and $c_{\mathrm{CT}}=81/5$,
+the literal CL1 expression obeys $C_f\le2^{360}$.
+The formula includes its source integral, endpoint, every prefactor and
+$[m^2(1+m^2)]^{-1}$. AP6 gives its applicability to the same original
+pressure-identified FS target under P1--P6. Earlier acceptances
+$C_{H2}\le2^{1800}$ and $C_f\le2^{1810}$ do not by themselves accept
+the changed coefficients.
+
+% MAP: source-gaussian-physical | S:961-973
+The inherited Gaussian/common-space facts are premises already used in
+the EB1 proof, rather than conclusions of SELECT's new source estimate.
+They hold for every fixed finite real compact-smooth tuple, including
+singular test covariance. At $m=1$, $0<a<1$, the physical $\Phi_a$ has
+the multiplier stated earlier, with measure $dp/(2\pi)^2$.
+On the accepted common realization,
+$\E|(\Phi_a-\Phi_0)(f)|^2\le(a^2/4)\|f\|_2^2$ for every such real $f$.
+The continuous Gaussian endpoint has covariance $e^{-|z-w|_1/a}/4$,
+distinct from the physical point variance $c_a$.
+
+% MAP: source-gaussian-defect | S:975-985
+For each $\Omega$, $C'_{\Omega,a}$ is an actual continuous covariance
+kernel with $0\le C'_{\Omega,a}\le C_a$ in positive-semidefinite kernel
+order. Thus $\Delta=C_a-C'_{\Omega,a}$ is positive semidefinite.
+There exist independent centered continuous Gaussian fields $\gamma',\psi$
+with covariances $C',\Delta$. Then $X_c=\gamma'+\psi$ has physical
+regulated reference law, and $Y_c=\gamma'$ has the mass-tilt reference law.
+The weights $w_X=e^{-W_{a,\Lambda}(X_c)}$ and
+$w_Y=e^{-W_{a,\Lambda}(Y_c)}$ yield the actual normalized $Q_a,Q_0$.
+Their common upper bound is $e^{6uAc_a^2}$; the $Y$ normalizer is at least
+$e^{-3uAc_a^2}$. If the strict Euclidean $s$-neighborhood of compact $H$
+lies in $\Omega$,
+$\delta_\Omega(H)\le\kappa_a^2\int_{|z|>s}C_a(z)^2\,dz$.
+
+% MAP: source-gaussian-weights | S:987-994
+On the physical common Gaussian space $U_{a,\Lambda}$ is the
+coefficient-one own-variance Wick interaction, and $U_{0,\Lambda}$ its
+fourth-chaos limit. Then $\E U_{a,\Lambda}=0$,
+$Z_a=\E e^{-U_{a,\Lambda}}\ge1$. For $w_a=e^{-U_{a,\Lambda}}$,
+$w_0=e^{-U_{0,\Lambda}}$,
+\[
+ \E|w_a-w_0|\le2K_\Lambda\Xi_2(\Lambda)^{1/2}\sqrt a,
+ \qquad\|w_0\|_2\le\Xi_2(\Lambda)^{1/2}.
+\]
+All stated physical moments are finite at each fixed physical square.
+$Q_{\mathrm{phys}}$ has the original classical $\nu_B$ compact-test laws,
+as AP5 also supplies.
+
+% MAP: source-gaussian-l0 | S:996-1003
+Finally, accepted L0 is an ambient Euclidean premise. For $G$ with separate
+unit sup and Lipschitz bounds on $\R^r$, standard Gaussian $\xi\in\R^r$
+and $G_\delta(y)=\E G(y-\delta\xi)$, $G_\delta$ is smooth,
+$\|G-G_\delta\|_\infty\le\sqrt r\delta$,
+$\|G_\delta\|_\infty\le1$, $\|DG_\delta\|_{\mathrm{op}}\le1$ and
+$\|D^jG_\delta\|_{\mathrm{op}}\le\sqrt{(j-1)!}\delta^{1-j}$ for $j\ge2$.
+For $0<\delta\le1$, all norms through four are at most $\sqrt6\delta^{-3}$.
+It holds in the original ambient dimension irrespective of covariance rank.
+
+
+% The accepted UDC source contract and its implementation proof.
+% MAP: udc-status | US:1-17 UP:1-3 UC:1-13 UD:1-30
+\subsection{The separately versioned finite-resource implementation}
+\label{udc:contract}
+UDA's every-$q$ statement concerns finite mathematical integers. The
+separately accepted UDC-dyadic-accuracy-v1 implements a finite partial
+realization: success gives an exact symbolic certificate, and a valid
+mathematical request may resource-refuse. Its frozen source files retain
+their author-candidate status flags; the external exact-current UDC decision
+supplies their internal acceptance. Neither a success flag nor a newly
+self-hashed core supplies acceptance. The unchanged older ACC and SVC
+interfaces retain their own names, domains and bytes.
+
+% MAP: udc-identities | US:3-9 UC:1-13 UP:23-27 G:141-161 V:139-180 H:15-40
+The version identities are:
+\begin{description}[leftmargin=1em,style=nextline,itemsep=0.1em]
+\item[Request] \nolinkurl{UDC-dyadic-accuracy-request/1}
+\item[Certificate] \nolinkurl{UDC-dyadic-certificate/1}
+\item[Backend] \nolinkurl{accepted-UDA-STAGE-RELATIVE-v2-bounded-v1}
+\item[Source bundle] \nolinkurl{UDC-UDA-STAGE-RELATIVE-v2-sources-20261028-v1}
+\end{description}
+The following entry-point and source-root descriptions refer to the original
+private UDC packet, which is not included in this public document export.
+Its original private source map supplies the paths and digests described below.
+The command-line entry points are \nolinkurl{dyadic_accuracy_search.py} and
+the separate \nolinkurl{verify_dyadic_accuracy.py}. Both use the adjacent \texttt{sources/}
+tree by default; \texttt{--source-root} relocates an identical complete
+tree. Every declared source body is local and hash-bound, with no live
+checkout fallback. The companion source map binds these names to their
+actual supplied relative paths and full digests.
+In this packet the core root is \nolinkurl{inputs/accepted/UDC/}, with its
+direct tree at \nolinkurl{inputs/accepted/UDC/sources/}. The eight bound core
+bodies are the producer, verifier, \nolinkurl{dyadic_common.py},
+\nolinkurl{SOURCE-PINS.json}, \nolinkurl{STATEMENT-ONLY.md},
+\nolinkurl{PROOF.md}, \nolinkurl{INPUT-CONTRACT.md} and
+\nolinkurl{INPUT-SCHEMA.json}. The reviewed frozen core supplies the external
+version trust root for those exact hashes.
+
+% MAP: udc-request | US:3-7 UC:12-16 UP:5-5 H:86-208 I:1-318
+Every fixed request member and member set is exact. The request retains
+the original model, metric, architectures and ordered translated-bump domain.
+A dyadic tolerance has \texttt{kind=dyadic} and a canonical decimal-string
+\texttt{q}, such as \texttt{"13"}; the separate compatibility form is
+\texttt{kind=one-fifth}. Decimal $q$ has no sign, leading zero, decimal point,
+exponent notation or whitespace. Values below three are unsupported.
+Canonical positive text exceeding the chosen representation ceiling
+resource-refuses before conversion to an integer or a $q$-dependent
+allocation. There is no mathematical upper $q$. Coordinate numerators are
+signed canonical decimal strings, with exponent $0,\ldots,16$, odd numerator
+for a positive denominator exponent, and exponent zero for integers and zero.
+The exact coordinate bound $|P|\le8\,2^k$ uses only fixed small shifts.
+
+% MAP: udc-capacities | UC:14-16 UP:5-5 H:22-40 H:157-208 H:210-268 I:1-318
+All ten limits are required. The first four are ordinary bounded integer
+fields; each stage limit is a typed integer node with
+\texttt{kind=integer} and canonical decimal text. A node's text must also fit
+\texttt{max\_integer\_digits}. The defaults and inclusive hard ranges are:
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\begin{longtable}{@{}p{0.46\linewidth}p{0.48\linewidth}@{}}
+\toprule
+Limit & Default; hard range \\
+\midrule
+\endhead
+\texttt{max\_integer\_digits} & $1024$; $1,\ldots,4096$ decimal magnitude digits \\
+\texttt{max\_watched\_bits} & $8192$; $16,\ldots,8192$ bits of selected magnitudes \\
+\texttt{max\_milliseconds} & $30000$; $1,\ldots,30000$ cooperative milliseconds \\
+\texttt{max\_steps} & $20000$; $1,\ldots,50000$ named logical ticks \\
+\texttt{max\_n} & $10^{100}$; $1,\ldots,10^{2048}$ \\
+\texttt{max\_k} & $10^{100}$; $1,\ldots,10^{2048}$ \\
+\texttt{max\_regulator\_exponent} & $10^{400}$; $4,\ldots,10^{2048}$ \\
+\texttt{max\_auxiliary\_radius\_exponent} & $8191$; $1,\ldots,8191$ \\
+\texttt{max\_stabilizer\_exponent} & $10^{1000}$; $34,\ldots,10^{2048}$ \\
+\texttt{max\_width\_exponent} & $10^{1000}$; $1,\ldots,10^{2048}$ \\
+\bottomrule
+\end{longtable}
+\endgroup
+Equality at stage, representation, bit, transport, work and timing caps
+passes. A conservative small-power preflight can refuse when its
+preconstruction bound $\operatorname{bitlen}(b)j$ exceeds the watched-bit
+cap even though a particular eventual value could fit. These are selected
+software capacities, rather than necessary mathematical resources.
+The width cap bounds $e_{\mathrm{new}}=\log_2N_{\mathrm{new}}$;
+$w_{\mathrm{old}}$ has the different unit $\log_2\log_2N_{\mathrm{old}}$.
+
+% MAP: udc-parser | US:17-17 UC:16-16 UC:34-34 UP:5-5 UP:27-27 H:70-135 H:137-208
+\paragraph{Strict parsing and refusal precedence.}
+API requests and certificate results are bytes. Request transport is capped
+at $32768$ bytes and certificate-result transport at $131072$ bytes; CLI
+reads stop after cap plus one. Before numerical or source work the parser
+checks strict UTF-8, no BOM, nesting at most sixteen, at most $5000$
+value/container nodes, strings at most $4096$ characters, member names at
+most $256$ characters, and integer tokens at most twenty characters including
+a sign. Duplicate members, floats, nonfinite tokens, malformed syntax,
+trailing data and unsupported types refuse; booleans are distinguished from
+integers. Byte capacity is reached before decoding, nesting before recursive
+JSON parsing, integer-token capacity during parsing, and the remaining
+structure capacities before semantic validation. A reached finite capacity
+returns \texttt{RESOURCE\_EXHAUSTED}; it can prevent a later syntax condition
+from being reached. Malformed syntax and unsupported mathematical values
+return \texttt{UNSUPPORTED\_INPUT} when reached. Certificate parsing preserves
+capacity refusal and translates malformed syntax to
+\texttt{REFUSED\_CERTIFICATE}. This retains the corrected parser category
+without declaring a large valid $q$ outside the theorem.
+
+% MAP: udc-representation-proof | US:7-9 UC:16-16 UP:5-5 H:157-208 H:431-481 G:141-161
+Every derived mathematical integer is a typed bounded decimal node;
+rationals have typed numerator and positive denominator. Powers are inert
+\texttt{pow2} nodes with typed exponents. The tolerance, $a$, $\epsilon$,
+$\eta$, $\zeta$ and both widths remain symbolic. No $2^q$, $2^p$, $2^t$,
+$N_{\mathrm{new}}$ or $2^{w_{\mathrm{old}}}$ is materialized. Every success
+node is watched and checked against its decimal digit ceiling. The hard
+$8192$-bit watched bound implies fewer than $2468$ decimal magnitude digits,
+below the $4096$-character string cap and the interpreter conversion guard.
+The producer reparses its own encoded result before reporting success.
+Thus successful output contains neither an oversized bare integer token nor
+an unreadable decimal node. A representation failure is an explicit resource
+refusal, even when the corresponding mathematical integer exists.
+
+% MAP: udc-factored-proof | UP:7-7 UC:18-18 G:11-23 V:12-20 H:210-268
+\paragraph{Exact factored arithmetic.}
+Let $a,b>0$ be integers and $z$ a finite signed integer. To decide
+$a2^z\le b$ when $z\ge0$, compare
+$\operatorname{bitlen}(a)+z$ with $\operatorname{bitlen}(b)$.
+Unequal lengths decide the comparison; equal lengths require the guarded
+exact integer shift. When $z<0$, compare $\operatorname{bitlen}(a)$ with
+$\operatorname{bitlen}(b)-z$, with the same equal-length rule.
+The verifier separately computes the displacement
+$z+\operatorname{bitlen}(a)-\operatorname{bitlen}(b)$ and uses its sign
+before a guarded equal-length comparison. Both rules follow directly from
+$2^{h-1}\le M<2^h$ for a positive integer of binary length $h$.
+Equality returns true. The guard checks the nonnegative shift exponent plus
+one before constructing that power. These exact predicates work even when
+the displayed exponent is far beyond a materializable power; no floating
+logarithm or astronomical shift is needed.
+
+% MAP: udc-log-proof | UP:9-9 G:25-32 V:22-29 S:227-248
+For a positive rational $a/b$, the producer starts at
+$h=\max(0,\operatorname{bitlen}(a)-\operatorname{bitlen}(b))$ and increases
+once if the factored test $a/b\le2^h$ fails. Binary-length bounds put the
+least answer in precisely these two positions; it checks the answer and
+predecessor. The verifier independently uses zero for $a\le b$, and otherwise
+\begin{equation}\label{udc:clog}
+ \operatorname{clog}_2(a/b)
+ =\operatorname{bitlen}\!\left(\left\lfloor\frac{a-1}{b}\right\rfloor\right).
+\end{equation}
+Indeed $\lfloor(a-1)/b\rfloor=\lceil a/b\rceil-1$, whose binary length is
+the least $h$ with $a/b\le2^h$. Its predicate and predecessor are also
+checked. This proves every non-strict dyadic tie rule in both paths.
+In particular $h_K=\lceil\operatorname{clog}_2(14u^2A)/2\rceil$ is the
+least integer with $14u^2A\le2^{2h_K}$, including exact powers of four and
+arguments at most one.
+
+% MAP: udc-spatial-proof | UP:11-11 G:41-72 V:37-67 S:229-240 P:56-82
+\paragraph{Least spatial and Nelson stages.}
+Both paths use the exact geometry and $\overline C$ above. The producer writes
+$\overline E(i)=C(i)2^{-5i}$ with
+\[
+ C(i)=\frac{\overline C\,\overline{\exp R}}{2500}
+ \left[\frac{32(2i+1)}{31}+\frac{64}{961}\right].
+\]
+The verifier independently reduces the bracket to $(1984i+1056)/961$.
+The spatial predicate is exactly $C(i)2^{d-5i}\le1$. The preceding
+mathematical proof shows strict monotonicity and the positive upper witness
+$\lceil(d+356)/4\rceil$. The producer bisects from zero to the lesser of
+this witness and \texttt{max\_n}; failure of the high predicate is a stage
+refusal. The verifier separately doubles from one, clamps at the same finite
+cap, and refines its false/true bracket. Each refinement strictly reduces
+the positive endpoint gap. The final predicate and predecessor prove the
+same least $n$. The selected ratio $\overline E(n)/\eta$ is materialized
+only with a separately guarded finite power and watched reduced rational.
+This is a capacity check on that ratio, rather than construction of $\eta$.
+
+% MAP: udc-nelson-proof | UP:13-13 G:73-91 V:67-88 S:237-248 P:84-132
+At this $n$, $A=4000000n^2$, $U_A=A/10^{10}$ and $b_0=3/(16U_A)$ are
+exact rational values. The producer forms $L_{10}(k)$ using direct guarded
+nonnegative polynomial powers and factorials. The verifier uses the distinct
+recurrence $T_0=1$, $T_j=T_{j-1}k/j$, summing through ten. Both give the
+same degree-ten polynomial and strict predicate $L_{10}(k)>32/b_0$.
+The finite witness $\lceil32/b_0\rceil$, producer bisection, independent
+verifier doubling/refinement, finite \texttt{max\_k} and checked predecessor
+prove the same least $k$. Monotonicity follows from the nonnegative
+coefficients and positive linear term. Also
+$1+\lceil\max(12U_A,4\overline K,4k^2/b_0)\rceil$ equals one plus the
+maximum of the individual ceilings. Thus the two implementations use exactly
+$H_N$, without substituting the older compact bounds. Both derive
+$p=4H_N+2h_K+2d+8$. Its first physical exponent is exactly $-d-1$, its
+second is at most $-d-1$, and the preceding even integer fails the first
+predicate. The actual $K_\Lambda$ and volume-dependent $\Xi_2$ remain in
+the conditional error estimate.
+
+% MAP: udc-outer-proof | UP:15-15 G:92-104 V:88-102 S:241-248 P:145-194
+\paragraph{Auxiliary radius and stabilizer.}
+At that same $p$, both compute $j=\lceil18U_Ap^2\rceil$ and the complete
+$B_{\mathrm{aux}}=64U_Ap^2+4c_r$. By the proved logarithmic rule,
+$h_s=1+\operatorname{clog}_2(j+h_{\mathrm{aux}}+p+d)$ is the first integer
+at least one satisfying $j+h_{\mathrm{aux}}+p-2^{h_s-1}\le-d$.
+Predicate and predecessor are checked before accepting the selected stage.
+The guarded $s=2^{h_s}$ gives $R_{\mathrm{aux}}=1000n+s+1$ and
+$O=4R_{\mathrm{aux}}^2$. Since $R\le9<1000n$, the strict source margin is
+one and $O>A$. Finally
+$t=\max(34,j+\operatorname{clog}_2(6Op^2)+d)$ gives the stabilizer exponent
+at most $-d$ and $0<\epsilon\le2^{-34}<u$.
+At every stage, equality with a cap passes and strict exceed refuses.
+The accepted mathematical argument then supplies the actual three
+$R_{\mathrm{phys}},A_{\mathrm{aux}},S$ bounds, with their full physical and
+common-space premises.
+
+% MAP: udc-relative-proof | UP:17-17 G:105-119 V:102-118 S:249-266 S:398-414 P:438-520
+\paragraph{Relative threshold, parity and complete old comparison.}
+Both implementations independently reconstruct $o_+=\max(o,78)$,
+$T_{1/2}=\lceil t/2\rceil$, $x,y,k_1,n_0,k_4$ and $e_{\mathrm{new}}$.
+They verify $4x\ge2t+4p+o_++3$ and
+$4y\ge2t+8p+3o_++8$. The proof above keeps both $t$ parities, the actual
+joint tilted moments through sixteen, every centered Bell/product term and
+the vector coefficient $38432$. Consequently $K_1<2^{k_1-2}$ and
+$16K_1^2<2^{2k_1}$. Since the right side is an integer,
+$N_0\le2^{2k_1}<2^{n_0}$. The exact positive difference
+$e_{\mathrm{new}}-n_0=6x+2y+4d+38$ proves threshold safety.
+$K_4<2^{k_4}$ and $\zeta=2^{-d-3}$ give normalized-law error below
+$3\eta/8$ and smoothing at most $\eta/2$. The actual first arrow is below
+$7\eta/8$. Software reconstruction uses these proved inequalities without
+replacing the interacting tilt by independent marginal laws.
+
+% MAP: udc-old-proof | UP:19-19 G:110-119 V:109-118 S:258-266 S:426-442 P:559-685
+At exactly those stages each path reconstructs the complete old coefficient
+majorants $h_{\mathrm{root}},v_{\mathrm{old}},q_{\mathrm{old}},l_{\mathrm{old}}$
+and $H_{\mathrm{small}}$. It checks both positive remainder guards,
+$o\le l_{\mathrm{old}}-1$ and
+$\operatorname{clog}_2(3U_Ap^2)\le l_{\mathrm{old}}-1$, and checks
+$H_{\mathrm{small}}\le7l_{\mathrm{old}}+47$ with
+$\operatorname{bitlen}(H_{\mathrm{small}})\le l_{\mathrm{old}}+2$.
+Thus the first old candidate fails its explicit strict inequality and
+$w_{\mathrm{old}}=l_{\mathrm{old}}+3$ passes both original guards.
+The old sufficiency proof above retains coercivity and both Jensen terms.
+The new bound $e_{\mathrm{new}}\le12l_{\mathrm{old}}+553$ and
+$\operatorname{bitlen}(e_{\mathrm{new}})\le w_{\mathrm{old}}$ prove
+$e_{\mathrm{new}}<2^{w_{\mathrm{old}}}$, hence
+$2^{e_{\mathrm{new}}}<2^{2^{w_{\mathrm{old}}}}$, without constructing either
+count. The obsolete compact $e<2^{40}$ and $6up<1$ guards do not appear.
+
+% MAP: udc-target-proof | UP:21-21 US:9-13 G:127-139 V:124-137 S:416-461 P:522-557 P:687-749
+\paragraph{The actual target budget and legacy equality.}
+The five certificate arrows are the same
+$P_N\to Q_\epsilon\to Q_0\to Q_a\to Q_{\mathrm{phys}}\to\nu^X$.
+Their upper factors in units of symbolic $\eta$ are
+$(1,1,1,1,\overline E(n)/\eta)$, whose sum is at most five.
+The allocated total divided by tolerance is $5/8$ for $d=q+3$, and
+$25/32$ for the separate $1/5$ request with $d=5$.
+The stronger first-arrow bound is separately retained. UDA.f proves exact
+equality of every listed legacy outer variable, both width formulas and all
+relative exponents on the eleven old settings. Both software paths check the
+bounded consequences and $e=16\lceil t/2\rceil+20p+4d+544$ when that
+branch applies. This is mathematical stage equality; the new request and
+certificate identities remain distinct. Finite replay cases check executed
+paths, while the complete proof supplies the universal quantifier.
+
+% MAP: udc-source-proof | UP:23-23 US:15-15 UC:20-22 H:270-420 V:139-180
+\paragraph{Source and core integrity; independent arithmetic.}
+The embedded manifest digest binds all $541$ direct source rows, including
+each exact relative path, size and hash. Per-source reads are capped at
+$1$ MiB and aggregate source reads at $16$ MiB. Resolved paths must remain
+inside the supplied root; absolute paths, parent escapes and symlink escapes
+refuse. Required original SELECT/OPT/EB1/EC1/ADMIT/SVA gates and material-role
+aliases, strict AP6 and unknown-$g_*$ flags, and the exact-current UDA
+statement, proof, freeze, decision and open gate are checked among explicit
+digest aliases. An unavailable required body is a source gap; changed
+size/hash/manifest/identity is a binding refusal; an over-cap read can
+resource-refuse first. Every declared body is bundled. These are byte
+identity checks, with the externally reviewed frozen core as the version
+trust root; a self-rewritten core or manifest is a different, unaccepted
+version. Source presence supplies no new analytic truth or authorship proof.
+
+% MAP: udc-verifier-proof | UP:23-23 US:11-15 UC:22-22 G:141-161 V:1-180 H:399-420
+The verifier imports only the common syntax, binding, constants and resource
+utilities. It imports no producer stage/search/width routine and no older
+arithmetic module. Its independent bracket/refinement, Nelson recurrence,
+rational-power formula and integer algebra reconstruct the entire expected
+typed object. Exact canonical encoded comparison checks every nested witness,
+symbolic unit, source/core binding, scope flag, extra or missing member and
+Boolean/integer distinction. It freshly binds current code and source bytes.
+Historical logical steps, selected peak bits and elapsed time are checked as
+typed provenance, with \texttt{historical\_execution\_authenticated=false}.
+A fabricated but well-typed historical time may verify; the verifier's own
+cooperative measurement is separate. Source/core hashes authenticate neither
+historical elapsed time nor external scientific acceptance.
+
+% MAP: udc-resource-proof | UP:25-25 UC:24-30 H:210-268 H:431-481 G:141-161 V:139-180
+\paragraph{Selected watches, work and timing scope.}
+Every search loop has a finite bracket/refinement variant or fixed degree,
+with named logical-step polling. Ticks count selected source/core/manifest
+reads, predicates, comparisons, logarithmic minimality checks, search
+iterations and polynomial/recurrence terms. They are software actions,
+rather than CPU instructions or a complexity bound. Output conversion,
+watches and time polls do not add ticks. Strict step exceed refuses.
+Selected integer and reduced-rational numerator/denominator watches cover
+the parsed stage caps and $q$, all selected stage values, factored comparison
+arguments, direct polynomial powers or recurrence terms, radii, area,
+relative/old exponents, ratio and typed output. A power-of-two allocation is
+guarded by exponent plus one; a degree at most twelve small power uses its
+conservative preconstruction bit bound. Fixed small constants and all Python
+arithmetic intermediates are not universally instrumented. These watches
+supply no all-intermediate or process-memory theorem.
+
+% MAP: udc-timing-proof | UP:25-25 UC:28-30 H:210-268 G:141-161 V:139-180
+Cooperative time begins after request parsing and validation in both APIs;
+the verifier parses the certificate result after creating its clock.
+Source reads, ticks, watches and final polls check elapsed time. Clock reads
+must be finite non-Boolean integers/floats, integer magnitude at most
+$10^{12}$, callable and monotonically nondecreasing. A bad or backward clock
+resource-refuses. Equality at the millisecond limit passes; strict exceed
+refuses. An operation is not interrupted between polls. Serialization,
+output, interpreter startup and whole-process duration are outside that
+interval. Arbitrary interruption, interpreter/hardware/output-device failure
+and process-memory guarantees are outside the defined certificate contract.
+CLI output uses exclusive creation, preserving prior result bytes on retries.
+
+% MAP: udc-results | US:15-17 UP:23-27 UC:30-34 H:42-59 H:422-459 G:141-161 V:139-194
+The producer's \texttt{SUPPORTED\_DOMAIN\_SUCCESS} supplies a conditional
+numerical certificate. The verifier's \texttt{CERTIFICATE\_VERIFIED}
+reports fresh binding and separate arithmetic. The defined refusals are:
+\begin{itemize}[nosep]
+\item \texttt{UNSUPPORTED\_INPUT}: malformed or unsupported request.
+\item \texttt{NUMERICAL\_SOURCE\_GAP}: required frozen source unavailable.
+\item \texttt{SOURCE\_BINDING\_REFUSAL}: changed binding or identity.
+\item \texttt{RESOURCE\_EXHAUSTED}: a reached declared finite capacity.
+\item \texttt{REFUSED\_CERTIFICATE}: malformed, incompatible or false result.
+\end{itemize}
+Every defined refusal has
+\texttt{numeric\_certificate\_available=false} and omits a numerical
+certificate. Success and verification keep self-acceptance false. The
+pre-correction parser core, original harness failures and the minor corrected
+forty-to-thirty-nine case count remain historical evidence; the current
+parser categories and exact current source decision govern this version.
+
+% MAP: udc-witness | E:1-1115 US:3-9 UP:21-21 UD:1-30
+\paragraph{A recorded request beyond the old eleven settings.}
+The accepted portable example uses the four distinct ordered corners
+$(-8,-8),(-8,8),(8,-8),(8,8)$, both architectures, and $q=13$.
+Its certificate records
+\begin{align*}
+ d&=16,&n&=76,&H_N&=2417,&p&=9708,\\
+ h_s&=33,&R_{\mathrm{aux}}&=8590010593,&t&=3919396758,\\
+ e_{\mathrm{new}}&=31355368832,&w_{\mathrm{old}}&=3919435662.
+\end{align*}
+The exact spatial ratio is $\overline E(n)/\eta=691456/11411875$.
+Thus the symbolic counts are $2^{31355368832}$ and
+$2^{2^{3919435662}}$ in their distinct units. This is recorded exact
+conditional arithmetic; it is neither an actual field simulation nor a
+measurement of the cost of constructing those process neurons. Any replay
+performed for this manuscript has its own hashed receipt. The universal
+theorem comes from the proof above, independently of this finite witness.
+
+% MAP: udc-final-scope | US:13-17 UC:32-34 UP:25-27 S:10-21 S:463-484 P:767-776 UD:1-42
+All physical covariance/Wick/common-space, strong-$L^4$ random-element,
+zero-Bochner-mean, sign, every bounded-bilinear and actual endpoint interfaces
+retain their original conditional scopes at each selected finite positive
+stage. NR1's sharper author versus larger blind core, classical/source truth,
+strict AP6 and unknown original fixed $g_*$ remain explicit. Width counts
+whole-plane process neurons with countably many internal variables. The
+software computes no canonical least inner indices, practical/minimal/necessary
+cost, finite global-weight field simulator, full-field rate, global neural
+Schwartz control, broader model/test family or priority. Its internal
+exact-version acceptance and this manuscript's fresh review are distinct;
+the immutable public v1 is unchanged.
+
+\endgroup

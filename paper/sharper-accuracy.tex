@@ -1,0 +1,613 @@
+\clearpage
+\section{Sharper relative accuracy at the selected stages}
+\label{sva:current}
+
+The accepted SVA-ACC-RELATIVE-v1 mathematics carries the relative estimate
+through all supported accuracy-selected stages. The separately accepted
+SVC-relative-accuracy-v1 implementation realizes the symbolic rule.
+This appendix states their precise content and mathematical reasoning;
+it preserves the earlier results as dated checkpoints. Its mathematical
+implications are conditional on the literal source and finite-law
+interfaces below. The integrated presentation awaits its own fresh review.
+
+\subsection{Domain, notation and the actual unchanged laws}
+\label{sva:domain}
+
+Fix $m=1$, $u=10^{-10}$, $\ell=1000$, $K_{\rm cov}=1$ and the original
+coefficient-one, same-mass, own-variance Wick quartic, with no factorial.
+The field state space is the original complete $X=H^{-2}_{\rm loc}$ and
+$\nu^X=\nu$ is the same Fr\"ohlich--Simon target of
+Section~\ref{vqal:premises}. All P1--P6/AP, Gaussian/Wick,
+DSS/BD/BBD/Griffiths--Simon/SK-q/P*, H1/MIX/REG/smoothed-CT/FLOW/TP/T,
+source/classical/coefficient and NR1 qualifications there retain their
+original scopes. Numerical target identification uses strict AP6,
+$0<u/m^2<1/8000$. The original fixed $g_*$ and $10^{-10}<g_*$ remain
+numerically unknown. The sharper NR1 author result and larger isolated
+blind-proof core remain distinct; excluded NR2 E4/r0 is not used.
+
+The bump and ordered observations are exactly
+\eqref{vqal:bumpfamily}: $b(x)=\exp[-1/(1-x^2)]$ for $|x|<1$, zero
+otherwise, and $f_h(z)=b(z_1-h_1)b(z_2-h_2)$. There are $r\in\{1,2,3,4\}$
+centers. Each coordinate is a canonical $P/2^k\in[-8,8]$,
+$0\le k\le16$, with $k=0$ for integers and zero, and odd numerator
+when $k>0$. Decimal numerators have no plus, leading zero or negative
+zero. The tolerance strings are exactly \eqref{vqal:tolerances}.
+Additional observation amplitudes or signed coefficients, dilations and
+rotations are absent. Order and multiplicity are retained. Put
+\begin{align}\label{sva:geometry}
+ K&=\bigcup_i[h_{i1}-1,h_{i1}+1]\times[h_{i2}-1,h_{i2}+1],
+ &R&=1+\max_{i,j}|h_{ij}|,\quad c_r=\lceil\sqrt r\rceil,\nonumber\\
+ F_q&=\left(\sum_i\|f_{h_i}\|_q^2\right)^{1/2},
+ &F&=F_{4/3},\quad\bar F=3c_r,\nonumber\\
+ \bar C_f&=2^{360}c_r(4R+1)/5,
+ &\eta&=2^{-d}.
+\end{align}
+The full ambient observation is $O_f(v)=(v(f_{h_i}))_{i=1}^r$.
+The metric is the supremum over real $G$ with $\|G\|_\infty\le1$
+and Euclidean Lipschitz constant at most one separately on $\R^r$.
+The class $\mathcal U_4(r)$ uses full Euclidean multilinear operator
+norms through order four, all at most one, including absolute value at
+order zero. H\"older gives $\|O_f\|\le F$.
+
+Use exactly the outer minima \eqref{vqal:acc-spatial}--\eqref{vqal:acc-outer},
+with their $\delta$ renamed $\eta$ here. Thus $H_N$ is $H_{\rm Nel}$,
+$j_e$ is $j_{\exp}$, $h_A$ is $h_{\rm aux}$ and $h_S$ is
+$h_{\rm stab}$. All of $n,p,a,s,R_{\rm aux},O,o,t,\varepsilon$ keep
+their original meanings. Define
+$\Lambda=(-1000n,1000n)^2$, $D=\Omega=[-R_{\rm aux},R_{\rm aux}]^2$,
+$A=4000000n^2$ and $E=L^4(D;\R)$. Here $O=|D|$, not the observation
+operator. The accepted SVA proof, applied to this unchanged ACC selection,
+gives the following whole-domain bounds; their derivation is recalled
+in the proof of Theorem~\ref{sva:width} below:
+\begin{align}\label{sva:stagebounds}
+ 5&\le d\le15,&1&\le n\le80,& U_A=uA&\le64/25<3,\nonumber\\
+ k&\le7,&H_N&\le3137,&4\le p&\le12586<20000\quad(p\text{ even}),\nonumber\\
+ h_s&\le36,&R_{\rm aux}&<2^{37},& O&<2^{76},\quad o\le76,\nonumber\\
+ h_{\rm stab}&\le109,&34\le t&<2^{36},&\varepsilon&<u,\quad6up<1.
+\end{align}
+Also $1\le R\le9$, $K\subset(-1000,1000)^2$ openly,
+$F_1\le4c_r\le8$, $F_2\le2c_r\le4$, $F\le\bar F\le6$.
+With identical chosen H1 and H2 coefficients, the literal CL1 formula
+\eqref{qrs:CL1-constant} gives
+$C_f(\text{tuple};R)=\sqrt r(4R+1)C_f(\text{base};1)/5\le\bar C_f<2^{364}$;
+its separate factor $\exp(R/256)$ remains separate. The source flow
+variable in that formula is distinct from the auxiliary radius $s$.
+
+\paragraph{Full selected-stage reference premise.}
+At every selected $(a,D)$ assume the original EB1/NR1 finite-reference
+interface in its complete form. The physical multiplier and variance are
+\begin{equation}\label{sva:physicalvariance}
+ {1\over1+w^2+q^2+a^2w^2q^2},\qquad
+ c=c_a={1\over2\pi}\int_0^\infty
+ {dq\over\sqrt{(1+q^2)(1+a^2q^2)}},\qquad \kappa_a^2=a^{-2}-1,
+\end{equation}
+with Fourier measure $dw\,dq/(2\pi)^2$ and
+$c\le\bar c=[\operatorname{asinh}(1/a)+1]/(2\pi)<p$.
+The endpoint $\gamma$ is a centered, strongly measurable Gaussian
+$E$-valued random element with zero Bochner mean, global sign symmetry
+and covariance $e^{-|z-z'|_1/a}/4$. For each original architecture,
+$g^b|_D$ is strongly measurable, Bochner centered, globally sign
+symmetric, with $|g^b(z)|=1/2$ a.e. almost surely and that covariance.
+The product neuron uses two independent stationary symmetric telegraph
+processes of rate $1/(2a)$ and their product divided by two. The Mondrian
+neuron uses the projectively consistent whole-plane axis-parallel
+partition at budget $1/a$, independent uniform cell signs, half-valued
+cells and the original lower-left half-open representative. A rectangle
+of sides $w,h$ splits at rate $w+h$, vertically with probability
+$w/(w+h)$, at a uniform position, and daughters evolve independently for
+the remaining budget. Original existence, consistency and measurability
+are premises; boundary changes agree as $E$ elements. For \emph{every}
+bounded bilinear $B_0:E\times E\to\R$ assume
+\begin{equation}\label{sva:bilinear}
+ E B_0(g^b,g^b)=E B_0(\gamma,\gamma).
+\end{equation}
+Independent copies exist on product spaces. This full assumption is
+separate from point covariance. It is assumed at selected stages rather
+than inferred by applying the fixed-$n=75$ VEC theorem elsewhere.
+
+The actual potential and full normalized laws are
+\begin{align}\label{sva:actuallaws}
+ V(v)&=u\int_\Lambda(v^4-6cv^2+3c^2)
+       +\varepsilon\int_{\Omega\setminus\Lambda}v^4
+       -{\kappa_a^2\over2}\int_\Omega v^2,\quad w(v)=e^{-V(v)},\nonumber\\
+ F_N^b&=N^{-1/2}\sum_{i=1}^N g_i^b,\quad
+ P_N^b={w\,\Law(F_N^b)\over Ew(F_N^b)},\qquad
+ Q_\varepsilon={w\,\Law(\gamma)\over Ew(\gamma)}.
+\end{align}
+These are restrictions of the original whole-plane laws, not a new
+reference model. The actual $V$ always retains $c_a$. All downstream
+laws and their common Gaussian/Wick couplings in
+\eqref{qrs:chain}--\eqref{qrs:physical-errors} remain literal premises:
+$Q_\varepsilon\to Q_0\to Q_a\to Q_{\rm phys}\to\nu^X$ has error bounds
+$S,A_{\rm aux},R_{\rm phys},E_n$. The physical Wick normalizer
+$Z_a=E e^{-U_{a,\Lambda}}\ge1$ uses $EU_{a,\Lambda}=0$ on its physical
+Gaussian space. It is separate from each full normalizer in
+\eqref{sva:actuallaws}. AP5/AP6 identifies the same physical-to-target
+limit. Neither source hashes nor this restatement reprove these inputs.
+
+Literal ambient L0 uses a standard Gaussian $\xi$ on the original
+$\R^r$: $G_\zeta(y)=E G(y-\zeta\xi)$ has approximation error
+$\sqrt r\zeta$, absolute value and first derivative bounded by one,
+and $\|D^qG_\zeta\|_{\rm op}\le\sqrt{(q-1)!}\zeta^{1-q}$ for
+$q\ge2$. For $0<\zeta\le1$, all four norms are bounded by
+$\sqrt6\zeta^{-3}$. Singular covariances retain this ambient dimension.
+
+\subsection{Relative comparison under that interface}
+\label{sva:relative}
+
+For any $c_*\ge c$ used only in positive majorants define
+\begin{align}\label{sva:constants}
+ \alpha&=\varepsilon,\quad U=u,\quad B=\kappa_a^2/2+6uc_*,
+ &L&={B^2O\over2\alpha},\quad J_z={3UO\over16}+3uc_*^2A,
+ \quad H=L+J_z,\nonumber\\
+ v_1(x)&=4Ux^3+2B\sqrt O x,&v_2(x)&=12Ux^2+2B\sqrt O,\nonumber\\
+ v_3(x)&=24Ux,&v_4(x)&=24U,\nonumber\\
+ e_0&=1,\quad e_1=v_1,\quad e_2=v_1^2+v_2,
+ &e_3&=v_1^3+3v_1v_2+v_3,\nonumber\\
+ e_4&=v_1^4+6v_1^2v_2+3v_2^2+4v_1v_3+v_4,
+ &P_F(x)&=2e_4(x)+\sum_{q=1}^4\binom4q F^qe_{4-q}(x),\nonumber\\
+ X_{\rm rel}&=[2(H+4)/\alpha]^{1/4},
+ &Y_{\rm rel}&=2O^{1/4}(H+10)^{1/2},\nonumber\\
+ K_1&=v_1(X_{\rm rel})Y_{\rm rel},
+ &N_0&=\max(1,\lceil16K_1^2\rceil),\quad
+ K_4(F)=P_F(X_{\rm rel})Y_{\rm rel}^4/6.
+\end{align}
+The scalar moment bounds $X_{\rm rel},Y_{\rm rel}$ are distinct from
+$X=H^{-2}_{\rm loc}$ and any physical coupling fields. All polynomial
+coefficients are nonnegative and $\deg P_F\le12$.
+
+\begin{theorem}[SVA.a--c at every selected stage]\label{sva:relative-theorem}
+Under the complete premises above, fix either architecture, integer
+$N\ge1$ and $0\le j<N$. Form $S_j$, $v$, $Z_{j,h}(\theta)$ and the
+actual joint law $\Pi_{j,h,\theta}$ exactly as in \eqref{vqal:joint},
+with $h$ independent before tilt and of neuron or Gaussian law. Then the
+untilted point variance is at most $1/4$, its fourth moment at most
+$3/16$, every $Z$ is positive finite, and, for $z\ge0$,
+\begin{align}\label{sva:moments}
+ w(v)&\le e^{L-\alpha\|v\|_4^4/2},\quad Z\ge e^{-J_z},
+ &{d\Pi\over d\Law(S_j,h)}&\le e^H,\nonumber\\
+ \Pi(\|v\|_4^4>z)&\le\min(1,e^{H-\alpha z/2}),
+ &\|\|v\|_4\|_{L^q(\Pi)}&\le X_{\rm rel},\quad
+ \|\|h\|_4\|_{L^q(\Pi)}\le Y_{\rm rel}\quad(1\le q\le16).
+\end{align}
+Before tilt $E\exp(\|\gamma\|_4^2/(4\sqrt O))<4$.
+Each $Z$ and $\log Z$ extends as $C^1$ past $[0,1]$ with
+\begin{align}\label{sva:partitionratios}
+ (\log Z)'&=-N^{-1/2}E_\Pi DV(v)[h],
+ &| (\log Z)'|&\le K_1/\sqrt N,\nonumber\\
+ {Z_{j,g}(\theta)\over Z_{j,g}(1)}&\le e^{K_1/\sqrt N},
+ &{Z_{j,\gamma}(\theta)\over Z_{j,g}(1)}&\le e^{2K_1/\sqrt N}<2
+ \quad(N\ge N_0).
+\end{align}
+The zero-amplitude partitions agree. All derivatives of $w$ through
+four are globally bounded, with $\|D^kV(v)\|\le v_k(\|v\|_4)$ for
+$1\le k\le4$ and $\|D^kw(v)\|\le w(v)e_k(\|v\|_4)$ for $0\le k\le4$.
+
+For $G\in\mathcal U_4(r)$, let $m_j$ be its actual normalized Gaussian
+endpoint expectation and put $\Phi_j=(G\circ O_f-m_j)w$. Then
+$|m_j|\le1$, $\Phi_j\in C_b^4(E)$ and
+\begin{equation}\label{sva:derivative}
+ \|D^4\Phi_j(v)\|_{\rm op}\le w(v)P_F(\|v\|_4),\qquad
+ E_\Pi[P_F(\|v\|_4)\|h\|_4^4]\le P_F(X_{\rm rel})Y_{\rm rel}^4.
+\end{equation}
+For every integer $N\ge N_0$, each adjacent normalized replacement has
+error at most $K_4(F)/N^2$ and the actual laws satisfy
+\begin{align}\label{sva:BL}
+ |P_N^b(G\circ O_f)-Q_\varepsilon(G\circ O_f)|
+ &\le\min(2,K_4(F)/N),\nonumber\\
+ d_{\rm BL}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\varepsilon))
+ &\le\min\left(2,{\sqrt6K_4(F)\over N\zeta^3}
+                         +2\sqrt r\zeta\right)\quad(0<\zeta\le1),\nonumber\\
+ d_{\rm BL}(\mathcal L_f(P_N^b),\mathcal L_f(Q_\varepsilon))
+ &\le\min(2,D_rN^{-1/4}),\qquad
+ D_r^4={2048\sqrt6\over27}r^{3/2}K_4(F).
+\end{align}
+All supported repetitions, singularities and support geometries retain
+order, multiplicity and ambient dimension.
+\end{theorem}
+
+\begin{proof}
+We carry the argument of Section~\ref{vqal:relative} to these stages
+using the explicitly assumed full interface, not its fixed-stage theorem.
+At a.e. point the $N$ independent centered summands have variance $1/4$
+and fourth moments at most $3/16$. Their squared coefficient sum is
+$(N-1+\theta^2)/N\le1$. Expansion of the fourth power yields
+$E(\sum\beta_i\xi_i)^4\le(3/16)(\sum\beta_i^2)^2$; only single-index
+and two-pair terms survive. Tonelli gives integrability on finite $D$.
+H\"older and completion of the square give
+$V(v)\ge\alpha x^4-B\sqrt O x^2\ge\alpha x^4/2-L$, $x=\|v\|_4$.
+Dropping negative quadratic terms only in an upper bound gives
+$EV\le J_z$; Jensen proves $Z\ge e^{-J_z}$. The resulting actual
+joint density is bounded by $e^{H-\alpha x^4/2}$, proving its tail.
+
+For a nonnegative $T$ with tail at most $\min(1,e^{a-z})$, $a\ge0$,
+tail integration bounds its positive integer moments by those of
+$a+E_1$ for a unit exponential scalar; Minkowski gives
+$\|T\|_k\le a+(k!)^{1/k}$. At $T=\alpha x^4/2$, $k=4$ this gives
+$\|x\|_{16}\le X_{\rm rel}$. For Gaussian directions, the
+spatial/probability Minkowski inequality gives
+$E\|\gamma\|_4^{2k}\le O^{k/2}(k/2)^k$ for $k\ge2$; at $k=1$,
+$E\|\gamma\|_4^2\le\sqrt{3O}/4\le\sqrt O/2$.
+The positive series and $k!\ge(k/e)^k$ give
+$E\exp(\|\gamma\|_4^2/(4\sqrt O))\le\sum_{k\ge0}(e/8)^k<4$.
+The actual joint density cap therefore bounds the tilted tail of
+$T_\gamma=\|\gamma\|_4^2/(4\sqrt O)$ by
+$\min(1,e^{H+2-z})$. At $k=8$, $(8!)^{1/8}<8$ gives
+$\|T_\gamma\|_8<H+10$, hence the $Y_{\rm rel}$ bound.
+For a neuron, $\|g^b\|_4=O^{1/4}/2$ deterministically, even after tilt.
+Lyapunov gives every real order through sixteen. No post-tilt
+independence is used.
+
+Quartic H\"older gives the full Fr\'echet $v_k$ bounds. The exponential
+partition rule gives the Bell polynomials in \eqref{sva:constants},
+including coefficients $1,6,3,4,1$ at order four. A finite polynomial
+times $e^{L-\alpha x^4/2}$ is bounded globally; for $k>0$ its monomial
+maximum is $(k/(2\alpha e))^{k/4}$. Thus $w$ has bounded derivatives
+through four. Differentiating $Z$ is dominated by a constant times
+$\|h\|_4/\sqrt N$, integrable before tilt, on a real neighborhood of
+the amplitude interval. H\"older under the same actual $\Pi$ gives
+$E_\Pi|DV(v)[h]|\le(4UX_{\rm rel}^3+2B\sqrt O X_{\rm rel})Y_{\rm rel}=K_1$.
+Integrating the logarithmic derivative along one branch, or along both
+through their common zero-amplitude partition, proves the two ratios.
+For $N\ge N_0$, $2K_1/\sqrt N\le1/2$, so the second ratio is at most
+$\sqrt e<2$.
+
+The fourth product rule uses $|G-m_j|\le2$ and
+$\|D^q(G\circ O_f)\|\le F^q$, giving exactly $P_F$ with its second
+pure $e_4$ copy and all observation binomials. Its nonnegative monomial
+$x^k$ has $k\le12$. H\"older at total order $k+4\le16$ gives
+$E_\Pi x^k\|h\|_4^4\le X_{\rm rel}^kY_{\rm rel}^4$; at $k=0$ use
+the fourth direction moment directly. This proves the mixed-moment
+bound without multiplying dependent marginal expectations.
+
+Taylor through order three has the remainder \eqref{vqal:taylor}.
+Conditioning before tilt on $S_j$, zero Bochner means cancel first
+terms, global sign symmetry cancels third terms, and the full
+bounded-bilinear premise cancels second terms for
+$D^2\Phi_j(S_j)$. Strong measurability, separability and bounded
+derivatives justify evaluations, expectations and interchanges. Centering
+at $m_j$ makes the difference divided by $Z_{j,g}(1)$ exactly the
+normalized endpoint difference. Each of its two remainders has partition
+ratio at most two, and the integral weight is $1/24$. Their sum is at
+most $4P_F(X_{\rm rel})Y_{\rm rel}^4/(24N^2)=K_4(F)/N^2$.
+The $N$ actual normalized mixtures telescope. The final normalized sum
+of independent Gaussian $E$-elements has exactly the original Gaussian
+law, since continuous-linear-functional laws determine Borel laws on
+separable $E$. The endpoints are the actual $P_N^b,Q_\varepsilon$.
+
+Ambient L0 contributes two errors $\sqrt r\zeta$ and rescales its
+smooth test by $\sqrt6\zeta^{-3}$, proving \eqref{sva:BL}.
+For $A_0=\sqrt6K_4$, $B_0=2\sqrt r$, the interior minimizer is
+$(3A_0/(B_0N))^{1/4}$. Its value has fourth-power coefficient
+$(2048\sqrt6/27)r^{3/2}K_4$. When this minimizer exceeds one, that
+value exceeds $(4/3)B_0\ge8/3>2$, and the probability cap suffices.
+Both cases retain $N\ge N_0$; no covariance inverse or rank reduction
+occurs.
+\end{proof}
+
+\subsection{Complete logarithmic enclosure and same-stage width}
+\label{sva:enclosure}
+
+\begin{theorem}[SVA.d--f: all supported requests]\label{sva:width}
+At each unchanged selected stage, set $c_*=p$ only in the majorants and
+\begin{align}\label{sva:exponents}
+ T&=\lceil t/2\rceil,&x_e&=T+p+21,&y_e&=T+2p+61,\nonumber\\
+ k_1&=4T+5p+127,&n_0&=8T+10p+258,&k_4&=16T+20p+532,\nonumber\\
+ \zeta&=2^{-(d+3)},&e_{\rm new}&=k_4+4d+12
+              =16T+20p+4d+544,&N_{\rm new}&=2^{e_{\rm new}}.
+\end{align}
+Here $T$ is a scalar half-exponent, distinct from any source transfer
+interface or field. Then
+\begin{align}\label{sva:enclosure-result}
+ X_{\rm rel}&<2^{x_e},\quad Y_{\rm rel}<2^{y_e},
+ &K_1&<2^{k_1-2},\quad16K_1^2<2^{2k_1},\nonumber\\
+ N_0&\le2^{2k_1}<2^{n_0},
+ &K_4(F)&\le K_4(\bar F)<2^{k_4},\quad N_{\rm new}>N_0,\nonumber\\
+ d_{\rm BL}(\mathcal L_f(P_{N_{\rm new}}^b),
+                \mathcal L_f(Q_\varepsilon))&<7\eta/8<\eta.
+\end{align}
+The four other errors remain $E_n\le\bar E(n)\le\eta$ and
+$R_{\rm phys},A_{\rm aux},S\le\eta$ at the same stages. Thus
+\begin{equation}\label{sva:target}
+ d_{\rm BL}(\mathcal L_f(P_{N_{\rm new}}^b),\mathcal L_f(\nu^X))
+ \le\bar E(n)+4\eta\le5\eta\le\tau.
+\end{equation}
+For the identical old comparison \eqref{vqal:acc-width},
+$w_{\rm old}=l+3$, and
+\begin{equation}\label{sva:order}
+ e_{\rm new}<2^{40}<2^{w_{\rm old}},\qquad
+ N_{\rm new}<N_{\rm old}=2^{2^{w_{\rm old}}}.
+\end{equation}
+These compare sufficient mathematical whole-plane process-neuron
+integers at identical model, tests, architectures, target, outer stages
+and error allocation.
+\end{theorem}
+
+\begin{proof}
+The ACC predicates give \eqref{sva:stagebounds} analytically throughout
+the domain. To display the outer dependencies, $q=\exp(-125/32)<1/32$
+follows from the positive degree-eight exponential partial sum
+$432528188408407789/8866461766385664>32$. The shell bracket increases
+in $q$; $\exp(R/256)\le256/(256-R)<2$ gives $E_n\le\bar E(n)$.
+At $n=80$ the bracket is $159776/961<256$ and
+$\bar E(80)<2^{-38}\le\eta$. The actual Nelson bounds give
+$K_\Lambda^2<14u^2A<1$, $K_\sharp\le\max(12U_A,4)$,
+$b_{\rm Nelson}>3/(16U_A)>1/16$ and
+$\log_+(64/(e b_{\rm Nelson}))<k\le7$, so $H_2<H_N\le3137$.
+Hence $\sqrt{\bar\Xi_2}<2^{2H_N+1}$ and
+\begin{equation}\label{sva:regulator}
+ R_{\rm phys}<2^{2H_N+3-p/2}+2^{2H_N+2-p}\le\eta.
+\end{equation}
+The even candidate $4H_N+2d+8$ passes both predicates, giving the bound
+on $p$. The variance estimate follows from
+$\operatorname{asinh}(2^p)<\log(3\,2^p)<p+2$ and $\pi>3$.
+
+For completeness the original physical Wick exponential and full
+vector bracket satisfy $\exp(9U_A\bar c^2)<2^{j_e}$ and
+$2U_A L_{\bar c}+F_1<64U_Ap^2+4c_r\le2^{h_A}$.
+The strict margin $R_{\rm aux}-\max(1000n,R)-s=1$ includes the
+open $s$-neighborhoods of both required compacts. The covariance-defect
+bound gives $\sqrt{\rho_a(s)}<2^{p-s/2}$. Thus
+\begin{equation}\label{sva:remaining-errors}
+ A_{\rm aux}<2^{j_e+h_A+p-s/2}\le\eta,\qquad
+ S<2^{j_e+h_{\rm stab}-t}\le\eta.
+\end{equation}
+The existence bounds $j_e\le21600000000<2^{35}$,
+$64U_Ap^2+4c_r<2^{37}$ and $j_e+h_A+p+d<2^{35}$ imply $h_s\le36$.
+They yield $O<2^{76}$, $h_{\rm stab}\le109$, $t<2^{36}$.
+The condition $t\ge34$ ensures $\varepsilon<u$. Every area,
+variance, geometry and stabilizer dependence used next is retained.
+
+Relax $O<2^{76}$ to $O<2^{78}$ and $\sqrt O<2^{39}$. Since
+$\kappa_a^2=2^{2p}-1$ and $6up<1$, $B<2^{2p-1}+1\le2^{2p}$.
+Put $l_c=t+4p+78\ge128$. Directly from \eqref{sva:constants},
+\begin{align}\label{sva:H-enclosure}
+ L&<2^{t+4p+77}=2^{l_c-1},\nonumber\\
+ J_z&<2^{78}+9p^2<2^{78}+2^{32}<2^{79}\le2^{l_c},\nonumber\\
+ H&<2^{l_c+1},\qquad H+4,H+10<2^{l_c+2},\nonumber\\
+ X_{\rm rel}^4&<2^{2t+4p+81},\qquad
+ Y_{\rm rel}^4<2^{2t+8p+242}.
+\end{align}
+For both parities of $t$, $4T\ge2t$, and the two fourth-power slacks are
+$4T-2t+3\ge3$ and $4T-2t+2\ge2$. Therefore
+$X_{\rm rel}<2^{x_e}$ and $Y_{\rm rel}<2^{y_e}$. Odd $t$ rounds
+upwards; no $\lfloor t/2\rfloor$ is used.
+
+As $4u<1$ and $2p+40\le2x_e$,
+\begin{align}\label{sva:K1-enclosure}
+ v_1(X_{\rm rel})&<2^{3x_e}+2^{2p+40+x_e}<2^{3x_e+1},\nonumber\\
+ K_1&<2^{3x_e+y_e+1}=2^{4T+5p+125}=2^{k_1-2},\nonumber\\
+ 16K_1^2&<2^{2k_1},\qquad
+ N_0\le2^{2k_1}<2^{2k_1+4}=2^{n_0}.
+\end{align}
+The right side $2^{2k_1}$ is an integer. A real number strictly below
+an integer has ceiling at most that integer; the same-exponent ceiling
+comparison is weak, followed by a strict four-bit slack. This handles
+$N_0=\max(1,\lceil16K_1^2\rceil)$ exactly.
+
+Let $W_0=2^{3x_e+5}\ge1$. All four $v_j(X_{\rm rel})<W_0$.
+For $v_2$ its two terms have upper powers $2x_e+4$ and
+$2p+40\le2x_e$; for $v_3,v_4$ use $x_e+5$ and $5$.
+The Bell bounds are $1,W_0,2W_0^2,5W_0^3,15W_0^4$, each at most
+$16W_0^4$. Retaining the centered second $e_4$, every binomial term
+and $\bar F\le6$ gives
+\begin{align}\label{sva:Bell-enclosure}
+ P_F(X_{\rm rel})&\le P_{\bar F}(X_{\rm rel})
+ \le16W_0^4\left[2+\sum_{q=1}^4\binom4q6^q\right]\nonumber\\
+ &=38432W_0^4<2^{12x_e+36},\nonumber\\
+ K_4(F)&\le K_4(\bar F)<2^{12x_e+4y_e+36}
+                         =2^{16T+20p+532}=2^{k_4}.
+\end{align}
+Here $38432=16(1+7^4)<2^{16}$; the scalar coefficient $4112$ is not
+used. We only enlarge the upper by dropping the divisor six in $K_4$.
+These whole-domain analytic enclosures retain the actual tilt, volume
+and variance dependence; finite stage lists do not prove them.
+
+Now $e_{\rm new}-n_0=8T+10p+4d+286>0$, so $N_{\rm new}>N_0$.
+With $\sqrt6<3$ and $\sqrt r\le2$, the two terms in \eqref{sva:BL}
+obey
+\begin{equation}\label{sva:allocation}
+ {\sqrt6K_4(F)\over N_{\rm new}\zeta^3}<3\eta/8,
+ \qquad2\sqrt r\zeta\le\eta/2.
+\end{equation}
+Their sum is $<7\eta/8<\eta$. The four unchanged later actual-law
+arrows and the triangle inequality give \eqref{sva:target}. Strict
+AP6 identifies the same $\nu^X$; an unknown $g_*$ inequality is not
+inserted into that step.
+
+For the old guard, $h_R\le38$, $p<20000$, $t<2^{36}$, $o\le76$
+give $v_e<40040$ and $0<H_{\rm small}<3\,2^{36}+160335<2^{38}$.
+As $l=t+4p+o\ge50$, its bit-length guard holds. The first old candidate
+$l+2$ fails its explicit strict predicate; the next succeeds, hence
+$w_{\rm old}=l+3$. This retains the original old full-normalizer bound
+as its inherited accepted premise. Since $T\le2^{35}$,
+$e_{\rm new}<2^{39}+400604<2^{40}$, while
+$w_{\rm old}\ge53>40$. This proves \eqref{sva:order} at identical
+outer stages and allocations. It proves no necessary or minimal cost,
+measured speedup or effective common-sequence least-index rule.
+\end{proof}
+
+\subsection{Exact examples and the separately versioned implementation}
+\label{sva:examples}
+
+For four \emph{distinct} corner centers $(-8,-8),(-8,8),(8,-8),(8,8)$
+and tolerance $2^{-12}$ the accepted example is
+\begin{align}\label{sva:corner-example}
+ d&=15,\quad n=75,\quad p=6954,\quad s=4294967296,\nonumber\\
+ t&=1958503808,\quad T=979251904,\quad
+ e_{\rm new}=15668170148,\quad w_{\rm old}=1958531694,\nonumber\\
+ \bar E(n)+4\eta&={919201379\over6076595200000}<{1\over4096},
+ \qquad N_{\rm new}=2^{15668170148}<2^{2^{1958531694}}=N_{\rm old}.
+\end{align}
+The historical tuple $(0,0),(8,8),(0,0),(-8,-8)$ has three distinct
+centers and four ordered slots, including a repeated observation. Its
+same radius and ambient dimension give the same selected numerical
+values, while the ordered tuple, request bytes and semantic identity
+remain distinct.
+For the single unshifted bump at $1/5$, the accepted odd-$t$ example is
+\begin{equation}\label{sva:odd-example}
+ n=73,\quad p=6574,\quad t=1658202793,\quad T=829101397,
+ \quad e_{\rm new}=13265754396,\quad w_{\rm old}=1658229159.
+\end{equation}
+Here $d=5$ and the upward rounding in \eqref{sva:exponents} matters.
+These examples use their own selected stages; they are distinct from the
+older fixed-$1/5$ NORM/VEC rows in Table~\ref{vqal:comparison}.
+
+\begin{proposition}[Accepted SVC-relative-accuracy-v1 software contract]
+\label{sva:software}
+The exact accepted SVC version implements Theorems~\ref{sva:relative-theorem}
+and~\ref{sva:width} under their conditional premises and its bounded
+input/source/resource contract. A successful request retains the exact
+ordered tuple and unchanged outer minima, returns the derived geometry,
+source/Nelson/regulator/auxiliary/stabilizer and rational five-error
+witnesses, and encodes $N$ as the inert node
+$\operatorname{pow2}(\operatorname{integer}(e_{\rm new}))$.
+The units of its width cap are $e_{\rm new}=\log_2N$.
+The old comparison is separately typed, with units
+$w_{\rm old}=\log_2\log_2N_{\rm old}$, and never controls new selection.
+
+A separately implemented arithmetic verifier binds exact request bytes,
+source closure and eight current core/version roots, reconstructs every
+stage and nested witness with its own arithmetic, and checks exact
+member sets, types, canonical spelling and scope flags. Success verifies
+bytes and arithmetic under the accepted mathematical premises. Matching
+changes to code/proof roots define a different, unaccepted version.
+\end{proposition}
+
+\noindent\emph{Public availability: the following proof describes the original
+private SVC package and proof map, which are not exported here.}
+
+\begin{proof}
+The strict request schema, parser and source contract are supplied with
+the frozen code; the exact locations and hashes are in the proof map.
+The parser rejects duplicate members, floats/nonfinite tokens, invalid
+UTF-8/BOM, boolean integer fields, unknown members and unsupported
+coordinate/tolerance syntax. Canonical integer/rational arithmetic
+preserves order and multiplicity. It admits the domain in
+Section~\ref{sva:domain}, not user coefficients or expressions.
+
+The generator searches the first admissible $d,n,k,p,h_s$ in the stated
+predicates. The verifier independently uses $d=5$ at $1/5$ and $d=q+3$
+at $2^{-q}$, a rearranged rational shell bound, a Nelson term recurrence,
+$p=4H_N+2d+8$ and $h_s=1+\operatorname{clog}_2(j_e+h_A+p+d)$.
+The preceding even $p-2$ fails the first regulator predicate; the
+preceding dyadic auxiliary exponent fails its predicate. Independent
+minimal-power calculations give $h_A,o,h_{\rm stab},h_R$.
+No generator selection functions are used by the verifier.
+
+With $T=t\mathbin{//}2+(t\bmod2)$ the verifier independently calculates
+$k_1=3x_e+y_e+3$, $n_0=2k_1+4$, $k_4=12x_e+4y_e+36$ and
+$e_{\rm new}=k_4+4d+12$. It checks both parity slacks, the integer-ceiling
+threshold, coefficient $38432$, joint moment order sixteen, the separate
+physical variance flag, smoothing fractions and exact rational total.
+It verifies the typed old guard and strict order without materializing
+$N$, $2^p$, $2^t$ or $2^{w_{\rm old}}$.
+
+The manifest has exactly 208 direct source rows: 195 inherited runtime
+bodies and thirteen new mathematical/old-contract provenance bodies.
+Every fixed safe path is bounded-read below the explicit source root,
+checked for size/hash and required material aliases; symlink escape
+refuses. Accepted SELECT/OPT/EB1/EC1/ADMIT and SVA decisions/gates retain
+their exact material relations. The three runtime files, source manifest,
+schema, software statement/proof and input contract are freshly hashed
+as eight core bindings. External review and freeze supply a separate
+version trust root. These checks establish identity and availability,
+not signatures, classical truth or hostile-filesystem atomicity.
+
+Request and result byte caps are respectively 32768 and 131072. Parser
+nesting is sixteen; integer tokens have at most twenty characters
+including sign, strings 4096, member names 256, and value/container nodes
+5000. Each source read is capped at one MiB, aggregate source bytes at
+sixteen MiB. All eight resource members are mandatory. Their exact
+defaults and allowed intervals are shown in Table~\ref{sva:resources}.
+A stricter valid cap can refuse before returning a certificate.
+
+The clock begins after request parsing/validation; verifier certificate
+parsing is inside its measured interval. Source reads, selected ticks
+and named integer/Fraction watches poll time. Equality at the millisecond
+ceiling passes; excess, invalid/nonfinite/boolean clock values or
+backward clocks refuse. Values must be finite monotone integers or floats,
+and an integer clock has absolute value at most $10^{12}$.
+Named watches cover guarded source-coefficient,
+spatial/allocation/auxiliary powers; selected rational geometry, Nelson,
+outer and width exponents; old comparison integers; and the exact total.
+Logical steps count the documented read/predicate/search ticks. Ordinary
+Python intermediates and fixed small shifts are not universally watched.
+Serialization/output, whole-process time, memory and filesystem atomicity
+are outside the contract. Typed historical measurement metadata is
+unauthenticated; the verifier measures its own interval.
+
+The exact outcomes are supported-domain success, certificate verified,
+unsupported input, numerical source gap, source binding refusal, resource
+exhaustion and refused certificate. Refusals contain no numerical
+certificate; CLI exit is zero only on success and two for defined
+refusals. Interpreter/hardware/output-device failures remain outside this
+exception contract. Executed finite tests and monkeypatch traps support
+the current implementation correspondence, separately from the analytic
+proof above and the upstream statement-only proof. The accepted decision
+governs retained earlier candidate headers in those frozen files.
+\end{proof}
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lll}\toprule
+Resource member (prefix \texttt{max\_})&Default&Allowed interval\\\midrule
+\texttt{watched\_bits}&1024&16--4096\\
+\texttt{milliseconds}&30000&1--30000\\
+\texttt{steps}&20000&1--50000\\
+\texttt{n}&80&1--80\\
+\texttt{regulator\_exponent}&20000&4--20000\\
+\texttt{auxiliary\_radius\_exponent}&40&1--64\\
+\texttt{stabilizer\_exponent}&$2^{40}$&$34$--$2^{50}$\\
+\texttt{width\_exponent}&$2^{40}$&$1$--$2^{50}$\\\bottomrule
+\end{tabular}
+\caption{Exact SVC selected-resource contract. The last member bounds
+$e=\log_2N$. The older \texttt{max\_width\_outer\_exponent} member is
+incompatible and refuses. Named watches and cooperative time have the
+specific scope stated in the proof.}\label{sva:resources}
+\end{table}
+
+\subsection{Source, history and construction boundaries}
+\label{sva:boundaries}
+
+The SVA mathematical decision, accepted at its exact conditional scope,
+retains its original statement that SVC was then unlaunched. The later
+accepted SVC decision supersedes only that implementation status for the
+separately reviewed version. Its author/hostile/numerical/code-matching
+records remain distinct from SVA's hostile, complete statement-only,
+arithmetic and actual-proof records. All are internal fresh-session
+model review, not an outside-expert or statistical-independence credential.
+Earlier adverse attempts, source gaps, adapted versus unchanged replays
+and findings/dispositions remain recorded under their original identities.
+The original private companion index recorded which exact bodies were local.
+
+In the historical private integration, the curated inherited companion
+tree resolved the 23-packet index and its ninety indexed bindings locally,
+alongside the seven later baseline packets and the SVA/SVC source trees.
+That historical availability closed a dated assignment gap. The historical
+tree did not recursively bundle every quoted path or supply unavailable
+primary classical proofs. Those private source trees and their original
+availability map are not attachments to this public edition. The public
+proof map gives this edition's source locations and hashes. Hashes record
+exact bytes only.
+
+The deterministic common sequence, its four noneffective least inner
+indices, quantifiers over all later tests, correlations and reflection
+lists, and both
+original architectures remain as in Theorem~\ref{vqal:seq}.
+The quantitative schedule fixes observations first. MOM proves local
+$H^{-2}$ moment convergence/UI; the separately derived SEQ-HS statement
+gives physical/target $H^{-s}$ moment finiteness for real $s>1$ at its
+literal scope. The inclusive qualitative cap and strict AP6 numerical
+cap remain separate. The present single-exponent widths are sufficient
+whole-plane process-neuron counts; practical/minimal/necessary complexity,
+full-field rates, global neural Schwartz control, broader domains and
+priority are separate questions. Public v1 is unchanged.
+
+The standalone source contains the full present argument and every
+preserved baseline mathematical block. The original private companion proof map binds each
+new block and reading-guide headline to accepted statement and full-proof
+clauses. The original reversible editorial delta, exact preservation audit,
+build, reference/numerical receipts and all-page inspection record are
+retained as private integration evidence. Fresh source/proof/visual review and coordinator
+acceptance remain separate.
