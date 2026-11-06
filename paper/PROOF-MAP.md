@@ -6,7 +6,7 @@ replace the original private proof packets or their conditional premises.
 
 | File | Contents |
 |---|---|
-| neural-construction.tex | Original construction, classical inputs, provenance, quantitative applications and qualitative coupling-cap results |
+| neural-construction.tex | Original construction, classical inputs, source scope, quantitative applications and qualitative coupling-cap results |
 | sharper-accuracy.tex | Supported-accuracy relative width bounds and their source-qualified software contract |
 | unbounded-accuracy.tex | Every-dyadic-accuracy extension and the historical UDC contract |
 | composite-update.tex | CC1, CA1, complete hypotheses and proofs, and the same-target union-premise bridge |

@@ -1,12 +1,12 @@
 {
   "kind": "Public source navigation and exact block identity",
-  "version": "2",
-  "scope": "Not the original private source/acceptance map; original source premises remain.",
+  "version": "3",
+  "scope": "Source navigation; original source premises remain.",
   "files": [
     {
       "file": "composite-update.tex",
-      "sha256": "f3583f19d345c5e8bd6a0ccbaf9744a4b835d4528d07f88e87ed5f175fcb56d4",
-      "lines": 1578,
+      "sha256": "9c9ad90a983f1b6ee8eb7f0d7344f8eb513cbfa4f45fd39ab386e80ea64535b6",
+      "lines": 1577,
       "locations": [
         {
           "line": 7,
@@ -109,17 +109,17 @@
           "label": null
         },
         {
-          "line": 1014,
+          "line": 1013,
           "section": "Complete CA1 proof",
           "label": null
         },
         {
-          "line": 1533,
+          "line": 1532,
           "section": "The same-target CC1--CA1 integration",
           "label": null
         },
         {
-          "line": 1534,
+          "line": 1533,
           "section": null,
           "label": "cm:union"
         }
@@ -175,14 +175,14 @@
         },
         {
           "environment": "corollary",
-          "start_line": 1534,
-          "end_line": 1550,
+          "start_line": 1533,
+          "end_line": 1549,
           "sha256": "67f731a1f60a53e5f747c84da5f698f188582448e00b1c674788b1dfcb570712"
         },
         {
           "environment": "proof",
-          "start_line": 1551,
-          "end_line": 1569,
+          "start_line": 1550,
+          "end_line": 1568,
           "sha256": "b8155505c5a79e4b1439802e6341b20ab476f4b39088f8c85fbff20d0ec332d1"
         }
       ]
@@ -207,8 +207,8 @@
     },
     {
       "file": "neural-construction.tex",
-      "sha256": "41ce879b0537abb2b2cec1f51c933d1b371578f24ab3e2a3bd6414509a57ceca",
-      "lines": 10355,
+      "sha256": "0c50fc0ea278ea29cba164da6192b00a34ed88c7f8fe3b7214dcbb4817419bf1",
+      "lines": 10333,
       "locations": [
         {
           "line": 145,
@@ -1426,1097 +1426,1097 @@
           "label": "sec:limits"
         },
         {
-          "line": 4120,
+          "line": 4119,
           "section": "Proofs for the process neurons",
           "label": null
         },
         {
-          "line": 4120,
+          "line": 4119,
           "section": null,
           "label": "app:E"
         },
         {
-          "line": 4136,
+          "line": 4135,
           "section": "Measurability",
           "label": null
         },
         {
-          "line": 4138,
+          "line": 4137,
           "section": null,
           "label": "lem:E-partspaces"
         },
         {
-          "line": 4166,
+          "line": 4165,
           "section": null,
           "label": "lem:E-fields"
         },
         {
-          "line": 4199,
+          "line": 4198,
           "section": null,
           "label": "lem:E-potential"
         },
         {
-          "line": 4218,
+          "line": 4217,
           "section": null,
           "label": "lem:E-restrictions"
         },
         {
-          "line": 4237,
+          "line": 4236,
           "section": "The canonical box Mondrian",
           "label": null
         },
         {
-          "line": 4250,
+          "line": 4249,
           "section": null,
           "label": "lem:E-nonexplosion"
         },
         {
-          "line": 4269,
+          "line": 4268,
           "section": null,
           "label": "def:E-rec"
         },
         {
-          "line": 4284,
+          "line": 4283,
           "section": null,
           "label": "lem:E-recursion"
         },
         {
-          "line": 4310,
+          "line": 4309,
           "section": null,
           "label": "lem:E-clocks"
         },
         {
-          "line": 4325,
+          "line": 4324,
           "section": "The core-exterior construction",
           "label": null
         },
         {
-          "line": 4327,
+          "line": 4326,
           "section": null,
           "label": "def:E-coreext"
         },
         {
-          "line": 4365,
+          "line": 4364,
           "section": null,
           "label": "lem:E-coreext"
         },
         {
-          "line": 4411,
+          "line": 4410,
           "section": null,
           "label": "cor:E-restriction"
         },
         {
-          "line": 4430,
+          "line": 4429,
           "section": null,
           "label": "cor:E-tracebox"
         },
         {
-          "line": 4472,
+          "line": 4471,
           "section": "The whole-plane Mondrian neuron",
           "label": null
         },
         {
-          "line": 4536,
+          "line": 4535,
           "section": "The product neuron",
           "label": null
         },
         {
-          "line": 4579,
+          "line": 4578,
           "section": "Finite-width annealed reflection positivity",
           "label": null
         },
         {
-          "line": 4583,
+          "line": 4582,
           "section": null,
           "label": "lem:E-projections"
         },
         {
-          "line": 4595,
+          "line": 4594,
           "section": null,
           "label": "lem:E-factor"
         },
         {
-          "line": 4611,
+          "line": 4610,
           "section": null,
           "label": "prop:E-sides"
         },
         {
-          "line": 4680,
+          "line": 4679,
           "section": null,
           "label": "rem:E-notcontained"
         },
         {
-          "line": 4695,
+          "line": 4694,
           "section": "Proofs for the Gaussian reference fields",
           "label": null
         },
         {
-          "line": 4695,
+          "line": 4694,
           "section": null,
           "label": "app:G"
         },
         {
-          "line": 4710,
+          "line": 4709,
           "section": null,
           "label": "lem:G-S"
         },
         {
-          "line": 4900,
+          "line": 4899,
           "section": null,
           "label": "rem:G-proofscope"
         },
         {
-          "line": 4912,
+          "line": 4911,
           "section": "Proofs for the fixed-volume Wick theory",
           "label": null
         },
         {
-          "line": 4912,
+          "line": 4911,
           "section": null,
           "label": "app:W"
         },
         {
-          "line": 4921,
+          "line": 4920,
           "section": "Gaussian preliminaries",
           "label": null
         },
         {
-          "line": 4923,
+          "line": 4922,
           "section": null,
           "label": "lem:W-prelim"
         },
         {
-          "line": 4954,
+          "line": 4953,
           "section": null,
           "label": "lem:W-kernels"
         },
         {
-          "line": 4986,
+          "line": 4985,
           "section": "The interaction and its \\texorpdfstring{$L^{2}$}{L2} limit",
           "label": null
         },
         {
-          "line": 5031,
+          "line": 5030,
           "section": "Nelson tail, weights and normalizers",
           "label": null
         },
         {
-          "line": 5060,
+          "line": 5059,
           "section": "Central reflection positivity at fixed volume",
           "label": null
         },
         {
-          "line": 5107,
+          "line": 5106,
           "section": null,
           "label": "rem:W-proofscope"
         },
         {
-          "line": 5119,
-          "section": "Provenance, review status and source access",
+          "line": 5118,
+          "section": "Sources, scope and access",
           "label": null
         },
         {
-          "line": 5119,
+          "line": 5118,
           "section": null,
           "label": "app:provenance"
         },
         {
-          "line": 5239,
+          "line": 5226,
           "section": "Disposition of the earlier premises",
           "label": null
         },
         {
-          "line": 5239,
+          "line": 5226,
           "section": null,
           "label": "app:dispositions"
         },
         {
-          "line": 5265,
+          "line": 5252,
           "section": "Notation",
           "label": null
         },
         {
-          "line": 5265,
+          "line": 5252,
           "section": null,
           "label": "app:notation"
         },
         {
-          "line": 5291,
+          "line": 5278,
           "section": "Historical records and paths not used",
           "label": null
         },
         {
-          "line": 5291,
+          "line": 5278,
           "section": null,
           "label": "app:historical"
         },
         {
-          "line": 5372,
+          "line": 5359,
           "section": "Quantitative observation control and the pressure target",
           "label": null
         },
         {
-          "line": 5373,
+          "line": 5360,
           "section": null,
           "label": "qrs:supplement"
         },
         {
-          "line": 5395,
+          "line": 5382,
           "section": "Two parameter routes and one field convention",
           "label": null
         },
         {
-          "line": 5396,
+          "line": 5383,
           "section": null,
           "label": "qrs:routes"
         },
         {
-          "line": 5433,
+          "line": 5420,
           "section": null,
           "label": "qrs:finite-law"
         },
         {
-          "line": 5440,
+          "line": 5427,
           "section": "Local response and the finite interaction box",
           "label": null
         },
         {
-          "line": 5441,
+          "line": 5428,
           "section": null,
           "label": "qrs:locality"
         },
         {
-          "line": 5446,
+          "line": 5433,
           "section": null,
           "label": "qrs:BL"
         },
         {
-          "line": 5457,
+          "line": 5444,
           "section": null,
           "label": "qrs:shell"
         },
         {
-          "line": 5471,
+          "line": 5458,
           "section": null,
           "label": "qrs:CL1"
         },
         {
-          "line": 5491,
+          "line": 5478,
           "section": null,
           "label": "qrs:CL1-data"
         },
         {
-          "line": 5502,
+          "line": 5489,
           "section": null,
           "label": "qrs:CL1-constant"
         },
         {
-          "line": 5518,
+          "line": 5505,
           "section": null,
           "label": "qrs:FV"
         },
         {
-          "line": 5541,
+          "line": 5528,
           "section": "Five errors between actual normalized laws",
           "label": null
         },
         {
-          "line": 5542,
+          "line": 5529,
           "section": null,
           "label": "qrs:budget"
         },
         {
-          "line": 5549,
+          "line": 5536,
           "section": null,
           "label": "qrs:chain"
         },
         {
-          "line": 5573,
+          "line": 5560,
           "section": null,
           "label": "qrs:physical-errors"
         },
         {
-          "line": 5602,
+          "line": 5589,
           "section": null,
           "label": "qrs:width-polynomials"
         },
         {
-          "line": 5614,
+          "line": 5601,
           "section": null,
           "label": "qrs:width-coefficient"
         },
         {
-          "line": 5626,
+          "line": 5613,
           "section": null,
           "label": "qrs:five-errors"
         },
         {
-          "line": 5641,
+          "line": 5628,
           "section": "Elementary enclosures and conditional selection",
           "label": null
         },
         {
-          "line": 5642,
+          "line": 5629,
           "section": null,
           "label": "qrs:effective"
         },
         {
-          "line": 5648,
+          "line": 5635,
           "section": null,
           "label": "qrs:variance"
         },
         {
-          "line": 5652,
+          "line": 5639,
           "section": null,
           "label": "qrs:tail"
         },
         {
-          "line": 5671,
+          "line": 5658,
           "section": null,
           "label": "qrs:Nelson"
         },
         {
-          "line": 5682,
+          "line": 5669,
           "section": null,
           "label": "qrs:selection-order"
         },
         {
-          "line": 5694,
+          "line": 5681,
           "section": "One explicit nonzero observation and two sufficient tuples",
           "label": null
         },
         {
-          "line": 5695,
+          "line": 5682,
           "section": null,
           "label": "qrs:certificate"
         },
         {
-          "line": 5699,
+          "line": 5686,
           "section": null,
           "label": "qrs:bump"
         },
         {
-          "line": 5729,
+          "line": 5716,
           "section": null,
           "label": "qrs:Wick-L8"
         },
         {
-          "line": 5744,
+          "line": 5731,
           "section": null,
           "label": "qrs:tuple-table"
         },
         {
-          "line": 5765,
+          "line": 5752,
           "section": null,
           "label": "qrs:OPT-errors"
         },
         {
-          "line": 5804,
+          "line": 5791,
           "section": "Reconstruction at the explicit pressure cap",
           "label": null
         },
         {
-          "line": 5805,
+          "line": 5792,
           "section": null,
           "label": "qrs:reconstruction"
         },
         {
-          "line": 5830,
+          "line": 5817,
           "section": null,
           "label": "qrs:Schwartz"
         },
         {
-          "line": 5835,
+          "line": 5822,
           "section": null,
           "label": "qrs:unitball"
         },
         {
-          "line": 5841,
+          "line": 5828,
           "section": null,
           "label": "qrs:moment"
         },
         {
-          "line": 5852,
+          "line": 5839,
           "section": null,
           "label": "qrs:mixing"
         },
         {
-          "line": 5862,
+          "line": 5849,
           "section": null,
           "label": "qrs:OS"
         },
         {
-          "line": 5924,
+          "line": 5911,
           "section": "Positioning and proof navigation",
           "label": null
         },
         {
-          "line": 5925,
+          "line": 5912,
           "section": null,
           "label": "qrs:positioning"
         },
         {
-          "line": 6005,
+          "line": 5987,
           "section": null,
           "label": "qrs:proof-table"
         },
         {
-          "line": 6040,
+          "line": 6022,
           "section": "27 October construction, vector accuracy and linkage",
+          "label": null
+        },
+        {
+          "line": 6023,
+          "section": null,
+          "label": "vqal:current"
+        },
+        {
+          "line": 6040,
+          "section": "Sources, laws and the two coupling domains",
           "label": null
         },
         {
           "line": 6041,
           "section": null,
-          "label": "vqal:current"
-        },
-        {
-          "line": 6061,
-          "section": "Sources, laws and the two coupling domains",
-          "label": null
-        },
-        {
-          "line": 6062,
-          "section": null,
           "label": "vqal:premises"
         },
         {
-          "line": 6093,
+          "line": 6072,
           "section": null,
           "label": "vqal:P1"
         },
         {
-          "line": 6103,
+          "line": 6082,
           "section": null,
           "label": "vqal:P2"
         },
         {
-          "line": 6115,
+          "line": 6094,
           "section": null,
           "label": "vqal:P3"
         },
         {
-          "line": 6146,
+          "line": 6125,
           "section": null,
           "label": "vqal:P6density"
         },
         {
-          "line": 6156,
+          "line": 6135,
           "section": null,
           "label": "vqal:P6raw"
         },
         {
-          "line": 6174,
+          "line": 6153,
           "section": null,
           "label": "vqal:AP2"
         },
         {
-          "line": 6188,
+          "line": 6167,
           "section": null,
           "label": "vqal:inclusive"
         },
         {
-          "line": 6194,
+          "line": 6173,
           "section": null,
           "label": "vqal:strict"
         },
         {
-          "line": 6211,
+          "line": 6190,
           "section": "All local moments and the original common sequence at the cap",
           "label": null
         },
         {
-          "line": 6212,
+          "line": 6191,
           "section": null,
           "label": "vqal:qualitative"
         },
         {
-          "line": 6215,
+          "line": 6194,
           "section": null,
           "label": "vqal:mom"
         },
         {
-          "line": 6220,
+          "line": 6199,
           "section": null,
           "label": "vqal:hsconstants"
         },
         {
-          "line": 6229,
+          "line": 6208,
           "section": null,
           "label": "vqal:hsmom"
         },
         {
-          "line": 6236,
+          "line": 6215,
           "section": null,
           "label": "vqal:momconvergence"
         },
         {
-          "line": 6254,
+          "line": 6233,
           "section": null,
           "label": "vqal:scalar-mom"
         },
         {
-          "line": 6298,
+          "line": 6277,
           "section": null,
           "label": "vqal:seq"
         },
         {
-          "line": 6307,
+          "line": 6286,
           "section": null,
           "label": "vqal:dist"
         },
         {
-          "line": 6313,
+          "line": 6292,
           "section": null,
           "label": "vqal:S"
         },
         {
-          "line": 6384,
+          "line": 6363,
           "section": null,
           "label": "vqal:tensorproof"
         },
         {
-          "line": 6403,
+          "line": 6382,
           "section": null,
           "label": "vqal:RPnorms"
         },
         {
-          "line": 6428,
+          "line": 6407,
           "section": "A finite family with full ambient vector geometry",
           "label": null
         },
         {
-          "line": 6429,
+          "line": 6408,
           "section": null,
           "label": "vqal:family"
         },
         {
-          "line": 6434,
+          "line": 6413,
           "section": null,
           "label": "vqal:bumpfamily"
         },
         {
-          "line": 6444,
+          "line": 6423,
           "section": null,
           "label": "vqal:familynorms"
         },
         {
-          "line": 6458,
+          "line": 6437,
           "section": null,
           "label": "vqal:selectgeometry"
         },
         {
-          "line": 6461,
+          "line": 6440,
           "section": null,
           "label": "vqal:normbounds"
         },
         {
-          "line": 6468,
+          "line": 6447,
           "section": null,
           "label": "vqal:Cf"
         },
         {
-          "line": 6481,
+          "line": 6460,
           "section": null,
           "label": "vqal:gramsources"
         },
         {
-          "line": 6494,
+          "line": 6473,
           "section": null,
           "label": "vqal:defect"
         },
         {
-          "line": 6543,
+          "line": 6522,
           "section": "Relative normalization and the sharper fixed-accuracy width",
           "label": null
         },
         {
-          "line": 6544,
+          "line": 6523,
           "section": null,
           "label": "vqal:relative"
         },
         {
-          "line": 6553,
+          "line": 6532,
           "section": null,
           "label": "vqal:outer"
         },
         {
-          "line": 6575,
+          "line": 6554,
           "section": null,
           "label": "vqal:joint"
         },
         {
-          "line": 6586,
+          "line": 6565,
           "section": null,
           "label": "vqal:relativeconstants"
         },
         {
-          "line": 6602,
+          "line": 6581,
           "section": null,
           "label": "vqal:relative-theorem"
         },
         {
-          "line": 6607,
+          "line": 6586,
           "section": null,
           "label": "vqal:jointbounds"
         },
         {
-          "line": 6616,
+          "line": 6595,
           "section": null,
           "label": "vqal:ratios"
         },
         {
-          "line": 6628,
+          "line": 6607,
           "section": null,
           "label": "vqal:centered"
         },
         {
-          "line": 6635,
+          "line": 6614,
           "section": null,
           "label": "vqal:relativeBL"
         },
         {
-          "line": 6673,
+          "line": 6652,
           "section": null,
           "label": "vqal:gaussianexp"
         },
         {
-          "line": 6709,
+          "line": 6688,
           "section": null,
           "label": "vqal:taylor"
         },
         {
-          "line": 6737,
+          "line": 6716,
           "section": null,
           "label": "vqal:widths"
         },
         {
-          "line": 6740,
+          "line": 6719,
           "section": null,
           "label": "vqal:headline"
         },
         {
-          "line": 6767,
+          "line": 6746,
           "section": null,
           "label": "vqal:majorants"
         },
         {
-          "line": 6784,
+          "line": 6763,
           "section": null,
           "label": "vqal:k4exponents"
         },
         {
-          "line": 6808,
+          "line": 6787,
           "section": null,
           "label": "vqal:outererrors"
         },
         {
-          "line": 6837,
+          "line": 6816,
           "section": "Supported accuracy search with the old vector backend",
           "label": null
         },
         {
-          "line": 6838,
+          "line": 6817,
           "section": null,
           "label": "vqal:accuracy"
         },
         {
-          "line": 6844,
+          "line": 6823,
           "section": null,
           "label": "vqal:tolerances"
         },
         {
-          "line": 6854,
+          "line": 6833,
           "section": null,
           "label": "vqal:acc-spatial"
         },
         {
-          "line": 6866,
+          "line": 6845,
           "section": null,
           "label": "vqal:acc-outer"
         },
         {
-          "line": 6878,
+          "line": 6857,
           "section": null,
           "label": "vqal:acc-width"
         },
         {
-          "line": 6891,
+          "line": 6870,
           "section": null,
           "label": "vqal:acc"
         },
         {
-          "line": 6901,
+          "line": 6880,
           "section": null,
           "label": "vqal:acc-result"
         },
         {
-          "line": 6967,
+          "line": 6946,
           "section": null,
           "label": "vqal:acc-normalizer"
         },
         {
-          "line": 6976,
+          "line": 6955,
           "section": null,
           "label": "vqal:acc-symbolic"
         },
         {
-          "line": 7004,
+          "line": 6983,
           "section": null,
           "label": "vqal:acc-example"
         },
         {
-          "line": 7013,
+          "line": 6992,
           "section": "Actual same-law linkage and what selection computes",
           "label": null
         },
         {
-          "line": 7014,
+          "line": 6993,
           "section": null,
           "label": "vqal:linkage"
         },
         {
-          "line": 7026,
+          "line": 7005,
           "section": null,
           "label": "vqal:link"
         },
         {
-          "line": 7029,
+          "line": 7008,
           "section": null,
           "label": "vqal:L"
         },
         {
-          "line": 7034,
+          "line": 7013,
           "section": null,
           "label": "vqal:pushforward"
         },
         {
-          "line": 7048,
+          "line": 7027,
           "section": null,
           "label": "vqal:linkbounds"
         },
         {
-          "line": 7065,
+          "line": 7044,
           "section": null,
           "label": "vqal:physicalmodulus"
         },
         {
-          "line": 7092,
+          "line": 7071,
           "section": null,
           "label": "vqal:nonreverse"
         },
         {
-          "line": 7129,
+          "line": 7108,
           "section": null,
           "label": "vqal:linkbump"
         },
         {
-          "line": 7135,
+          "line": 7114,
           "section": null,
           "label": "vqal:concretelink"
         },
         {
-          "line": 7170,
+          "line": 7149,
           "section": "Comparison, software domains and proof navigation",
           "label": null
         },
         {
-          "line": 7171,
+          "line": 7150,
           "section": null,
           "label": "vqal:navigation"
         },
         {
-          "line": 7182,
+          "line": 7161,
           "section": null,
           "label": "vqal:comparison"
         },
         {
-          "line": 7306,
+          "line": 7285,
           "section": "Sharper relative accuracy at the selected stages",
           "label": null
         },
         {
-          "line": 7307,
+          "line": 7286,
           "section": null,
           "label": "sva:current"
         },
         {
-          "line": 7317,
+          "line": 7296,
           "section": "Domain, notation and the actual unchanged laws",
           "label": null
         },
         {
-          "line": 7318,
+          "line": 7297,
           "section": null,
           "label": "sva:domain"
         },
         {
-          "line": 7341,
+          "line": 7320,
           "section": null,
           "label": "sva:geometry"
         },
         {
-          "line": 7366,
+          "line": 7345,
           "section": null,
           "label": "sva:stagebounds"
         },
         {
-          "line": 7383,
+          "line": 7362,
           "section": null,
           "label": "sva:physicalvariance"
         },
         {
-          "line": 7405,
+          "line": 7384,
           "section": null,
           "label": "sva:bilinear"
         },
         {
-          "line": 7413,
+          "line": 7392,
           "section": null,
           "label": "sva:actuallaws"
         },
         {
-          "line": 7439,
+          "line": 7418,
           "section": "Relative comparison under that interface",
           "label": null
         },
         {
-          "line": 7440,
+          "line": 7419,
           "section": null,
           "label": "sva:relative"
         },
         {
-          "line": 7443,
+          "line": 7422,
           "section": null,
           "label": "sva:constants"
         },
         {
-          "line": 7463,
+          "line": 7442,
           "section": null,
           "label": "sva:relative-theorem"
         },
         {
-          "line": 7470,
+          "line": 7449,
           "section": null,
           "label": "sva:moments"
         },
         {
-          "line": 7479,
+          "line": 7458,
           "section": null,
           "label": "sva:partitionratios"
         },
         {
-          "line": 7493,
+          "line": 7472,
           "section": null,
           "label": "sva:derivative"
         },
         {
-          "line": 7499,
+          "line": 7478,
           "section": null,
           "label": "sva:BL"
         },
         {
-          "line": 7592,
+          "line": 7571,
           "section": "Complete logarithmic enclosure and same-stage width",
           "label": null
         },
         {
-          "line": 7593,
+          "line": 7572,
           "section": null,
           "label": "sva:enclosure"
         },
         {
-          "line": 7595,
+          "line": 7574,
           "section": null,
           "label": "sva:width"
         },
         {
-          "line": 7597,
+          "line": 7576,
           "section": null,
           "label": "sva:exponents"
         },
         {
-          "line": 7605,
+          "line": 7584,
           "section": null,
           "label": "sva:enclosure-result"
         },
         {
-          "line": 7615,
+          "line": 7594,
           "section": null,
           "label": "sva:target"
         },
         {
-          "line": 7621,
+          "line": 7600,
           "section": null,
           "label": "sva:order"
         },
         {
-          "line": 7642,
+          "line": 7621,
           "section": null,
           "label": "sva:regulator"
         },
         {
-          "line": 7655,
+          "line": 7634,
           "section": null,
           "label": "sva:remaining-errors"
         },
         {
-          "line": 7668,
+          "line": 7647,
           "section": null,
           "label": "sva:H-enclosure"
         },
         {
-          "line": 7681,
+          "line": 7660,
           "section": null,
           "label": "sva:K1-enclosure"
         },
         {
-          "line": 7698,
+          "line": 7677,
           "section": null,
           "label": "sva:Bell-enclosure"
         },
         {
-          "line": 7713,
+          "line": 7692,
           "section": null,
           "label": "sva:allocation"
         },
         {
-          "line": 7734,
+          "line": 7713,
           "section": "Exact examples and the separately versioned implementation",
           "label": null
         },
         {
-          "line": 7735,
+          "line": 7714,
           "section": null,
           "label": "sva:examples"
         },
         {
-          "line": 7739,
+          "line": 7718,
           "section": null,
           "label": "sva:corner-example"
         },
         {
-          "line": 7752,
+          "line": 7731,
           "section": null,
           "label": "sva:odd-example"
         },
         {
-          "line": 7761,
+          "line": 7740,
           "section": null,
           "label": "sva:software"
         },
         {
-          "line": 7871,
+          "line": 7850,
           "section": null,
           "label": "sva:resources"
         },
         {
-          "line": 7874,
+          "line": 7853,
           "section": "Source, history and construction boundaries",
           "label": null
         },
         {
-          "line": 7875,
+          "line": 7854,
           "section": null,
           "label": "sva:boundaries"
         },
         {
-          "line": 7927,
+          "line": 7905,
           "section": "A conditional schedule for every dyadic accuracy",
           "label": null
         },
         {
-          "line": 7928,
+          "line": 7906,
           "section": null,
           "label": "uda:current"
         },
         {
-          "line": 7938,
+          "line": 7916,
           "section": "Model, observations and the literal conditional interface",
           "label": null
         },
         {
-          "line": 8139,
+          "line": 8117,
           "section": "Relative constants and the complete old coefficient",
           "label": null
         },
         {
-          "line": 8179,
+          "line": 8157,
           "section": "Universal rational stage prescription",
           "label": null
         },
         {
-          "line": 8243,
+          "line": 8221,
           "section": "The explicitly defined legacy comparator",
           "label": null
         },
         {
-          "line": 8306,
+          "line": 8284,
           "section": "Six exact candidate clauses",
           "label": null
         },
         {
-          "line": 8308,
+          "line": 8286,
           "section": null,
           "label": "uda:clause-a"
         },
         {
-          "line": 8339,
+          "line": 8317,
           "section": null,
           "label": "uda:clause-b"
         },
         {
-          "line": 8391,
+          "line": 8369,
           "section": null,
           "label": "uda:clause-c"
         },
         {
-          "line": 8417,
+          "line": 8395,
           "section": null,
           "label": "uda:clause-d"
         },
         {
-          "line": 8434,
+          "line": 8412,
           "section": null,
           "label": "uda:clause-e"
         },
         {
-          "line": 8459,
+          "line": 8437,
           "section": null,
           "label": "uda:clause-f"
         },
         {
-          "line": 8502,
+          "line": 8480,
           "section": "Complete conditional proof",
           "label": null
         },
         {
-          "line": 8503,
+          "line": 8481,
           "section": null,
           "label": "uda:proof"
         },
         {
-          "line": 9341,
+          "line": 9319,
           "section": "Literal inherited source interface and attribution",
           "label": null
         },
         {
-          "line": 9342,
+          "line": 9320,
           "section": null,
           "label": "uda:source"
         },
         {
-          "line": 9982,
+          "line": 9960,
           "section": "The separately versioned finite-resource implementation",
           "label": null
         },
         {
-          "line": 9983,
+          "line": 9961,
           "section": null,
           "label": "udc:contract"
         },
         {
-          "line": 10123,
+          "line": 10101,
           "section": null,
           "label": "udc:clog"
         }
@@ -3370,538 +3370,538 @@
         },
         {
           "environment": "lemma",
-          "start_line": 4138,
-          "end_line": 4146,
+          "start_line": 4137,
+          "end_line": 4145,
           "sha256": "fe5e63d1cd7b7a5c83343ef2f2765c412e7195fed83a9e36add3b4f217c07d24"
         },
         {
           "environment": "proof",
-          "start_line": 4148,
-          "end_line": 4164,
+          "start_line": 4147,
+          "end_line": 4163,
           "sha256": "154504425b5680ab378088dd43849da391dd5668637bd80536607cc3a0064baa"
         },
         {
           "environment": "lemma",
-          "start_line": 4166,
-          "end_line": 4178,
+          "start_line": 4165,
+          "end_line": 4177,
           "sha256": "aca8b79478be2c76cd20c1fd81726e52dc3a91fcd35fd8056eaaaa9d79188d48"
         },
         {
           "environment": "proof",
-          "start_line": 4180,
-          "end_line": 4197,
+          "start_line": 4179,
+          "end_line": 4196,
           "sha256": "ca6d57c04ea948deeb38e81d86eae3f4a93e252339fb1055a608b57ea0cbc09d"
         },
         {
           "environment": "lemma",
-          "start_line": 4199,
-          "end_line": 4203,
+          "start_line": 4198,
+          "end_line": 4202,
           "sha256": "0cf0f41d798819712d0fe5997d840af7ef0cbaa7feb355caa2f9063deb061e42"
         },
         {
           "environment": "proof",
-          "start_line": 4205,
-          "end_line": 4216,
+          "start_line": 4204,
+          "end_line": 4215,
           "sha256": "8db700499c7941052e522e4389c959fb2e0dd60f2878c80d63d433f5bd9e175a"
         },
         {
           "environment": "lemma",
-          "start_line": 4218,
-          "end_line": 4225,
+          "start_line": 4217,
+          "end_line": 4224,
           "sha256": "2500fc960ff9e6791d7d9736fd05cc7152c901f938d6eb2a41677be75d087b62"
         },
         {
           "environment": "proof",
-          "start_line": 4227,
-          "end_line": 4235,
+          "start_line": 4226,
+          "end_line": 4234,
           "sha256": "1cbf8c582c723538d651de52e7a87fce1d3785394f6ab6b52d29aafd2e40ce2c"
         },
         {
           "environment": "lemma",
-          "start_line": 4250,
-          "end_line": 4254,
+          "start_line": 4249,
+          "end_line": 4253,
           "sha256": "44e2dfa6e586c66df55112d5189e245d7450a73660760d222ba42207426751a3"
         },
         {
           "environment": "proof",
-          "start_line": 4256,
-          "end_line": 4267,
+          "start_line": 4255,
+          "end_line": 4266,
           "sha256": "cc28ed65c713a05db9a4289cd8ccfbb2512dcc90769e33d931a69f28acec0ae2"
         },
         {
           "environment": "definition",
-          "start_line": 4269,
-          "end_line": 4282,
+          "start_line": 4268,
+          "end_line": 4281,
           "sha256": "f8a4964c7ad998678caac21d8b9d8f3746940323acacb7fc8e7e2435399144d0"
         },
         {
           "environment": "lemma",
-          "start_line": 4284,
-          "end_line": 4289,
+          "start_line": 4283,
+          "end_line": 4288,
           "sha256": "aea4f378ae61d4512b8ad56ebfdce9a23e3573e15a1d62c646c0f1a613e26347"
         },
         {
           "environment": "proof",
-          "start_line": 4291,
-          "end_line": 4308,
+          "start_line": 4290,
+          "end_line": 4307,
           "sha256": "1c283c626f5c73aa5d4a6e68af8ada191fc701c6d9bec602d78d2fd7bcdde691"
         },
         {
           "environment": "lemma",
-          "start_line": 4310,
-          "end_line": 4316,
+          "start_line": 4309,
+          "end_line": 4315,
           "sha256": "aaae423b9276185bd2efb81349b040063a6a9e1ec94b1a77b73ce41405028253"
         },
         {
           "environment": "proof",
-          "start_line": 4318,
-          "end_line": 4323,
+          "start_line": 4317,
+          "end_line": 4322,
           "sha256": "9d3a4e59c2c7ed10e7ce225bd30aa9afb84ee3a44d06e47b5a7b906879979ad0"
         },
         {
           "environment": "definition",
-          "start_line": 4327,
-          "end_line": 4363,
+          "start_line": 4326,
+          "end_line": 4362,
           "sha256": "c02c11b10b7d34202ee26e3b6763e4ceb5f22ed6d579d05c9b538ceacea339a4"
         },
         {
           "environment": "lemma",
-          "start_line": 4365,
-          "end_line": 4376,
+          "start_line": 4364,
+          "end_line": 4375,
           "sha256": "f0423e94276d8a34cd09a42d061a83e24b5ffbacb5fa4d9d97601c244de5a7c1"
         },
         {
           "environment": "proof",
-          "start_line": 4378,
-          "end_line": 4409,
+          "start_line": 4377,
+          "end_line": 4408,
           "sha256": "31792eff39ce9b356b1f31f887892d54a23bfd283fb16b4efce896bdf0d15a11"
         },
         {
           "environment": "corollary",
-          "start_line": 4411,
-          "end_line": 4420,
+          "start_line": 4410,
+          "end_line": 4419,
           "sha256": "4c38ecbfc53272deecb0e80d44ce5c53e3db75d132e8bb6db99d9a39815ab7fa"
         },
         {
           "environment": "proof",
-          "start_line": 4422,
-          "end_line": 4428,
+          "start_line": 4421,
+          "end_line": 4427,
           "sha256": "17638f39954ac50aba070db558f11beeed3393146504ffd6f95a53ad4cec7968"
         },
         {
           "environment": "corollary",
-          "start_line": 4430,
-          "end_line": 4442,
+          "start_line": 4429,
+          "end_line": 4441,
           "sha256": "f4f4372eacf0c997c39a56bac840e63640b7df73b5c9eed38b56a71e899ed898"
         },
         {
           "environment": "proof",
-          "start_line": 4444,
-          "end_line": 4461,
+          "start_line": 4443,
+          "end_line": 4460,
           "sha256": "9d5491b77c5456d62c2f19dfbbcd3bf139b152cb6062509682098164059f0719"
         },
         {
           "environment": "proof",
-          "start_line": 4463,
-          "end_line": 4470,
+          "start_line": 4462,
+          "end_line": 4469,
           "sha256": "062526573980dfd0b428e9fa25b6291794b62f1f142c90a0d2ad680643c00760"
         },
         {
           "environment": "proof",
-          "start_line": 4474,
-          "end_line": 4489,
+          "start_line": 4473,
+          "end_line": 4488,
           "sha256": "8e4f09cf97a124d0fb0634327b0025607a39f8b674f0e4f145dde6ba8f588738"
         },
         {
           "environment": "proof",
-          "start_line": 4491,
-          "end_line": 4517,
+          "start_line": 4490,
+          "end_line": 4516,
           "sha256": "38fdedfea58a2d9e49701f96eb54330c6d9a92eae0af5efc21ba6afafebca4f4"
         },
         {
           "environment": "proof",
-          "start_line": 4519,
-          "end_line": 4534,
+          "start_line": 4518,
+          "end_line": 4533,
           "sha256": "3441be493d1a8a85d2638432f8a097b70d1dd2646a1b2ff641cc5b401eda239f"
         },
         {
           "environment": "proof",
-          "start_line": 4538,
-          "end_line": 4577,
+          "start_line": 4537,
+          "end_line": 4576,
           "sha256": "91f664abf24c78ee25f134567e15bf9d20b805280ed24912d3e0e3bf8a852e4c"
         },
         {
           "environment": "lemma",
-          "start_line": 4583,
-          "end_line": 4586,
+          "start_line": 4582,
+          "end_line": 4585,
           "sha256": "51c2793cfa18f5892f0e15ea01d03c7cf7cf79e44b013689c84eeac0a5344028"
         },
         {
           "environment": "proof",
-          "start_line": 4588,
-          "end_line": 4593,
+          "start_line": 4587,
+          "end_line": 4592,
           "sha256": "321a6babc7ba574f2369e37efbbb7b7e55b70996a0c31f137623e0872a197c71"
         },
         {
           "environment": "lemma",
-          "start_line": 4595,
-          "end_line": 4602,
+          "start_line": 4594,
+          "end_line": 4601,
           "sha256": "fbe7948bc4e5f17c631b7d54ed50ebd729843a473dc60c9dc33428a1b65b8a6b"
         },
         {
           "environment": "proof",
-          "start_line": 4604,
-          "end_line": 4609,
+          "start_line": 4603,
+          "end_line": 4608,
           "sha256": "76042260961684c6799359e022e6d05141910222694b4375eb5b139f45d31eeb"
         },
         {
           "environment": "proposition",
-          "start_line": 4611,
-          "end_line": 4614,
+          "start_line": 4610,
+          "end_line": 4613,
           "sha256": "d2a175f4c2d6b87b8563bbd40c1d9cdce408719312774087b49b84ed394409a9"
         },
         {
           "environment": "proof",
-          "start_line": 4616,
-          "end_line": 4635,
+          "start_line": 4615,
+          "end_line": 4634,
           "sha256": "55f7be10b9175904e6b974866395ed19147e6c777afeb180dc7259b1e92e94f4"
         },
         {
           "environment": "proof",
-          "start_line": 4637,
-          "end_line": 4660,
+          "start_line": 4636,
+          "end_line": 4659,
           "sha256": "439aadf668cee7dea766b621a0a17afe551ecc3e1c7fb991a5aacf1d037809d0"
         },
         {
           "environment": "proof",
-          "start_line": 4662,
-          "end_line": 4678,
+          "start_line": 4661,
+          "end_line": 4677,
           "sha256": "c68044186b5857420d711847f5e8e985f4bd63d1f65dec056f6b466989d59550"
         },
         {
           "environment": "remark",
-          "start_line": 4680,
-          "end_line": 4692,
+          "start_line": 4679,
+          "end_line": 4691,
           "sha256": "5bd507b3785b60990c561b2e97c0aaf60492b248f97254475eabb3de8359f7a6"
         },
         {
           "environment": "lemma",
-          "start_line": 4710,
-          "end_line": 4727,
+          "start_line": 4709,
+          "end_line": 4726,
           "sha256": "db17ebe7292cd32d5c2ad86e664ea0f6314ac23509b38b8cfdd48e47ede97484"
         },
         {
           "environment": "proof",
-          "start_line": 4729,
-          "end_line": 4746,
+          "start_line": 4728,
+          "end_line": 4745,
           "sha256": "dccafa274b231b37d3d9dfc9fcb34e25c3c85179effc5e6a8663405749820fb8"
         },
         {
           "environment": "proof",
-          "start_line": 4748,
-          "end_line": 4754,
+          "start_line": 4747,
+          "end_line": 4753,
           "sha256": "51a5f0941058477d7ce567babaddc907a4bb5c6ce49a19925d7c1bf98b3561ef"
         },
         {
           "environment": "proof",
-          "start_line": 4756,
-          "end_line": 4783,
+          "start_line": 4755,
+          "end_line": 4782,
           "sha256": "1da51659f08e323a1f69594c7cbf3cb2cec820eb69f207377855b863d39e13e2"
         },
         {
           "environment": "proof",
-          "start_line": 4785,
-          "end_line": 4793,
+          "start_line": 4784,
+          "end_line": 4792,
           "sha256": "817050d958465d54182b40abcdf7529af2e8323d93f45d85559a53e88a15417f"
         },
         {
           "environment": "proof",
-          "start_line": 4795,
-          "end_line": 4824,
+          "start_line": 4794,
+          "end_line": 4823,
           "sha256": "af8792c884cd838576d10f9d6064cb23772041df72b4aa7c946dc561c487670e"
         },
         {
           "environment": "proof",
-          "start_line": 4826,
-          "end_line": 4832,
+          "start_line": 4825,
+          "end_line": 4831,
           "sha256": "bdd6da06bb46e74ee8b825823fa975c054c4d7f49d62f2884b83eaaa65659912"
         },
         {
           "environment": "proof",
-          "start_line": 4834,
-          "end_line": 4854,
+          "start_line": 4833,
+          "end_line": 4853,
           "sha256": "d76f2213a821d6c61203f42778f4fca6afc03826c93be0c984e15a3483136ea0"
         },
         {
           "environment": "proof",
-          "start_line": 4856,
-          "end_line": 4866,
+          "start_line": 4855,
+          "end_line": 4865,
           "sha256": "fee93e848213a54c90951981273cf4c89288698e1a56f1cba8a5e760c547f0e6"
         },
         {
           "environment": "proof",
-          "start_line": 4868,
-          "end_line": 4879,
+          "start_line": 4867,
+          "end_line": 4878,
           "sha256": "b6b952f2c9253b792bdbc85fe987ea58def6f5b17b5f49f56ef8e015e98cf6b8"
         },
         {
           "environment": "proof",
-          "start_line": 4881,
-          "end_line": 4898,
+          "start_line": 4880,
+          "end_line": 4897,
           "sha256": "b4bc653d8b77a83b28367732277f19a1484d5b9c5ef5cd292b7639ed6bc06b31"
         },
         {
           "environment": "remark",
-          "start_line": 4900,
-          "end_line": 4909,
+          "start_line": 4899,
+          "end_line": 4908,
           "sha256": "acfe47b1e7bb9c5c24e81b3b08d463b14dadddf41b2c8ea6ef067fc3a3805a24"
         },
         {
           "environment": "lemma",
-          "start_line": 4923,
-          "end_line": 4937,
+          "start_line": 4922,
+          "end_line": 4936,
           "sha256": "f8e3f1318d73b28513bc6c3f406ac9ff9a43ef67ec6725e7047e16c98b42ab6b"
         },
         {
           "environment": "proof",
-          "start_line": 4939,
-          "end_line": 4952,
+          "start_line": 4938,
+          "end_line": 4951,
           "sha256": "64c1d5ff1acefcc452908f28251f68e2e0cf8b04d5aa055035225c15b4cd13a7"
         },
         {
           "environment": "lemma",
-          "start_line": 4954,
-          "end_line": 4966,
+          "start_line": 4953,
+          "end_line": 4965,
           "sha256": "95cc28b2380704d1b385bfbcc2a6296c525f5b376c5d019dfc9643da5d6b022f"
         },
         {
           "environment": "proof",
-          "start_line": 4968,
-          "end_line": 4984,
+          "start_line": 4967,
+          "end_line": 4983,
           "sha256": "4552fa45506b5d8f145941dbcde1ec838e2b7029ef29f1661814d5c7d6efc704"
         },
         {
           "environment": "proof",
-          "start_line": 4988,
-          "end_line": 5004,
+          "start_line": 4987,
+          "end_line": 5003,
           "sha256": "8be9daee2662a62e126df56e2c0db36b1b8f29e6f4cd1d22478758e0beb89c80"
         },
         {
           "environment": "proof",
-          "start_line": 5006,
-          "end_line": 5029,
+          "start_line": 5005,
+          "end_line": 5028,
           "sha256": "cb93c6c6f3df5a70688bf34efa09c90b269a2521d8616a6bc918911b96005615"
         },
         {
           "environment": "proof",
-          "start_line": 5033,
-          "end_line": 5051,
+          "start_line": 5032,
+          "end_line": 5050,
           "sha256": "158cddef3421eaf33b8c2d8b680f5ed3fdf91b204beccdfe12db55097aeaa09e"
         },
         {
           "environment": "proof",
-          "start_line": 5053,
-          "end_line": 5058,
+          "start_line": 5052,
+          "end_line": 5057,
           "sha256": "b71c97a5fbc0e6344b4a369bacdfdd41dbb0fc3c55290411abcf47d3fc0ea33e"
         },
         {
           "environment": "proof",
-          "start_line": 5062,
-          "end_line": 5082,
+          "start_line": 5061,
+          "end_line": 5081,
           "sha256": "eea09ac4a5aa6677f40e00058e1689fd8fd2a162dd9256bfaacd9a14621a31f7"
         },
         {
           "environment": "proof",
-          "start_line": 5084,
-          "end_line": 5100,
+          "start_line": 5083,
+          "end_line": 5099,
           "sha256": "b7f0fa1ee1aa06142dc0ef09b14d448fbc62c797935259c8eda39085f4bff22b"
         },
         {
           "environment": "remark",
-          "start_line": 5102,
-          "end_line": 5105,
+          "start_line": 5101,
+          "end_line": 5104,
           "sha256": "418825940253d3e8dc0ea237752afd24f65d42a9d525ab8ac08d6cecb58f5957"
         },
         {
           "environment": "remark",
-          "start_line": 5107,
-          "end_line": 5116,
+          "start_line": 5106,
+          "end_line": 5115,
           "sha256": "010b261c5d615b9f1695773744120f72f6d8eabd34782059f112a57e3687ca91"
         },
         {
           "environment": "theorem",
-          "start_line": 6214,
-          "end_line": 6247,
+          "start_line": 6193,
+          "end_line": 6226,
           "sha256": "88bb5e1dad6de17c4e0eae15fa972206594c736d3f21da887d02a2bf1fbba0cc"
         },
         {
           "environment": "proof",
-          "start_line": 6249,
-          "end_line": 6295,
+          "start_line": 6228,
+          "end_line": 6274,
           "sha256": "074d8f0347273cb99444ae4b983f7d29e9b28e3a16860747a7c8885182840be9"
         },
         {
           "environment": "theorem",
-          "start_line": 6297,
-          "end_line": 6341,
+          "start_line": 6276,
+          "end_line": 6320,
           "sha256": "a70d845252826037c25f1f3dc4e74d3592a503691130ca69a4ce08f50fa6043b"
         },
         {
           "environment": "proof",
-          "start_line": 6343,
-          "end_line": 6426,
+          "start_line": 6322,
+          "end_line": 6405,
           "sha256": "0dec25b2d3ed54c62be985494f1358c46bc2ae903463e9c5a631cde64e419113"
         },
         {
           "environment": "proposition",
-          "start_line": 6457,
-          "end_line": 6502,
+          "start_line": 6436,
+          "end_line": 6481,
           "sha256": "97b58a87035fa8e67363cf65577a4a6383e8d9f105cd7e08d93a61fddf44ade3"
         },
         {
           "environment": "proof",
-          "start_line": 6504,
-          "end_line": 6541,
+          "start_line": 6483,
+          "end_line": 6520,
           "sha256": "8313df1f0144789af5727bde6b217525c19e37fdc6c99d8f6544a9d3e88163c6"
         },
         {
           "environment": "theorem",
-          "start_line": 6601,
-          "end_line": 6648,
+          "start_line": 6580,
+          "end_line": 6627,
           "sha256": "a2a6c697432de235851b4ffdb858a0f5a7711b71ec0c93ba407d1fe89a8890b2"
         },
         {
           "environment": "proof",
-          "start_line": 6650,
-          "end_line": 6734,
+          "start_line": 6629,
+          "end_line": 6713,
           "sha256": "cd09e5534921900c2b13a636548ceb732396099e204f1adcd73279ed87501e89"
         },
         {
           "environment": "proposition",
-          "start_line": 6736,
-          "end_line": 6756,
+          "start_line": 6715,
+          "end_line": 6735,
           "sha256": "ef23c9301edbc8e46d4f6dd24411016e04551ef42bdaa7a5fb8783d057e2c8f6"
         },
         {
           "environment": "proof",
-          "start_line": 6758,
-          "end_line": 6835,
+          "start_line": 6737,
+          "end_line": 6814,
           "sha256": "e2f184dd008c73d70f4672e922f7bc751f4c34393adb6321a64d10220a4635e5"
         },
         {
           "environment": "theorem",
-          "start_line": 6890,
-          "end_line": 6909,
+          "start_line": 6869,
+          "end_line": 6888,
           "sha256": "dbd10c59f32317f90db819e7863ce35ac1d352dda9489e31dd593688a4e7697d"
         },
         {
           "environment": "proof",
-          "start_line": 6911,
-          "end_line": 7000,
+          "start_line": 6890,
+          "end_line": 6979,
           "sha256": "513b0b5057bf2714e7c044fa229a718a0c70d3bc99b07fe8a1e83a53eada105d"
         },
         {
           "environment": "theorem",
-          "start_line": 7025,
-          "end_line": 7072,
+          "start_line": 7004,
+          "end_line": 7051,
           "sha256": "c7ab5cef1f6b668b59826ee2b0cf64ad83df1e5d084c543edb548b6e3ee7db83"
         },
         {
           "environment": "proof",
-          "start_line": 7074,
-          "end_line": 7126,
+          "start_line": 7053,
+          "end_line": 7105,
           "sha256": "f3fc2e9746c9d6fcf917e054c2a9b3bfe38ebb6216fd13822794364b8366bdf2"
         },
         {
           "environment": "corollary",
-          "start_line": 7128,
-          "end_line": 7146,
+          "start_line": 7107,
+          "end_line": 7125,
           "sha256": "9cc667b637f32950bbfc129ee00ca7779942f0c042259355037645185decbf97"
         },
         {
           "environment": "proof",
-          "start_line": 7148,
-          "end_line": 7168,
+          "start_line": 7127,
+          "end_line": 7147,
           "sha256": "6631ca06966b7052cdef2534aef57c4c75426aa5947a70c65d399369e3184bfe"
         },
         {
           "environment": "theorem",
-          "start_line": 7463,
-          "end_line": 7511,
+          "start_line": 7442,
+          "end_line": 7490,
           "sha256": "0d8f673f196317b985fa69d69ae3b366fac44aab1a95f786bc525689e555e782"
         },
         {
           "environment": "proof",
-          "start_line": 7513,
-          "end_line": 7590,
+          "start_line": 7492,
+          "end_line": 7569,
           "sha256": "60ba2006453b38fae20e4bf31a03b755c0a241ab9c1ad25a5fbc870f17f297cf"
         },
         {
           "environment": "theorem",
-          "start_line": 7595,
-          "end_line": 7628,
+          "start_line": 7574,
+          "end_line": 7607,
           "sha256": "03e23897dd48018207b87309d77435c9c3e35c76e0dbb1cbae0fd27439750dd8"
         },
         {
           "environment": "proof",
-          "start_line": 7630,
-          "end_line": 7732,
+          "start_line": 7609,
+          "end_line": 7711,
           "sha256": "a6177ccfa2bd8859c25e0e5d6a877010e8b76b4fd41e11bfe700f1f8e1ae3a5e"
         },
         {
           "environment": "proposition",
-          "start_line": 7760,
-          "end_line": 7779,
+          "start_line": 7739,
+          "end_line": 7758,
           "sha256": "216d3af800057cdcb88c10cbd313542d05484c2c2f7bca77c9be16226510b52a"
         },
         {
           "environment": "proof",
-          "start_line": 7784,
-          "end_line": 7853,
-          "sha256": "4d1b3f4cc6ed0923e591ae14d5c15b3ac1202e0543dd61b7de4d836499d464bb"
+          "start_line": 7763,
+          "end_line": 7832,
+          "sha256": "04b0fdb34a9267d2bbe3024135319070251c18414703f364bf2b1e0d26e5b3d1"
         },
         {
           "environment": "theorem",
-          "start_line": 8307,
-          "end_line": 8335,
+          "start_line": 8285,
+          "end_line": 8313,
           "sha256": "61cdd5bdf6ecd7810ce2d4ec1da51faf9942b56c20455af54c1363694c39e4b3"
         },
         {
           "environment": "theorem",
-          "start_line": 8338,
-          "end_line": 8387,
+          "start_line": 8316,
+          "end_line": 8365,
           "sha256": "42c76973bbfc3b16cd9b69a87f1b213d7dced659854a0a2084f27f6959eae83b"
         },
         {
           "environment": "theorem",
-          "start_line": 8390,
-          "end_line": 8413,
+          "start_line": 8368,
+          "end_line": 8391,
           "sha256": "225e72b16579be27fe8264c64f6be60ed44dae46b3d56fcdbfd493fa51cc8554"
         },
         {
           "environment": "theorem",
-          "start_line": 8416,
-          "end_line": 8430,
+          "start_line": 8394,
+          "end_line": 8408,
           "sha256": "4fcba1d7ee9db4afc55aec6fb58e86dbf9fdca153187de0b6959eefb17ed7269"
         },
         {
           "environment": "theorem",
-          "start_line": 8433,
-          "end_line": 8455,
+          "start_line": 8411,
+          "end_line": 8433,
           "sha256": "b439d09c6f897545e831bba4f0c954055ab4de0d81bd0686d4f41e7417cf5336"
         },
         {
           "environment": "theorem",
-          "start_line": 8458,
-          "end_line": 8487,
+          "start_line": 8436,
+          "end_line": 8465,
           "sha256": "b6d7dfe515974506887538962428b5f6f615db2816070b8db6cf028389e56ee7"
         }
       ]
     },
     {
       "file": "sharper-accuracy.tex",
-      "sha256": "007eb0dca972d0a9d95fe68ca93c1a729791a5906c1f22f08e930da230f196e6",
-      "lines": 613,
+      "sha256": "a67ac881f5f2f94e9812beacf2984378e33a4e366a2fdfe89858b4fb6f951d2b",
+      "lines": 612,
       "locations": [
         {
           "line": 2,
@@ -4129,13 +4129,13 @@
           "environment": "proof",
           "start_line": 480,
           "end_line": 549,
-          "sha256": "4d1b3f4cc6ed0923e591ae14d5c15b3ac1202e0543dd61b7de4d836499d464bb"
+          "sha256": "04b0fdb34a9267d2bbe3024135319070251c18414703f364bf2b1e0d26e5b3d1"
         }
       ]
     },
     {
       "file": "software-contract.tex",
-      "sha256": "19a5bd843280a58a8e684b1a99766854535af2a0c48ddd1894539b1418d6c92b",
+      "sha256": "19bf0856e5ec656cf12b2436483bb3dd9b5770cd7eab1c0bc0778095a1390bb1",
       "lines": 366,
       "locations": [
         {
@@ -4158,7 +4158,7 @@
     },
     {
       "file": "unbounded-accuracy.tex",
-      "sha256": "ca87c77bbd9a297e7492c4d359b08a27a5d62097f9b593df9ed35a0917163298",
+      "sha256": "9119ea336ab5e8bd9d9d7d84b6d43da1135db8c09007ecd1d92d765954e51c36",
       "lines": 2429,
       "locations": [
         {

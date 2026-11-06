@@ -6,7 +6,7 @@ standard packages declared by the source. From this extracted package:
     sh paper/build.sh
 
 The result is `paper/output/neural-construction.pdf`. The distributed paper is
-`paper/neurons-through-the-looking-glass-v2.pdf`. The bibliography is supplied
+`paper/neurons-through-the-looking-glass-v3.pdf`. The bibliography is supplied
 in `references.bib`; latexmk runs BibTeX as needed. No network, credentials,
 external figures, hosted CI or cloud compute is required by the build.
 
@@ -14,10 +14,9 @@ The script fixes the source date and timezone. PDF bytes can still vary with
 TeX/toolchain versions or build paths. The release checks compare text, rendered
 pages, source hashes and the exact distributed PDF separately.
 
-Two inherited TeX diagnostics report ignored infinite glue shrinkage in long
-tables. The baseline and candidate retain those diagnostics. Their affected
-pages require visual inspection; a zero process exit code alone does not prove
-layout quality. This is not a warning-free build claim.
+Inherited long-table layouts can produce ignored infinite-glue-shrinkage
+diagnostics. Inspect the final build log and affected rendered pages; a zero
+process exit code alone does not establish layout quality.
 
 `SHA256SUMS` identifies every exported payload file except itself. Check it from
 the package root with `shasum -a 256 -c SHA256SUMS` on macOS, or an equivalent

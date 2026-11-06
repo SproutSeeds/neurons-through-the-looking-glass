@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the version 2 paper record when available. The reference below identifies version 1 only."
+message: "Please cite the version 3 paper using the preferred citation below."
 title: "Document source for Neurons Through the Looking Glass"
 type: software
-version: "2"
+doi: "10.5281/zenodo.24020730"
+version: "3"
 url: "https://github.com/SproutSeeds/neurons-through-the-looking-glass"
 authors:
   - family-names: Mitchell
@@ -10,8 +11,9 @@ authors:
     orcid: "https://orcid.org/0009-0003-1546-0552"
 preferred-citation:
   type: article
+  doi: "10.5281/zenodo.24020729"
   title: "Neurons Through the Looking Glass: Constructing an Interacting Quantum Field in Two Dimensions"
-  version: "2"
+  version: "3"
   year: 2026
   authors:
     - family-names: Mitchell

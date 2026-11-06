@@ -2,9 +2,9 @@
 
 Constructing an Interacting Quantum Field in Two Dimensions
 
-Cody Mitchell, Fractal Research Group · Version 2 · 6 November 2026
+Cody Mitchell, Fractal Research Group · Preprint · Version 3 · 6 November 2026
 
-[Paper](paper/neurons-through-the-looking-glass-v2.pdf) · [Changes](CHANGES.md) · [Build instructions](REPRODUCE.md)
+[Paper](paper/neurons-through-the-looking-glass-v3.pdf) · [Changes](CHANGES.md) · [Build instructions](REPRODUCE.md)
 
 Two process-neuron architectures converge to the established massive,
 weakly coupled two-dimensional Wick-quartic field under the stated classical
@@ -12,9 +12,10 @@ inputs. Their normalized finite-stage laws preserve reflection positivity
 across the two central coordinate lines. One deterministic sequence works for
 both architectures and compactly supported measurements chosen afterwards.
 
-Version 2 brings the later conditional quantitative bounds and prescribed
-renormalized local-square results into the manuscript. The quantitative results
-select sufficient finite parameters for their stated observations and premises.
+Version 3 is an editorial revision of version 2. The mathematical results are
+unchanged. Version 2 brought the later conditional quantitative bounds and
+prescribed renormalized local-square results into the manuscript. The quantitative
+results select sufficient finite parameters for their stated observations and premises.
 The local-square results bound target smoothing error and combine eight errors
 in the joint field/local-square law. The exact domains, normalization and source
 conditions appear in the paper.
@@ -39,10 +40,10 @@ baseline and the separate checks for this public edition.
 Version 1 remains archived at [the paper DOI](https://doi.org/10.5281/zenodo.23603995),
 [the support DOI](https://doi.org/10.5281/zenodo.23603997) and
 [the GitHub release](https://github.com/SproutSeeds/neurons-through-the-looking-glass/releases/tag/v1).
-Those identifiers refer to version 1. Version-specific identifiers are recorded
-with the published release; this document source package assigns no new DOI.
+Those identifiers refer to version 1. Version 3 has a separate
+[paper DOI](https://doi.org/10.5281/zenodo.24020729) and
+[source DOI](https://doi.org/10.5281/zenodo.24020730).
 
 The paper and its source use CC BY 4.0; documentation uses Apache 2.0.
-Attribution, classical inputs and the roles of Opus, Astra and Sol are preserved
-in the manuscript. Internal model review is distinct from independent expert
-peer review and formal proof certification.
+Classical attribution, source qualifications and the exact mathematical scopes
+are preserved in the manuscript.

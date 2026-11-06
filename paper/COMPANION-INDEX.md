@@ -1,6 +1,6 @@
 # Public companion index
 
-This version 2 export contains the complete typeset manuscript and its LaTeX
+This version 3 export contains the complete typeset manuscript and its LaTeX
 build inputs. `PROOF-MAP.md` and `PROOF-MAP.json` locate arguments in these files.
 They are public navigation maps, not the original private acceptance ledger.
 
@@ -9,8 +9,9 @@ integrations. References to original packets, decisions, source roots, scripts,
 supplied historical bodies or a curated 23-packet tree refer to that private
 record. Those files are not included in this mathematical document export.
 The public map does not claim to expose or reproduce that record. Original
-statement/proof hashes, access limitations and internal review remain separate
-evidence; a private reference is not a publicly accessible proof attachment.
+statement/proof hashes, access limitations and version-specific decisions
+remain separate evidence; a private reference is not a publicly accessible proof
+attachment.
 
 Where the manuscript invokes a named inherited result rather than giving its
 complete original proof, the literal source-qualified premise remains part of
@@ -26,5 +27,5 @@ whose content also appears in the integrated manuscript. `build.sh` supplies
 the local build.
 
 The published version 1 is separately available from its DOI and GitHub release.
-Its finite diagnostics cover their original scope. The version 2 document
+Its finite diagnostics cover their original scope. The version 3 document
 package adds no claim of a practical field sampler or executable selector.
